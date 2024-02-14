@@ -13,7 +13,7 @@ public class MenuUzb {
     public SendMessage menu(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText(" ");
+        sendMessage.setText("Hizmatni tanlang");
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow>rowList=new ArrayList<>();
@@ -38,8 +38,62 @@ public class MenuUzb {
         return sendMessage;
     }
 
+    public SendMessage Sozlamalar(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Sozlamalar⚙\uFE0F");
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList=new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        button.setText("Tilni O`zgartirish\uD83D\uDD04");
+        button1.setText("Raqamni o`zgartirish\uD83D\uDD04");
+        row.add(button);
+        row.add(button1);
+        rowList.add(row);
+        replyKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        return sendMessage;
+    }
+    public SendMessage TilOzgartirish(Long chatid){
 
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setText("На какую язык хотите поменять \nqaysi tilga o`zgartirmoqchisiz");
+        sendMessage.setChatId(chatid);
 
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow>rowList=new ArrayList<>();
+        KeyboardRow row=new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardButton button1 = new KeyboardButton();
+        button.setText("O`zbek tili\uD83C\uDDFA\uD83C\uDDFF\uD83D\uDD04");
+        button1.setText("Русский язык\uD83C\uDDF7\uD83C\uDDFA\uD83D\uDD04");
+        row.add(button);
+        row.add(button1);
+        rowList.add(row);
 
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        return sendMessage;
+    }
+    public SendMessage RaqamOzgartirish(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Ozgartirmoqchi bo`lgan raqamingizni jo`nating");
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow>rowList=new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        button.setText("Kontakt jo`natish");
+        row.add(button);
+        rowList.add(row);
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        return sendMessage;
+    }
 
 }
