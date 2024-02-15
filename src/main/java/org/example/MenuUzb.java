@@ -48,13 +48,18 @@ public class MenuUzb {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList=new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1= new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
         button.setText("Tilni O`zgartirish\uD83D\uDD04");
         button1.setText("Raqamni o`zgartirish\uD83D\uDD04");
+        button2.setText("👈Orqaga");
         row.add(button);
         row.add(button1);
+        row1.add(button2);
         rowList.add(row);
+        rowList.add(row1);
         replyKeyboardMarkup.setKeyboard(rowList);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -85,12 +90,13 @@ public class MenuUzb {
     public SendMessage RaqamOzgartirish(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Ozgartirmoqchi bo`lgan raqamingizni jo`nating");
+        sendMessage.setText("Ozgartirmoqchi bo`lgan raqamingizni  \n " +
+                " +7 **********  YOKI +998 ********* korinishida yuboring");
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow>rowList=new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
-        button.setText("Kontakt jo`natish");
+        button.setText("👈 Orqaga");
         row.add(button);
         rowList.add(row);
         replyKeyboardMarkup.setKeyboard(rowList);
@@ -169,11 +175,26 @@ public class MenuUzb {
         button.setText("Sport va hordiq");
         button.setCallbackData("Sport va hordiq");
         row.add(button);
-
-
-
         inlineKeyboardMarkup.setKeyboard(rowlist);
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
+
+    public SendMessage KategoriyaOrqaga(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("yana qaysidur hizmatdan foydalanishni hohlaysizmi? ");
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow>rowList=new ArrayList<>();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardRow row = new KeyboardRow();
+        button.setText("👈Orqaga");
+        row.add(button);
+        rowList.add(row);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        replyKeyboardMarkup.setResizeKeyboard(true);
         return sendMessage;
     }
 

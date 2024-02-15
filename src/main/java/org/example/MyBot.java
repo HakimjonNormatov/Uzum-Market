@@ -124,6 +124,7 @@ public class MyBot extends TelegramLongPollingBot {
             if (text.equals("Katigoriyalar\uD83D\uDDC2")){
                 try {
                     execute(menuUzb.Kategoriyalar(chatId));
+                    execute(menuUzb.KategoriyaOrqaga(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
@@ -131,10 +132,40 @@ public class MyBot extends TelegramLongPollingBot {
             if (text.equals("Категории\uD83D\uDDC2")){
                 try {
                     execute(menuRus.Kategoriyalar(chatId));
+                    execute(menuRus.KategoriyaOrqaga(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
+            if(text.equals("👈Orqaga")){
+                try {
+                    execute(menuUzb.menu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }if (text.equals("👈 Orqaga")){
+                try {
+                    execute(menuUzb.Sozlamalar(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("👈Назад")){
+                try {
+                    execute(menuRus.menu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (text.equals("👈 Назад")){
+                try {
+                    execute(menuRus.Sozlamalar(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
 
         } else if (update.hasMessage() && update.getMessage().hasContact()){
             if (Language.equals("uz")) {

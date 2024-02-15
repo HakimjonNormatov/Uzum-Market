@@ -49,13 +49,18 @@ public class MenuRus {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList=new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
+        KeyboardRow row1= new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
+        KeyboardButton button2 = new KeyboardButton();
         button.setText("Изменить язык\uD83D\uDD04");
         button1.setText("Изменить номер\uD83D\uDD04");
+        button2.setText("👈Назад");
         row.add(button);
         row.add(button1);
+        row1.add(button2);
         rowList.add(row);
+        rowList.add(row1);
         replyKeyboardMarkup.setKeyboard(rowList);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -86,12 +91,13 @@ public class MenuRus {
     public SendMessage RaqamOzgartirish(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Введите номер, который хотите изменить");
+        sendMessage.setText("Введите номер, который хотите изменить \n " +
+                "Номер должен иметь вид +7 **********  ИЛИ +998 *********");
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow>rowList=new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
-        button.setText("Переслать контакт");
+        button.setText("👈 Назад");
         row.add(button);
         rowList.add(row);
         replyKeyboardMarkup.setKeyboard(rowList);
@@ -171,10 +177,26 @@ public class MenuRus {
         button.setCallbackData("Спорт и отдых");
         row.add(button);
 
-
-
         inlineKeyboardMarkup.setKeyboard(rowlist);
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
+
+    public SendMessage KategoriyaOrqaga(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Хотите воспользоваться другой услугой?");
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow>rowList=new ArrayList<>();
+        KeyboardButton button = new KeyboardButton();
+        KeyboardRow row = new KeyboardRow();
+        button.setText("👈Назад");
+        row.add(button);
+        rowList.add(row);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        replyKeyboardMarkup.setResizeKeyboard(true);
         return sendMessage;
     }
 }
