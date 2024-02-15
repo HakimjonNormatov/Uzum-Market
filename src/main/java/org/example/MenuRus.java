@@ -1,7 +1,10 @@
 package org.example;
 
+import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
@@ -94,6 +97,84 @@ public class MenuRus {
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        return sendMessage;
+    }
+
+    public SendMessage Kategoriyalar(Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("""
+                 <b>Категории</b>
+                """);
+        sendMessage.setParseMode(ParseMode.HTML);
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>>rowlist=new ArrayList<>();
+        List<InlineKeyboardButton>row=new ArrayList<>();
+
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("Електроника");
+        button.setCallbackData("Електроника");
+        row.add(button);
+        rowlist.add(row);
+
+        button=new InlineKeyboardButton();
+        button.setText("Бытовая техника");
+        button.setCallbackData("Бытовая техника");
+        row.add(button);
+
+        button=new InlineKeyboardButton();
+        row=new ArrayList<>();
+        button.setText("Одежда");
+        button.setCallbackData("Одежда");
+        row.add(button);
+        rowlist.add(row);
+
+        button=new InlineKeyboardButton();
+        button.setText("Аксессуары");
+        button.setCallbackData("Аксессуары");
+        row.add(button);
+
+        button=new InlineKeyboardButton();
+        row=new ArrayList<>();
+        button.setText("Красота и уход");
+        button.setCallbackData("Красота и уход");
+        row.add(button);
+        rowlist.add(row);
+
+        button=new InlineKeyboardButton();
+        button.setText("Здоровье");
+        button.setCallbackData("Здоровье");
+        row.add(button);
+
+        button=new InlineKeyboardButton();
+        row=new ArrayList<>();
+        button.setText("Строительство и ремонт");
+        button.setCallbackData("Строительство и ремонт");
+        row.add(button);
+        rowlist.add(row);
+
+        button=new InlineKeyboardButton();
+        button.setText("Автотовары");
+        button.setCallbackData("Автотовары");
+        row.add(button);
+
+        button=new InlineKeyboardButton();
+        row=new ArrayList<>();
+        button.setText("Для ребёнок");
+        button.setCallbackData("Для ребёнок");
+        row.add(button);
+        rowlist.add(row);
+
+        button=new InlineKeyboardButton();
+        button.setText("Спорт и отдых");
+        button.setCallbackData("Спорт и отдых");
+        row.add(button);
+
+
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
 }

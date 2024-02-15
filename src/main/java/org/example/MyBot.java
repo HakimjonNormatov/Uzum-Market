@@ -121,10 +121,22 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (text.equals("Katigoriyalar\uD83D\uDDC2")){
+                try {
+                    execute(menuUzb.Kategoriyalar(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("Категории\uD83D\uDDC2")){
+                try {
+                    execute(menuRus.Kategoriyalar(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
-        }
-
-        if (update.hasMessage() && update.getMessage().hasContact()){
+        } else if (update.hasMessage() && update.getMessage().hasContact()){
             if (Language.equals("uz")) {
                 SendMessage sendMessage = new SendMessage();
                 Long chatId = update.getMessage().getChatId();

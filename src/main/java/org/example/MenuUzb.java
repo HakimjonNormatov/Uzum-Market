@@ -1,7 +1,10 @@
 package org.example;
 
+import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
@@ -95,5 +98,84 @@ public class MenuUzb {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
+
+    public SendMessage Kategoriyalar(Long chatId){
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("""
+                 <b>Kategoriyalar</b>
+                """);
+        sendMessage.setParseMode(ParseMode.HTML);
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>>rowlist=new ArrayList<>();
+        List<InlineKeyboardButton>row=new ArrayList<>();
+
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("Elektronika");
+        button.setCallbackData("Elektronika");
+        row.add(button);
+        rowlist.add(row);
+
+        button=new InlineKeyboardButton();
+        button.setText("Maishiy Texnika");
+        button.setCallbackData("Maishiy Texnika");
+        row.add(button);
+
+        button=new InlineKeyboardButton();
+        row=new ArrayList<>();
+        button.setText("Kiyimlar");
+        button.setCallbackData("Kiyimlar");
+        row.add(button);
+        rowlist.add(row);
+
+        button=new InlineKeyboardButton();
+        button.setText("Aksessuarlar");
+        button.setCallbackData("Aksessuarlar");
+        row.add(button);
+
+        button=new InlineKeyboardButton();
+        row=new ArrayList<>();
+        button.setText("Go`zallik va parvarish");
+        button.setCallbackData("Go`zallik va parvarish");
+        row.add(button);
+        rowlist.add(row);
+
+        button=new InlineKeyboardButton();
+        button.setText("Salomatlik");
+        button.setCallbackData("Salomatlik");
+        row.add(button);
+
+        button=new InlineKeyboardButton();
+        row=new ArrayList<>();
+        button.setText("Qurilish mollari");
+        button.setCallbackData("Qurilish mollari");
+        row.add(button);
+        rowlist.add(row);
+
+        button=new InlineKeyboardButton();
+        button.setText("Avtotovarlar");
+        button.setCallbackData("Avtotovarlar");
+        row.add(button);
+
+        button=new InlineKeyboardButton();
+        row=new ArrayList<>();
+        button.setText("Bolalar uchun");
+        button.setCallbackData("Bolalar uchun");
+        row.add(button);
+        rowlist.add(row);
+
+        button=new InlineKeyboardButton();
+        button.setText("Sport va hordiq");
+        button.setCallbackData("Sport va hordiq");
+        row.add(button);
+
+
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
+
 
 }
