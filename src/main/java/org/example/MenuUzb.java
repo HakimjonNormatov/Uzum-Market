@@ -26,7 +26,7 @@ public class MenuUzb {
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2= new KeyboardButton();
         button.setText("Katigoriyalar\uD83D\uDDC2");
-        button1.setText("Biz haqimizdaℹ\uFE0F");
+        button1.setText("Bizning sayt\uD83D\uDECD");
         button2.setText("Sozlamalar⚙\uFE0F");
 
         row.add(button);
@@ -195,6 +195,16 @@ public class MenuUzb {
         replyKeyboardMarkup.setKeyboard(rowList);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         replyKeyboardMarkup.setResizeKeyboard(true);
+        return sendMessage;
+    }
+    public SendMessage Site(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("""
+                 <b> "https://uzum.uz/ru" Uzum Market </b>
+                """);
+        sendMessage.setParseMode(ParseMode.HTML);
+
         return sendMessage;
     }
 

@@ -8,11 +8,15 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
+import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -30,8 +34,11 @@ public class MyBot extends TelegramLongPollingBot {
         if (update.hasMessage() && update.getMessage().hasText()){
             String text = update.getMessage().getText();
             Long chatId = update.getMessage().getChatId();
-            //String firstName = update.getMessage().getFrom().getFirstName();
-            //String phoneNumber = update.getMessage().getContact().getPhoneNumber();
+            String firstName = update.getMessage().getChat().getFirstName();
+            String lastName = update.getMessage().getChat().getLastName();
+            Long id = update.getMessage().getChat().getId();
+
+            info(firstName , lastName , chatId , text);
 
             if (text.equals("/start")){
                 try {
@@ -165,6 +172,20 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (text.equals("Bizning sayt\uD83D\uDECD")){
+                try {
+                    execute(menuUzb.Site(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("Наш сайт\uD83D\uDECD")){
+                try {
+                    execute(menuRus.Site(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
 
         } else if (update.hasMessage() && update.getMessage().hasContact()){
@@ -173,6 +194,7 @@ public class MyBot extends TelegramLongPollingBot {
                 Long chatId = update.getMessage().getChatId();
                 String phoneNumber = update.getMessage().getContact().getPhoneNumber();
                 String firstName = update.getMessage().getFrom().getFirstName();
+                String lastName = update.getMessage().getFrom().getLastName();
                 sendMessage.setChatId(chatId);
                 sendMessage.setText("Hurmatli " + firstName + " tabriklaymiz ro`yxatdan muvaffaqiyatli o`tdingiz🤗");
                 try {
@@ -197,10 +219,21 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+        } else if (update.hasCallbackQuery()) {
+            CallbackQuery callbackQuery = update.getCallbackQuery();
+            String data = callbackQuery.getData();
+            System.out.println(data);
+            Long chatId = callbackQuery.getMessage().getChatId();
+            Message message = callbackQuery.getMessage();
+            if (data.equals("Elektronika")){
+
+            }
+
+
+
+
+
         }
-
-
-
 
 
     }
@@ -212,5 +245,12 @@ public class MyBot extends TelegramLongPollingBot {
     @Override
     public String getBotToken() {
         return "6278691791:AAHUo1ctSTY8e12o9KUoywgrMUXFlTO4lGU";
+    }
+    private void info(String Firstname , String Lastname , Long Id , String text){
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd//MM//yyyy HH:mm:ss");
+        Date date = new Date();
+        System.out.println(dateFormat.format(date));
+
+        System.out.println("Ismi: "+Firstname +"\n "+"Familiyasi: "+Lastname +"\n"+"Id: "+Id+"\n"+"Text: "+text);
     }
 }
