@@ -13,7 +13,6 @@ import java.util.List;
 
 public class MenuRus {
 
-
     public SendMessage menu(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -41,7 +40,6 @@ public class MenuRus {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
-
     public SendMessage Sozlamalar(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -105,7 +103,6 @@ public class MenuRus {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
-
     public SendMessage Kategoriyalar(Long chatId){
 
         SendMessage sendMessage = new SendMessage();
@@ -181,7 +178,6 @@ public class MenuRus {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-
     public SendMessage KategoriyaOrqaga(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
