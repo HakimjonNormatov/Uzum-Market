@@ -238,6 +238,11 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
             if (data.equals("1-elektronika oldinga")||(data.equals("3-elektronika orqaga"))){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://uzum.uz/uz/product/televizor-premier-43prm705s-full-hd-smart-910164?SG=1415458");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
 
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
@@ -254,13 +259,21 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setMessageId(message.getMessageId());
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_Elektronika(chatId));
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
+
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
             if (data.equals("2-elektronika oldinga")||(data.equals("4-elektronika orqaga"))){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cla6qcnn7c6qm23j01mg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
                 editMessageReplyMarkup.setMessageId(message.getMessageId());
@@ -281,6 +294,7 @@ public class MyBot extends TelegramLongPollingBot {
                        "tezligini ta’minlash imkonini beradi\n"+
                        "● PUBG Mobile o‘yinida, siz 60 FPSgacha olasiz.");
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -288,6 +302,13 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
             if (data.equals("3-elektronika oldinga")||(data.equals("5-elektronika orqaga"))){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckk5o4cjvf2peh8sjehg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
@@ -309,6 +330,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setMessageId(message.getMessageId());
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.tort_Elektronika(chatId));
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -316,6 +338,12 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
             if (data.equals("4-elektronika oldinga" )||( data.equals("6-elektronika orqaga"))){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cjjgakkvutv1g2ricde0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
                 editMessageReplyMarkup.setMessageId(message.getMessageId());
@@ -335,6 +363,7 @@ public class MyBot extends TelegramLongPollingBot {
                         " ● Batareya: 1050 mA/soat");
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -342,6 +371,11 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
             if (data.equals("5-elektronika oldinga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clk4get6sfhsc0umir90/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
                 editMessageReplyMarkup.setMessageId(message.getMessageId());
@@ -353,6 +387,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageCaption.setCaption("Aqlli qo'l soati Zeblaze Vibe 7 Pro");
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -360,6 +395,12 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
             if (data.equals("2-elektronika orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmfa23hs99ouqbfq6kq0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
@@ -381,6 +422,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setMessageId(message.getMessageId());
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_ElektronikaInline(chatId));
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -398,6 +440,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
             if (data.equals("1-Maishiy texnika oldinga")||data.equals("3-Maishiy texnika orqaga")){
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());

@@ -1288,8 +1288,13 @@ public class MenuUzb {
     public SendPhoto Bir_MaishiyTexnikaSendphoto(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clomahfn7c6gg9ie3om0/original.jpg"));
+        sendPhoto.setCaption("Aqlli robot changyutgich Xiaomi Robot Vacuum E12 Global, quruq va nam tozalash\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Ishlab chiqaruvchidan rasmiy kafolat: 1 yil. \n" +
+                "● Yangi Xiaomi Robot Vacuum E12 EU bilan samarali va aqlli yig‘ishtirish dunyosini oching. Bu oddiy aqlli robot-changyutgich emas, balki tozalik dunyosidagi haqiqiy chempion.\n" +
+                "● Mi Home ilovasiga ulanib, siz yig‘ishtirish ustidan nazoratni qo‘lga kiritasiz. Aqlli robotni bevosita smartfoningizdan boshqaring, yig‘ishtirishning uchta rejimi orasidan tanlang va ortiqcha zo‘riqishlarsiz bekami-ko‘st tozalikdan bahramand bo‘ling.\n" +
+                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi.");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1334,8 +1339,13 @@ public class MenuUzb {
     public InlineKeyboardMarkup Bir_MaishiyTexnikaInline(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clomahfn7c6gg9ie3om0/original.jpg"));
+        sendPhoto.setCaption("Aqlli robot changyutgich Xiaomi Robot Vacuum E12 Global, quruq va nam tozalash\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Ishlab chiqaruvchidan rasmiy kafolat: 1 yil.\n" +
+                "● Yangi Xiaomi Robot Vacuum E12 EU bilan samarali va aqlli yig‘ishtirish dunyosini oching. Bu oddiy aqlli robot-changyutgich emas, balki tozalik dunyosidagi haqiqiy chempion.\n" +
+                "● Mi Home ilovasiga ulanib, siz yig‘ishtirish ustidan nazoratni qo‘lga kiritasiz. Aqlli robotni bevosita smartfoningizdan boshqaring, yig‘ishtirishning uchta rejimi orasidan tanlang va ortiqcha zo‘riqishlarsiz bekami-ko‘st tozalikdan bahramand bo‘ling.\n" +
+                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi.");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1381,8 +1391,13 @@ public class MenuUzb {
         Bir_MaishiyTexnika++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clomahfn7c6gg9ie3om0/original.jpg"));
+        sendPhoto.setCaption("Aqlli robot changyutgich Xiaomi Robot Vacuum E12 Global, quruq va nam tozalash\n\n" +
+                "Mahsulot haqida qisqacha:\\n\" +\n" +
+                "● Ishlab chiqaruvchidan rasmiy kafolat: 1 yil.\n" +
+                "● Yangi Xiaomi Robot Vacuum E12 EU bilan samarali va aqlli yig‘ishtirish dunyosini oching. Bu oddiy aqlli robot-changyutgich emas, balki tozalik dunyosidagi haqiqiy chempion.\n" +
+                "● Mi Home ilovasiga ulanib, siz yig‘ishtirish ustidan nazoratni qo‘lga kiritasiz. Aqlli robotni bevosita smartfoningizdan boshqaring, yig‘ishtirishning uchta rejimi orasidan tanlang va ortiqcha zo‘riqishlarsiz bekami-ko‘st tozalikdan bahramand bo‘ling.\n" +
+                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi.");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1430,8 +1445,13 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clomahfn7c6gg9ie3om0/original.jpg"));
+        sendPhoto.setCaption("Aqlli robot changyutgich Xiaomi Robot Vacuum E12 Global, quruq va nam tozalash\n\n " +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Ishlab chiqaruvchidan rasmiy kafolat: 1 yil.\n" +
+                "● Yangi Xiaomi Robot Vacuum E12 EU bilan samarali va aqlli yig‘ishtirish dunyosini oching. Bu oddiy aqlli robot-changyutgich emas, balki tozalik dunyosidagi haqiqiy chempion.\n" +
+                "● Mi Home ilovasiga ulanib, siz yig‘ishtirish ustidan nazoratni qo‘lga kiritasiz. Aqlli robotni bevosita smartfoningizdan boshqaring, yig‘ishtirishning uchta rejimi orasidan tanlang va ortiqcha zo‘riqishlarsiz bekami-ko‘st tozalikdan bahramand bo‘ling.\n" +
+                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi.");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1478,8 +1498,15 @@ public class MenuUzb {
     public InlineKeyboardMarkup Ikki_MaishiyTexnika(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmcj35bifoubkc6n5f8g/original.jpg"));
+        sendPhoto.setCaption("Mikroto'lqinli pech Goodwell GMF-2012W, Solo, 20 L\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Boshqarish turi: Mexanik\n" +
+                "● Hajmi: 20 L\n" +
+                "● Koson turi: Oq\n" +
+                "● Mikroto'lqinli pechning quvvati: 700 Vt\n" +
+                "● Ishlab chiqaruvchi: Xitoy\n" +
+                "● Kafolat: 3 yil");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1525,8 +1552,15 @@ public class MenuUzb {
         Ikki_MaishiyTexnika++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmcj35bifoubkc6n5f8g/original.jpg"));
+        sendPhoto.setCaption("Mikroto'lqinli pech Goodwell GMF-2012W, Solo, 20 L\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Boshqarish turi: Mexanik\n" +
+                "● Hajmi: 20 L\n" +
+                "● Koson turi: Oq\n" +
+                "● Mikroto'lqinli pechning quvvati: 700 Vt\n" +
+                "● Ishlab chiqaruvchi: Xitoy\n" +
+                "● Kafolat: 3 yil");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1574,8 +1608,15 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmcj35bifoubkc6n5f8g/original.jpg"));
+        sendPhoto.setCaption("Mikroto'lqinli pech Goodwell GMF-2012W, Solo, 20 L\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Boshqarish turi: Mexanik\n" +
+                "● Hajmi: 20 L\n" +
+                "● Koson turi: Oq\n" +
+                "● Mikroto'lqinli pechning quvvati: 700 Vt\n" +
+                "● Ishlab chiqaruvchi: Xitoy\n" +
+                "● Kafolat: 3 yil");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1622,8 +1663,14 @@ public class MenuUzb {
     public InlineKeyboardMarkup Uch_MaishiyTexnika(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckjbb6cjvf2sulnvad3g/original.jpg"));
+        sendPhoto.setCaption("Konditsioner TCL TAC - 12CHSD/YA 11 I Invertor, ten bilan\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Elektr tent (harorat -15°C pasayganda ham to'xtovsiz ishlaydi)\n" +
+                "● Invertor motor (past elektr kuchlanishda ham ishlashni davom etadi)\n" +
+                "● R32 freon. Kam shovqin darajasi (19dB gacha)\n" +
+                "● LED displey va kutish rejimi (minimal shovqin darajasini va qulay harorat o'zgarishini ta'minlaydi)\n" +
+                "● Xavfsiz dizayn. Kondensat va elektr o'rtasida aloqa yo'q.");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1669,8 +1716,14 @@ public class MenuUzb {
         Uch_MaishiyTexnika++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckjbb6cjvf2sulnvad3g/original.jpg"));
+        sendPhoto.setCaption("Konditsioner TCL TAC - 12CHSD/YA 11 I Invertor, ten bilan\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Elektr tent (harorat -15°C pasayganda ham to'xtovsiz ishlaydi)\n" +
+                "● Invertor motor (past elektr kuchlanishda ham ishlashni davom etadi)\n" +
+                "● R32 freon. Kam shovqin darajasi (19dB gacha)\n" +
+                "● LED displey va kutish rejimi (minimal shovqin darajasini va qulay harorat o'zgarishini ta'minlaydi)\n" +
+                "● Xavfsiz dizayn. Kondensat va elektr o'rtasida aloqa yo'q.");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1718,8 +1771,14 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckjbb6cjvf2sulnvad3g/original.jpg"));
+        sendPhoto.setCaption("Konditsioner TCL TAC - 12CHSD/YA 11 I Invertor, ten bilan\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Elektr tent (harorat -15°C pasayganda ham to'xtovsiz ishlaydi)\n" +
+                "● Invertor motor (past elektr kuchlanishda ham ishlashni davom etadi)\n" +
+                "● R32 freon. Kam shovqin darajasi (19dB gacha)\n" +
+                "● LED displey va kutish rejimi (minimal shovqin darajasini va qulay harorat o'zgarishini ta'minlaydi)\n" +
+                "● Xavfsiz dizayn. Kondensat va elektr o'rtasida aloqa yo'q.");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1766,8 +1825,18 @@ public class MenuUzb {
     public InlineKeyboardMarkup Tort_MaishiyTexnika(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/chmpuav5d7kom1tgatb0/original.jpg"));
+        sendPhoto.setCaption("Dazmol HADiD BI-101\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● HADID BI-101\n" +
+                "● MODEL NO.:BI-101\n" +
+                "● 220-240V kuchlanish 50-60Hz\n" +
+                "● Quvvat 1200-1600 W\n" +
+                "● Suv idishining hajmi: 200ml.\n" +
+                "● Keramika tagligi\n" +
+                "● Balandligi 250 (mm) 25 sm.\n" +
+                "● Bug'li dazmol\n" +
+                "● Made in P.R.C");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1813,8 +1882,18 @@ public class MenuUzb {
         Tort_MaishiyTexnika++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/chmpuav5d7kom1tgatb0/original.jpg"));
+        sendPhoto.setCaption("Dazmol HADiD BI-101\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● HADID BI-101\n" +
+                "● MODEL NO.:BI-101\n" +
+                "● 220-240V kuchlanish 50-60Hz\n" +
+                "● Quvvat 1200-1600 W\n" +
+                "● Suv idishining hajmi: 200ml.\n" +
+                "● Keramika tagligi\n" +
+                "● Balandligi 250 (mm) 25 sm.\n" +
+                "● Bug'li dazmol\n" +
+                "● Made in P.R.C");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1862,8 +1941,18 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/chmpuav5d7kom1tgatb0/original.jpg"));
+        sendPhoto.setCaption("Dazmol HADiD BI-101\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● HADID BI-101\n" +
+                "● MODEL NO.:BI-101\n" +
+                "● 220-240V kuchlanish 50-60Hz\n" +
+                "● Quvvat 1200-1600 W\n" +
+                "● Suv idishining hajmi: 200ml.\n" +
+                "● Keramika tagligi\n" +
+                "● Balandligi 250 (mm) 25 sm.\n" +
+                "● Bug'li dazmol\n" +
+                "● Made in P.R.C");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1910,8 +1999,19 @@ public class MenuUzb {
     public InlineKeyboardMarkup Besh_MaishiyTexnika(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckiempsjvf2sulnv3dng/original.jpg"));
+        sendPhoto.setCaption("Portativ tikuv mashinasi Mini Sewing Machine SM-202\n\n" +
+                "Texnik xususiyatlari:\n" +
+                "\n" +
+                " ● Quvvat: 4.8 Vt\n" +
+                "\n" +
+                " ● Chastotasi: 50 Hz\n" +
+                "\n" +
+                " ● Parametrlar (l/g/soat): 19.5*12.5*20 sm\n" +
+                "\n" +
+                " ● Uzluksiz ish vaqti: cheklovlarsiz\n" +
+                "\n" +
+                " ● 2 tezlik");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1957,8 +2057,19 @@ public class MenuUzb {
         Besh_MaishiyTexnika++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckiempsjvf2sulnv3dng/original.jpg"));
+        sendPhoto.setCaption("Portativ tikuv mashinasi Mini Sewing Machine SM-202\n\n" +
+                "Texnik xususiyatlari:\n" +
+                "\n" +
+                " ● Quvvat: 4.8 Vt\n" +
+                "\n" +
+                " ● Chastotasi: 50 Hz\n" +
+                "\n" +
+                " ● Parametrlar (l/g/soat): 19.5*12.5*20 sm\n" +
+                "\n" +
+                " ● Uzluksiz ish vaqti: cheklovlarsiz\n" +
+                "\n" +
+                " ● 2 tezlik");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2006,8 +2117,19 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckiempsjvf2sulnv3dng/original.jpg"));
+        sendPhoto.setCaption("Portativ tikuv mashinasi Mini Sewing Machine SM-202\n\n" +
+                "Texnik xususiyatlari:\n" +
+                "\n" +
+                " ● Quvvat: 4.8 Vt\n" +
+                "\n" +
+                " ● Chastotasi: 50 Hz\n" +
+                "\n" +
+                " ● Parametrlar (l/g/soat): 19.5*12.5*20 sm\n" +
+                "\n" +
+                " ● Uzluksiz ish vaqti: cheklovlarsiz\n" +
+                "\n" +
+                " ● 2 tezlik");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2054,8 +2176,14 @@ public class MenuUzb {
     public InlineKeyboardMarkup Olti_MaishiyTexnika(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmtl0d125ku8jql6hcj0/original.jpg"));
+        sendPhoto.setCaption("Isitgich AIWA CNH1114, 2000 Vt 25 kvadrat metrga, g'ildirakli shassili pechka\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● 25 kvadrat uchun 2 kVt quvvat maydonlarni isitadi\n" +
+                "● Kompakt - qulay dizaynga ega, uni oson olib borish va har qanday sharoitda foydalanish oson\n" +
+                "● Ishonchli va qulay qurilma\n" +
+                "● Rang: oq\n" +
+                "● Kuchi - 2000 Vt");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2101,8 +2229,14 @@ public class MenuUzb {
         Olti_MaishiyTexnika++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmtl0d125ku8jql6hcj0/original.jpg"));
+        sendPhoto.setCaption("Isitgich AIWA CNH1114, 2000 Vt 25 kvadrat metrga, g'ildirakli shassili pechka\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● 25 kvadrat uchun 2 kVt quvvat maydonlarni isitadi\n" +
+                "● Kompakt - qulay dizaynga ega, uni oson olib borish va har qanday sharoitda foydalanish oson\n" +
+                "● Ishonchli va qulay qurilma\n" +
+                "● Rang: oq\n" +
+                "● Kuchi - 2000 Vt");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2150,8 +2284,14 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmtl0d125ku8jql6hcj0/original.jpg"));
+        sendPhoto.setCaption("Isitgich AIWA CNH1114, 2000 Vt 25 kvadrat metrga, g'ildirakli shassili pechka\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● 25 kvadrat uchun 2 kVt quvvat maydonlarni isitadi\n" +
+                "● Kompakt - qulay dizaynga ega, uni oson olib borish va har qanday sharoitda foydalanish oson\n" +
+                "● Ishonchli va qulay qurilma\n" +
+                "● Rang: oq\n" +
+                "● Kuchi - 2000 Vt");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2205,8 +2345,19 @@ public class MenuUzb {
     public SendPhoto Bir_KiyimlarSendphoto(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cfjidl7hgiopn8lc3bvg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar sport to'plami, xudi shim bilan, qora\n\n" +
+                "Ikki ipli yuqori sifatli erkaklar kostyumi. Bahoriy havo uchun ajoyib variant. Ipli qalpoqli qalpoqli, katta kenguru cho'ntak, etagi manjetli. Kesish bepul.\n" +
+                "\n" +
+                "\n" +
+                "\n" +
+                "Еrkaklar kostyumi, ikki ipli\n" +
+                "\n" +
+                "Kostyum siqilmaydi, yuqori sifatli mato\n" +
+                "\n" +
+                "Material: 90% paxta 10% polyester\n" +
+                "\n" +
+                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2251,8 +2402,19 @@ public class MenuUzb {
     public InlineKeyboardMarkup Bir_KiyimlarInline(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cfjidl7hgiopn8lc3bvg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar sport to'plami, xudi shim bilan, qora\n\n" +
+                "Ikki ipli yuqori sifatli erkaklar kostyumi. Bahoriy havo uchun ajoyib variant. Ipli qalpoqli qalpoqli, katta kenguru cho'ntak, etagi manjetli. Kesish bepul.\n" +
+                "\n" +
+                "\n" +
+                "\n" +
+                "Еrkaklar kostyumi, ikki ipli\n" +
+                "\n" +
+                "Kostyum siqilmaydi, yuqori sifatli mato\n" +
+                "\n" +
+                "Material: 90% paxta 10% polyester\n" +
+                "\n" +
+                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2298,8 +2460,19 @@ public class MenuUzb {
         Bir_Kiyimlar++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cfjidl7hgiopn8lc3bvg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar sport to'plami, xudi shim bilan, qora\n\n" +
+                "Ikki ipli yuqori sifatli erkaklar kostyumi. Bahoriy havo uchun ajoyib variant. Ipli qalpoqli qalpoqli, katta kenguru cho'ntak, etagi manjetli. Kesish bepul.\n" +
+                "\n" +
+                "\n" +
+                "\n" +
+                "Еrkaklar kostyumi, ikki ipli\n" +
+                "\n" +
+                "Kostyum siqilmaydi, yuqori sifatli mato\n" +
+                "\n" +
+                "Material: 90% paxta 10% polyester\n" +
+                "\n" +
+                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2347,8 +2520,19 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cfjidl7hgiopn8lc3bvg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar sport to'plami, xudi shim bilan, qora\n\n" +
+                "Ikki ipli yuqori sifatli erkaklar kostyumi. Bahoriy havo uchun ajoyib variant. Ipli qalpoqli qalpoqli, katta kenguru cho'ntak, etagi manjetli. Kesish bepul.\n" +
+                "\n" +
+                "\n" +
+                "\n" +
+                "Еrkaklar kostyumi, ikki ipli\n" +
+                "\n" +
+                "Kostyum siqilmaydi, yuqori sifatli mato\n" +
+                "\n" +
+                "Material: 90% paxta 10% polyester\n" +
+                "\n" +
+                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2395,8 +2579,14 @@ public class MenuUzb {
     public InlineKeyboardMarkup Ikki_Kiyimlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn325n3ifoubkc6r8ujg/original.jpg"));
+        sendPhoto.setCaption("Ayollar to'plami: yubka + kofta\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Tantanali tadbirlar va kundalik kiyim uchun javob beradi\n" +
+                "● Keng turadigon fason\n" +
+                "● Har qanday poyabzal bilan kiyinish mumkin\n" +
+                "● Bitta o'lcham 46-52 gacha mos keladi\n" +
+                "● Fasl: kuz qish bohor");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2442,8 +2632,14 @@ public class MenuUzb {
         Ikki_Kiyimlar++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn325n3ifoubkc6r8ujg/original.jpg"));
+        sendPhoto.setCaption("Ayollar to'plami: yubka + kofta\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Tantanali tadbirlar va kundalik kiyim uchun javob beradi\n" +
+                "● Keng turadigon fason\n" +
+                "● Har qanday poyabzal bilan kiyinish mumkin\n" +
+                "● Bitta o'lcham 46-52 gacha mos keladi\n" +
+                "● Fasl: kuz qish bohor");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2491,8 +2687,14 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn325n3ifoubkc6r8ujg/original.jpg"));
+        sendPhoto.setCaption("Ayollar to'plami: yubka + kofta\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Tantanali tadbirlar va kundalik kiyim uchun javob beradi\n" +
+                "● Keng turadigon fason\n" +
+                "● Har qanday poyabzal bilan kiyinish mumkin\n" +
+                "● Bitta o'lcham 46-52 gacha mos keladi\n" +
+                "● Fasl: kuz qish bohor");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2539,8 +2741,11 @@ public class MenuUzb {
     public InlineKeyboardMarkup Uch_Kiyimlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmjr8u1s99ouqbfqvh20/original.jpg"));
+        sendPhoto.setCaption("Bolalar kombinezoni, chaqaloqlar uchun, quloqchalar bilan quyoncha, paxtali\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "Balandligi 52 dan 80 gacha bo'lgan o'lchamlar mavjud, ular chaqaloqlar va bir yarim yoshgacha bo'lgan bolalar uchun juda mos keladi.\n" +
+                "Yumshoq va nozik yuqori sifatli trikotaj mato. Kombinezon 95% paxta va 5% elastandan iborat. Elastanning ozgina foizi kombinezonga shakl beradi, burishmaydi, cho'zilmaydi");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2586,8 +2791,11 @@ public class MenuUzb {
         Uch_Kiyimlar++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmjr8u1s99ouqbfqvh20/original.jpg"));
+        sendPhoto.setCaption("Bolalar kombinezoni, chaqaloqlar uchun, quloqchalar bilan quyoncha, paxtali\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "Balandligi 52 dan 80 gacha bo'lgan o'lchamlar mavjud, ular chaqaloqlar va bir yarim yoshgacha bo'lgan bolalar uchun juda mos keladi.\n" +
+                "Yumshoq va nozik yuqori sifatli trikotaj mato. Kombinezon 95% paxta va 5% elastandan iborat. Elastanning ozgina foizi kombinezonga shakl beradi, burishmaydi, cho'zilmaydi");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2635,8 +2843,11 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmjr8u1s99ouqbfqvh20/original.jpg"));
+        sendPhoto.setCaption("Bolalar kombinezoni, chaqaloqlar uchun, quloqchalar bilan quyoncha, paxtali\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "Balandligi 52 dan 80 gacha bo'lgan o'lchamlar mavjud, ular chaqaloqlar va bir yarim yoshgacha bo'lgan bolalar uchun juda mos keladi.\n" +
+                "Yumshoq va nozik yuqori sifatli trikotaj mato. Kombinezon 95% paxta va 5% elastandan iborat. Elastanning ozgina foizi kombinezonga shakl beradi, burishmaydi, cho'zilmaydi");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
