@@ -39,7 +39,6 @@ public class MenuUzb {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
-
     public SendMessage Sozlamalar(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -64,7 +63,6 @@ public class MenuUzb {
         replyKeyboardMarkup.setResizeKeyboard(true);
         return sendMessage;
     }
-
     public SendMessage TilOzgartirish(Long chatid) {
 
         SendMessage sendMessage = new SendMessage();
@@ -87,7 +85,6 @@ public class MenuUzb {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
-
     public SendMessage RaqamOzgartirish(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -105,7 +102,6 @@ public class MenuUzb {
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         return sendMessage;
     }
-
     public SendMessage Kategoriyalar(Long chatId) {
 
         SendMessage sendMessage = new SendMessage();
@@ -216,15 +212,6 @@ public class MenuUzb {
     int Besh_elektronika=1;
     int Olti_elektronika=1;
 
-    public SendMessage ElektronikaUchunSendMessage(Long chatId){
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("""
-                <b>Katerogira: Elektronika</b>
-                """);
-        sendMessage.setParseMode(ParseMode.HTML);
-        return sendMessage;
-    }
     public SendPhoto Bir_Elektronikasendphoto(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -240,7 +227,7 @@ public class MenuUzb {
                 "● Protsessor: MediaTek Helio G85\n" +
                 "● Diagonali displey: 6,74 dyum 1600x720, 260 ppi\n" +
                 "● Yangilanish tezligi: 90 Hz gacha\n" +
-                "● Yorqinligi: 450 nit (turi), 600 nit\n\n "+ElektronikaUchunSendMessage(chatId));
+                "● Yorqinligi: 450 nit (turi), 600 nit\n\n ");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -297,7 +284,7 @@ public class MenuUzb {
                 "● Protsessor: MediaTek Helio G85\n" +
                 "● Diagonali displey: 6,74 dyum 1600x720, 260 ppi\n" +
                 "● Yangilanish tezligi: 90 Hz gacha\n" +
-                "● Yorqinligi: 450 nit (turi), 600 nit\n\n "+ElektronikaUchunSendMessage(chatId));
+                "● Yorqinligi: 450 nit (turi), 600 nit\n\n ");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -355,7 +342,7 @@ public class MenuUzb {
                 "● Protsessor: MediaTek Helio G85\n" +
                 "● Diagonali displey: 6,74 dyum 1600x720, 260 ppi\n" +
                 "● Yangilanish tezligi: 90 Hz gacha\n" +
-                "● Yorqinligi: 450 nit (turi), 600 nit\n\n "+ElektronikaUchunSendMessage(chatId));
+                "● Yorqinligi: 450 nit (turi), 600 nit\n\n ");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -415,7 +402,7 @@ public class MenuUzb {
                 "● Protsessor: MediaTek Helio G85\n" +
                 "● Diagonali displey: 6,74 dyum 1600x720, 260 ppi\n" +
                 "● Yangilanish tezligi: 90 Hz gacha\n" +
-                "● Yorqinligi: 450 nit (turi), 600 nit\n\n "+ElektronikaUchunSendMessage(chatId));
+                "● Yorqinligi: 450 nit (turi), 600 nit\n\n ");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -462,7 +449,7 @@ public class MenuUzb {
     public InlineKeyboardMarkup Ikki_Elektronika(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://uzum.uz/uz/product/televizor-premier-43prm705s-full-hd-smart-910164?SG=1415458"));
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn4ucohs99ouqbfu5jt0/original.jpg"));
         sendPhoto.setCaption("Televizor Premier 43PRM705S, Full HD Smart TV \n " +
                 "Mahsulot haqida qisqacha:\n" +
                 "● Matritsa turi - VA paneli\n" +
@@ -514,7 +501,7 @@ public class MenuUzb {
         Ikki_elektronika++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://uzum.uz/uz/product/televizor-premier-43prm705s-full-hd-smart-910164?SG=1415458"));
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn4ucohs99ouqbfu5jt0/original.jpg"));
         sendPhoto.setCaption("Televizor Premier 43PRM705S, Full HD Smart TV \n " +
                 "Mahsulot haqida qisqacha:\n" +
                 "● Matritsa turi - VA paneli\n" +
@@ -568,7 +555,7 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://uzum.uz/uz/product/televizor-premier-43prm705s-full-hd-smart-910164?SG=1415458"));
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn4ucohs99ouqbfu5jt0/original.jpg"));
         sendPhoto.setCaption("Televizor Premier 43PRM705S, Full HD Smart TV \n " +
                 "Mahsulot haqida qisqacha:\n" +
                 "● Matritsa turi - VA paneli\n" +
@@ -2113,7 +2100,7 @@ public class MenuUzb {
     }
     public InlineKeyboardMarkup Besh_MaishiyTexnikaMinus(Long chatId){
         if (Besh_MaishiyTexnika>1){
-            Besh_elektronika--;
+            Besh_MaishiyTexnika--;
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -2894,8 +2881,15 @@ public class MenuUzb {
     public InlineKeyboardMarkup Tort_Kiyimlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn50anbifoubkc6rjrig/original.jpg"));
+        sendPhoto.setCaption("Erkaklar krossovkalari Skechers GOWALK Flex 216481\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Havo sovutadigan Goga Mat oyoq to'shagini o'z ichiga oladi\n" +
+                "● Nafas oladigan trikotaj ustki\n" +
+                "● Asosiy xususiyatlar Yengil va sezgir ULTRA GO® tamponlama\n" +
+                "● Model har qanday lazzat uchun 3 ta rangda taqdim etilgan\n" +
+                "● Uzoq yurish, sport va kundalik hayot uchun juda mos keladi\n" +
+                "● SKECHERS assortimenti haqida ko'proq bilish uchun do'kon sahifasiga o'ting");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2941,8 +2935,15 @@ public class MenuUzb {
         Tort_Kiyimlar++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn50anbifoubkc6rjrig/original.jpg"));
+        sendPhoto.setCaption("Erkaklar krossovkalari Skechers GOWALK Flex 216481\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Havo sovutadigan Goga Mat oyoq to'shagini o'z ichiga oladi\n" +
+                "● Nafas oladigan trikotaj ustki\n" +
+                "● Asosiy xususiyatlar Yengil va sezgir ULTRA GO® tamponlama\n" +
+                "● Model har qanday lazzat uchun 3 ta rangda taqdim etilgan\n" +
+                "● Uzoq yurish, sport va kundalik hayot uchun juda mos keladi\n" +
+                "● SKECHERS assortimenti haqida ko'proq bilish uchun do'kon sahifasiga o'ting");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2990,8 +2991,15 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn50anbifoubkc6rjrig/original.jpg"));
+        sendPhoto.setCaption("Erkaklar krossovkalari Skechers GOWALK Flex 216481\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Havo sovutadigan Goga Mat oyoq to'shagini o'z ichiga oladi\n" +
+                "● Nafas oladigan trikotaj ustki\n" +
+                "● Asosiy xususiyatlar Yengil va sezgir ULTRA GO® tamponlama\n" +
+                "● Model har qanday lazzat uchun 3 ta rangda taqdim etilgan\n" +
+                "● Uzoq yurish, sport va kundalik hayot uchun juda mos keladi\n" +
+                "● SKECHERS assortimenti haqida ko'proq bilish uchun do'kon sahifasiga o'ting");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3038,8 +3046,10 @@ public class MenuUzb {
     public InlineKeyboardMarkup Besh_Kiyimlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cg67d37hgiov1qie6pbg/original.jpg"));
+        sendPhoto.setCaption("Ayollar krossovkalari \n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● EVA taglik, usti sun'iy teri");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3085,8 +3095,10 @@ public class MenuUzb {
         Besh_Kiyimlar++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cg67d37hgiov1qie6pbg/original.jpg"));
+        sendPhoto.setCaption("Ayollar krossovkalari \n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● EVA taglik, usti sun'iy teri");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3134,8 +3146,10 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cg67d37hgiov1qie6pbg/original.jpg"));
+        sendPhoto.setCaption("Ayollar krossovkalari \n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● EVA taglik, usti sun'iy teri");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3182,8 +3196,8 @@ public class MenuUzb {
     public InlineKeyboardMarkup Olti_Kiyimlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckp9t6sjvf2iqscbnfdg/original.jpg"));
+        sendPhoto.setCaption("Bolalar etikchalari, ustki qismi parusinalik, o'lchamlari 22-35");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3225,13 +3239,12 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Olti_KiyimlarPlus(Long chatId){
         Olti_Kiyimlar++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckp9t6sjvf2iqscbnfdg/original.jpg"));
+        sendPhoto.setCaption("Bolalar etikchalari, ustki qismi parusinalik, o'lchamlari 22-35");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3273,15 +3286,14 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Olti_KiyimlarMinus(Long chatId){
         if (Olti_Kiyimlar>1){
             Olti_Kiyimlar--;
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckp9t6sjvf2iqscbnfdg/original.jpg"));
+        sendPhoto.setCaption("Bolalar etikchalari, ustki qismi parusinalik, o'lchamlari 22-35");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3323,6 +3335,1050 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
+
+
+    int Bir_Aksessuarlar=1;
+    int Ikki_Aksessuarlar=1;
+    int Uch_Aksessuarlar=1;
+    int Tort_Aksessuarlar=1;
+    int Besh_Aksessuarlar=1;
+    int Olti_Aksessuarlar=1;
+
+    public SendPhoto Bir_AksessuarlarSendPhoto(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjj1qrkjvf2ofbh7llcg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar yelkama-sumkasi, barsetka\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Sozlanishi tasma\n" +
+                "● To'rtburchaklar shakli; asosiy model\n" +
+                "● Mahkamlagich turi - chaqmoq; tugmalar\n" +
+                "● Sumka modeli: o'zaro faoliyat\n" +
+                "Agar biror narsa sizga mos kelmasa, salbiy sharh yozishga shoshilmang. Bizga shaxsiy xabar yuboring va biz sizning muammoingizni albatta hal qilamiz!\n" +
+                "● Har kuni, ofisga va ish uchun sumka");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Aksessuarlar));
+        button.setCallbackData("1-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return sendPhoto;
+    }
+    public InlineKeyboardMarkup Bir_AksessuarlarInline(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjj1qrkjvf2ofbh7llcg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar yelkama-sumkasi, barsetka\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Sozlanishi tasma\n" +
+                "● To'rtburchaklar shakli; asosiy model\n" +
+                "● Mahkamlagich turi - chaqmoq; tugmalar\n" +
+                "● Sumka modeli: o'zaro faoliyat\n" +
+                "Agar biror narsa sizga mos kelmasa, salbiy sharh yozishga shoshilmang. Bizga shaxsiy xabar yuboring va biz sizning muammoingizni albatta hal qilamiz!\n" +
+                "● Har kuni, ofisga va ish uchun sumka");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Aksessuarlar));
+        button.setCallbackData("1-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Bir_AksessuarlarPlus(Long chatId){
+        Bir_Aksessuarlar++;
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjj1qrkjvf2ofbh7llcg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar yelkama-sumkasi, barsetka\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Sozlanishi tasma\n" +
+                "● To'rtburchaklar shakli; asosiy model\n" +
+                "● Mahkamlagich turi - chaqmoq; tugmalar\n" +
+                "● Sumka modeli: o'zaro faoliyat\n" +
+                "Agar biror narsa sizga mos kelmasa, salbiy sharh yozishga shoshilmang. Bizga shaxsiy xabar yuboring va biz sizning muammoingizni albatta hal qilamiz!\n" +
+                "● Har kuni, ofisga va ish uchun sumka");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Aksessuarlar));
+        button.setCallbackData("1-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Bir_AksessuarlarMinus(Long chatId){
+        if (Bir_Aksessuarlar>1){
+            Bir_Aksessuarlar--;
+        }
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjj1qrkjvf2ofbh7llcg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar yelkama-sumkasi, barsetka\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Sozlanishi tasma\n" +
+                "● To'rtburchaklar shakli; asosiy model\n" +
+                "● Mahkamlagich turi - chaqmoq; tugmalar\n" +
+                "● Sumka modeli: o'zaro faoliyat\n" +
+                "Agar biror narsa sizga mos kelmasa, salbiy sharh yozishga shoshilmang. Bizga shaxsiy xabar yuboring va biz sizning muammoingizni albatta hal qilamiz!\n" +
+                "● Har kuni, ofisga va ish uchun sumka");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Aksessuarlar));
+        button.setCallbackData("1-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+
+    public InlineKeyboardMarkup Ikki_Aksessuarlar(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cje50qkjvf2trp6s4nrg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar va yigitlar uchun 2 tarafli kamar SERRADOR\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Material: germantin\n" +
+                "● Ishlab chiqarilgan davlat: Xitoy\n" +
+                "● Rangi: bir tomoni qora - ikkinchi tomoni jigarrang\n" +
+                "● Eni: 4 sm\n" +
+                "● Bo`yi: 120 sm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("2-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Ikki_Aksessuarlar));
+        button.setCallbackData("2-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("2-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("2-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("2-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("2-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Ikki_AksessuarlarPlus(Long chatId){
+        Ikki_Aksessuarlar++;
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cje50qkjvf2trp6s4nrg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar va yigitlar uchun 2 tarafli kamar SERRADOR\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Material: germantin\n" +
+                "● Ishlab chiqarilgan davlat: Xitoy\n" +
+                "● Rangi: bir tomoni qora - ikkinchi tomoni jigarrang\n" +
+                "● Eni: 4 sm\n" +
+                "● Bo`yi: 120 sm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("2-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Ikki_Aksessuarlar));
+        button.setCallbackData("2-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("2-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("2-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("2-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("2-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Ikki_AksessuarlarMinus(Long chatId){
+        if (Ikki_Aksessuarlar>1){
+            Ikki_Aksessuarlar--;
+        }
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cje50qkjvf2trp6s4nrg/original.jpg"));
+        sendPhoto.setCaption("Erkaklar va yigitlar uchun 2 tarafli kamar SERRADOR\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Material: germantin\n" +
+                "● Ishlab chiqarilgan davlat: Xitoy\n" +
+                "● Rangi: bir tomoni qora - ikkinchi tomoni jigarrang\n" +
+                "● Eni: 4 sm\n" +
+                "● Bo`yi: 120 sm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("2-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Ikki_Aksessuarlar));
+        button.setCallbackData("2-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("2-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("2-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("2-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("2-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+
+    public InlineKeyboardMarkup Uch_Aksessuarlar(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjcb4lkvutv7iatast50/original.jpg"));
+        sendPhoto.setCaption("Ayollar uchun sumka\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Yuqori sifatli armatura\n" +
+                "● Material-ekologik teri\n" +
+                "● Tanlash uchun 4 ta rang\n" +
+                "● Yilni o'lcham\n" +
+                "● Sozlanishi tasma\n" +
+                "● Ayollar uchun elkama-sumka");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("3-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Uch_Aksessuarlar));
+        button.setCallbackData("3-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("3-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("3-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("3-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("3-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Uch_AksessuarlarPlus(Long chatId){
+        Uch_Aksessuarlar++;
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjcb4lkvutv7iatast50/original.jpg"));
+        sendPhoto.setCaption("Ayollar uchun sumka\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Yuqori sifatli armatura\n" +
+                "● Material-ekologik teri\n" +
+                "● Tanlash uchun 4 ta rang\n" +
+                "● Yilni o'lcham\n" +
+                "● Sozlanishi tasma\n" +
+                "● Ayollar uchun elkama-sumka");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("3-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Uch_Aksessuarlar));
+        button.setCallbackData("3-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("3-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("3-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("3-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("3-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Uch_AksessuarlarMinus(Long chatId){
+        if (Uch_Aksessuarlar>1){
+            Uch_Aksessuarlar--;
+        }
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjcb4lkvutv7iatast50/original.jpg"));
+        sendPhoto.setCaption("Ayollar uchun sumka\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Yuqori sifatli armatura\n" +
+                "● Material-ekologik teri\n" +
+                "● Tanlash uchun 4 ta rang\n" +
+                "● Yilni o'lcham\n" +
+                "● Sozlanishi tasma\n" +
+                "● Ayollar uchun elkama-sumka");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("3-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Uch_Aksessuarlar));
+        button.setCallbackData("3-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("3-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("3-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("3-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("3-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+
+    public InlineKeyboardMarkup Tort_Aksessuarlar(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clqtjohs99oopol1euj0/original.jpg"));
+        sendPhoto.setCaption("Bolalar uchun qalpoq, bahor va kuz fasliga mos\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Kuz,Bahor va Qish fasli uchun mo'ljallangan qalpoq\n" +
+                "● O'lchamlarii: 1 yoshdan 3 yoshgacha\n" +
+                "● Ishlab chiqaruvchi O'zbekiston\n" +
+                "● 30 gradusdan past haroratda yuvilsin\n" +
+                "● Qiz va o'g'il bolalar uchun\n" +
+                "● Yengil to'qilgan material\n" +
+                "● Farzandingizga qulaylik va uslub bering");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("4-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Tort_Aksessuarlar));
+        button.setCallbackData("4-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("4-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("4-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("4-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("4-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Tort_AksessuarlarPlus(Long chatId){
+        Tort_Aksessuarlar++;
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clqtjohs99oopol1euj0/original.jpg"));
+        sendPhoto.setCaption("Bolalar uchun qalpoq, bahor va kuz fasliga mos\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Kuz,Bahor va Qish fasli uchun mo'ljallangan qalpoq\n" +
+                "● O'lchamlarii: 1 yoshdan 3 yoshgacha\n" +
+                "● Ishlab chiqaruvchi O'zbekiston\n" +
+                "● 30 gradusdan past haroratda yuvilsin\n" +
+                "● Qiz va o'g'il bolalar uchun\n" +
+                "● Yengil to'qilgan material\n" +
+                "● Farzandingizga qulaylik va uslub bering");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("4-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Tort_Aksessuarlar));
+        button.setCallbackData("4-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("4-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("4-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("4-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("4-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Tort_AksessuarlarMinus(Long chatId){
+        if (Tort_Aksessuarlar>1){
+            Tort_Aksessuarlar--;
+        }
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clqtjohs99oopol1euj0/original.jpg"));
+        sendPhoto.setCaption("Bolalar uchun qalpoq, bahor va kuz fasliga mos\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Kuz,Bahor va Qish fasli uchun mo'ljallangan qalpoq\n" +
+                "● O'lchamlarii: 1 yoshdan 3 yoshgacha\n" +
+                "● Ishlab chiqaruvchi O'zbekiston\n" +
+                "● 30 gradusdan past haroratda yuvilsin\n" +
+                "● Qiz va o'g'il bolalar uchun\n" +
+                "● Yengil to'qilgan material\n" +
+                "● Farzandingizga qulaylik va uslub bering");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("4-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Tort_Aksessuarlar));
+        button.setCallbackData("4-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("4-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("4-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("4-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("4-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Besh_Aksessuarlar(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckd380rk9fq1hr1nstrg/original.jpg"));
+        sendPhoto.setCaption("Yonadigan uzuk, puls va yurak, fosforli, sevishganlar uchun, qorong'uda yonadigan\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Vaqt o'tishi bilan rangi o'chmaydi\n" +
+                "● Metall turi: zanglamaydigan po'lat\n" +
+                "● Allergiyaga olib kelmaydi\n" +
+                "● Erkaklar va ayollar uchun\n" +
+                "● Uslub: har kuni uchun\n" +
+                "● Nur bilan quvvatlanadi");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("5-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Besh_Aksessuarlar));
+        button.setCallbackData("5-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("5-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("5-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("5-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("5-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Besh_AksessuarlarPlus(Long chatId){
+        Besh_Aksessuarlar++;
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckd380rk9fq1hr1nstrg/original.jpg"));
+        sendPhoto.setCaption("Yonadigan uzuk, puls va yurak, fosforli, sevishganlar uchun, qorong'uda yonadigan\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Vaqt o'tishi bilan rangi o'chmaydi\n" +
+                "● Metall turi: zanglamaydigan po'lat\n" +
+                "● Allergiyaga olib kelmaydi\n" +
+                "● Erkaklar va ayollar uchun\n" +
+                "● Uslub: har kuni uchun\n" +
+                "● Nur bilan quvvatlanadi");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("5-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Besh_Aksessuarlar));
+        button.setCallbackData("5-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("5-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("5-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("5-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("5-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Besh_AksessuarlarMinus(Long chatId){
+        if (Besh_Aksessuarlar>1){
+            Besh_Aksessuarlar--;
+        }
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckd380rk9fq1hr1nstrg/original.jpg"));
+        sendPhoto.setCaption("Yonadigan uzuk, puls va yurak, fosforli, sevishganlar uchun, qorong'uda yonadigan\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Vaqt o'tishi bilan rangi o'chmaydi\n" +
+                "● Metall turi: zanglamaydigan po'lat\n" +
+                "● Allergiyaga olib kelmaydi\n" +
+                "● Erkaklar va ayollar uchun\n" +
+                "● Uslub: har kuni uchun\n" +
+                "● Nur bilan quvvatlanadi");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("5-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Besh_Aksessuarlar));
+        button.setCallbackData("5-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("5-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("5-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("5-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("5-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Olti_Aksessuarlar(Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ck6lh83k9fqd6b9u0su0/original.jpg"));
+        sendPhoto.setCaption("Soch uchun obodok marvaridlardan, oq marvaridli ayollar aksessuari, bezaklar\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Mahsulotning qadoqlangan og'irligi 40 g\n" +
+                "● Bezatish har qanday zichlik va hajmdagi bukleler uchun javob beradi\n" +
+                "● Boshni siqmaydi\n" +
+                "● Buyum kengligi 1-1.5 sm. Diametri: 15 sm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("6-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Olti_Aksessuarlar));
+        button.setCallbackData("6-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("6-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("6-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("6-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("6-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Olti_AksessuarlarPlus(Long chatId){
+        Olti_Aksessuarlar++;
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ck6lh83k9fqd6b9u0su0/original.jpg"));
+        sendPhoto.setCaption("Soch uchun obodok marvaridlardan, oq marvaridli ayollar aksessuari, bezaklar\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Mahsulotning qadoqlangan og'irligi 40 g\n" +
+                "● Bezatish har qanday zichlik va hajmdagi bukleler uchun javob beradi\n" +
+                "● Boshni siqmaydi\n" +
+                "● Buyum kengligi 1-1.5 sm. Diametri: 15 sm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("6-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Olti_Aksessuarlar));
+        button.setCallbackData("6-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("6-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("6-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("6-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("6-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Olti_AksessuarlarMinus(Long chatId) {
+        if (Olti_Aksessuarlar>1){
+            Olti_Aksessuarlar--;
+        }
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ck6lh83k9fqd6b9u0su0/original.jpg"));
+        sendPhoto.setCaption("Soch uchun obodok marvaridlardan, oq marvaridli ayollar aksessuari, bezaklar\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Mahsulotning qadoqlangan og'irligi 40 g\n" +
+                "● Bezatish har qanday zichlik va hajmdagi bukleler uchun javob beradi\n" +
+                "● Boshni siqmaydi\n" +
+                "● Buyum kengligi 1-1.5 sm. Diametri: 15 sm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("6-Aksessuarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Olti_Aksessuarlar));
+        button.setCallbackData("6-Aksessuarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("6-Aksessuarlar plus");
+        row.add(button);
+        rowlist.add(row);
+
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("6-Aksessuarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("6-Aksessuarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("6-Aksessuarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+
+
+
+
+
+
+
 
 
 

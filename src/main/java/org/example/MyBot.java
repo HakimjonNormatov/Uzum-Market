@@ -192,7 +192,8 @@ public class MyBot extends TelegramLongPollingBot {
             }
 
 
-        } else if (update.hasMessage() && update.getMessage().hasContact()){
+        }
+        else if (update.hasMessage() && update.getMessage().hasContact()){
             if (Language.equals("uz")) {
                 SendMessage sendMessage = new SendMessage();
                 Long chatId = update.getMessage().getChatId();
@@ -223,7 +224,12 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
-        } else if (update.hasCallbackQuery()) {
+        }
+
+
+
+
+        else if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
             String data = callbackQuery.getData();
             System.out.println(data);
@@ -237,9 +243,31 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            if (data.equals("1-elektronika oldinga")||(data.equals("3-elektronika orqaga"))){
+            if (data.equals("1-elektronika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_ElektronikaInlinePlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-elektronika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_ElektronikaInlineMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-elektronika oldinga")||data.equals("3-elektronika orqaga")){
                 EditMessageMedia editMessageMedia = new EditMessageMedia();
-                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://uzum.uz/uz/product/televizor-premier-43prm705s-full-hd-smart-910164?SG=1415458");
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cn4ucohs99ouqbfu5jt0/original.jpg");
                 editMessageMedia.setMedia(inputMediaPhoto);
                 editMessageMedia.setChatId(chatId);
                 editMessageMedia.setMessageId(message.getMessageId());
@@ -247,22 +275,45 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("Televizor Premier 43PRM705S, Full HD Smart TV \n" +
+                editMessageCaption.setCaption("Televizor Premier 43PRM705S, Full HD Smart TV \n " +
                         "Mahsulot haqida qisqacha:\n" +
                         "● Matritsa turi - VA paneli\n" +
                         "● Ekran o'lchamlari - Full HD (1920 * 1080)\n" +
                         "● Smart TV - Android\n" +
-                        "● Kafolat - 3 yil\n "+menuUzb.ElektronikaUchunSendMessage(chatId));
+                        "● Kafolat - 3 yil");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
                 editMessageReplyMarkup.setMessageId(message.getMessageId());
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_Elektronika(chatId));
+
                 try {
                     execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
+            }
+            if (data.equals("2-elektronika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_ElektronikaPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-elektronika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_ElektronikaMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
@@ -296,6 +347,28 @@ public class MyBot extends TelegramLongPollingBot {
                 try {
                     execute(editMessageMedia);
                     execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-elektronika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_ElektronikaPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-elektronika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_ElektronikaMinus(chatId));
+                try {
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
@@ -337,6 +410,28 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (data.equals("4-elektronika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.tort_ElektronikaPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-elektronika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.tort_ElektronikaMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("4-elektronika oldinga" )||( data.equals("6-elektronika orqaga"))){
                 EditMessageMedia editMessageMedia = new EditMessageMedia();
                 InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cjjgakkvutv1g2ricde0/original.jpg");
@@ -370,7 +465,29 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            if (data.equals("5-elektronika oldinga")){
+            if (data.equals("5-elektronika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.besh_ElektronikaPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-elektronika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.besh_ElektronikaMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-elektronika oldinga")||data.equals("1-Maishiy texnika orqaga")){
                 EditMessageMedia editMessageMedia = new EditMessageMedia();
                 InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clk4get6sfhsc0umir90/original.jpg");
                 editMessageMedia.setMedia(inputMediaPhoto);
@@ -389,6 +506,28 @@ public class MyBot extends TelegramLongPollingBot {
                 try {
                     execute(editMessageMedia);
                     execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-elektronika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.olti_ElektronikaPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-elektronika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.olti_ElektronikaMinus(chatId));
+                try {
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
@@ -432,19 +571,53 @@ public class MyBot extends TelegramLongPollingBot {
 
 
 
-             if (data.equals("Maishiy Texnika")){
+            if (data.equals("Maishiy Texnika")||data.equals("6-elektronika oldinga")){
                 try {
                     execute(menuUzb.Bir_MaishiyTexnikaSendphoto(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
+            if (data.equals("1-Maishiy texnika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_MaishiyTexnikaInlinePlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Maishiy texnika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_MaishiyTexnikaInlineMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("1-Maishiy texnika oldinga")||data.equals("3-Maishiy texnika orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmcj35bifoubkc6n5f8g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
 
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Mikroto'lqinli pech Goodwell GMF-2012W, Solo, 20 L\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Boshqarish turi: Mexanik\n" +
+                        "● Hajmi: 20 L\n" +
+                        "● Koson turi: Oq\n" +
+                        "● Mikroto'lqinli pechning quvvati: 700 Vt\n" +
+                        "● Ishlab chiqaruvchi: Xitoy\n" +
+                        "● Kafolat: 3 yil");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -452,17 +625,52 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_MaishiyTexnika(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
+            if (data.equals("2-Maishiy texnika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_MaishiyTexnikaPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Maishiy texnika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_MaishiyTexnikaMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("2-Maishiy texnika oldinga")||data.equals("4-Maishiy texnika orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckjbb6cjvf2sulnvad3g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Konditsioner TCL TAC - 12CHSD/YA 11 I Invertor, ten bilan\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Elektr tent (harorat -15°C pasayganda ham to'xtovsiz ishlaydi)\n" +
+                        "● Invertor motor (past elektr kuchlanishda ham ishlashni davom etadi)\n" +
+                        "● R32 freon. Kam shovqin darajasi (19dB gacha)\n" +
+                        "● LED displey va kutish rejimi (minimal shovqin darajasini va qulay harorat o'zgarishini ta'minlaydi)\n" +
+                        "● Xavfsiz dizayn. Kondensat va elektr o'rtasida aloqa yo'q.");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -470,17 +678,56 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_MaishiyTexnika(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
+            if (data.equals("3-Maishiy texnika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_MaishiyTexnikaPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Maishiy texnika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_MaishiyTexnikaMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("3-Maishiy texnika oldinga")||data.equals("5-Maishiy texnika orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/chmpuav5d7kom1tgatb0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Dazmol HADiD BI-101\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● HADID BI-101\n" +
+                        "● MODEL NO.:BI-101\n" +
+                        "● 220-240V kuchlanish 50-60Hz\n" +
+                        "● Quvvat 1200-1600 W\n" +
+                        "● Suv idishining hajmi: 200ml.\n" +
+                        "● Keramika tagligi\n" +
+                        "● Balandligi 250 (mm) 25 sm.\n" +
+                        "● Bug'li dazmol\n" +
+                        "● Made in P.R.C");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -488,6 +735,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_MaishiyTexnika(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -495,11 +743,50 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
+            if (data.equals("4-Maishiy texnika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_MaishiyTexnikaPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Maishiy texnika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_MaishiyTexnikaMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("4-Maishiy texnika oldinga")||data.equals("6-Maishiy texnika orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckiempsjvf2sulnv3dng/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Portativ tikuv mashinasi Mini Sewing Machine SM-202\n\n" +
+                        "Texnik xususiyatlari:\n" +
+                        "\n" +
+                        " ● Quvvat: 4.8 Vt\n" +
+                        "\n" +
+                        " ● Chastotasi: 50 Hz\n" +
+                        "\n" +
+                        " ● Parametrlar (l/g/soat): 19.5*12.5*20 sm\n" +
+                        "\n" +
+                        " ● Uzluksiz ish vaqti: cheklovlarsiz\n" +
+                        "\n" +
+                        " ● 2 tezlik");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -507,17 +794,52 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_MaishiyTexnika(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if (data.equals("5-Maishiy texnika oldinga")){
+            if (data.equals("5-Maishiy texnika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_MaishiyTexnikaPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Maishiy texnika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_MaishiyTexnikaMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Maishiy texnika oldinga")||data.equals("1-Kiyimlar orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmtl0d125ku8jql6hcj0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Isitgich AIWA CNH1114, 2000 Vt 25 kvadrat metrga, g'ildirakli shassili pechka\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● 25 kvadrat uchun 2 kVt quvvat maydonlarni isitadi\n" +
+                        "● Kompakt - qulay dizaynga ega, uni oson olib borish va har qanday sharoitda foydalanish oson\n" +
+                        "● Ishonchli va qulay qurilma\n" +
+                        "● Rang: oq\n" +
+                        "● Kuchi - 2000 Vt");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -525,17 +847,51 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_MaishiyTexnika(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
+            if (data.equals("6-Maishiy texnika plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_MaishiyTexnikaPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Maishiy texnika minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_MaishiyTexnikaMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("2-Maishiy texnika orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clomahfn7c6gg9ie3om0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Aqlli robot changyutgich Xiaomi Robot Vacuum E12 Global, quruq va nam tozalash\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Ishlab chiqaruvchidan rasmiy kafolat: 1 yil.\n" +
+                        "● Yangi Xiaomi Robot Vacuum E12 EU bilan samarali va aqlli yig‘ishtirish dunyosini oching. Bu oddiy aqlli robot-changyutgich emas, balki tozalik dunyosidagi haqiqiy chempion.\n" +
+                        "● Mi Home ilovasiga ulanib, siz yig‘ishtirish ustidan nazoratni qo‘lga kiritasiz. Aqlli robotni bevosita smartfoningizdan boshqaring, yig‘ishtirishning uchta rejimi orasidan tanlang va ortiqcha zo‘riqishlarsiz bekami-ko‘st tozalikdan bahramand bo‘ling.\n" +
+                        "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi.");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -543,6 +899,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_MaishiyTexnikaInline(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -552,18 +909,52 @@ public class MyBot extends TelegramLongPollingBot {
 
 
 
-            if (data.equals("Kiyimlar")){
+            if (data.equals("Kiyimlar")||data.equals("6-Maishiy texnika oldinga")){
                 try {
                     execute(menuUzb.Bir_KiyimlarSendphoto(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
+            if (data.equals("1-Kiyimlar plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_KiyimlarInlinePlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Kiyimlar minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_KiyimlarInlineMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("1-Kiyimlar oldinga")||data.equals("3-Kiyimlar orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cn325n3ifoubkc6r8ujg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Ayollar to'plami: yubka + kofta\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Tantanali tadbirlar va kundalik kiyim uchun javob beradi\n" +
+                        "● Keng turadigon fason\n" +
+                        "● Har qanday poyabzal bilan kiyinish mumkin\n" +
+                        "● Bitta o'lcham 46-52 gacha mos keladi\n" +
+                        "● Fasl: kuz qish bohor");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -571,6 +962,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_Kiyimlar(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -578,11 +970,42 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
+            if (data.equals("2-Kiyimlar plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_KiyimlarPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Kiyimlar minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_KiyimlarMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("2-Kiyimlar oldinga")||data.equals("4-Kiyimlar orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmjr8u1s99ouqbfqvh20/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Bolalar kombinezoni, chaqaloqlar uchun, quloqchalar bilan quyoncha, paxtali\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "Balandligi 52 dan 80 gacha bo'lgan o'lchamlar mavjud, ular chaqaloqlar va bir yarim yoshgacha bo'lgan bolalar uchun juda mos keladi.\n" +
+                        "Yumshoq va nozik yuqori sifatli trikotaj mato. Kombinezon 95% paxta va 5% elastandan iborat. Elastanning ozgina foizi kombinezonga shakl beradi, burishmaydi, cho'zilmaydi");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -590,6 +1013,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_Kiyimlar(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -597,11 +1021,46 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
+            if (data.equals("3-Kiyimlar plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_KiyimlarPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Kiyimlar minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_KiyimlarMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("3-Kiyimlar oldinga")||data.equals("5-Kiyimlar orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cn50anbifoubkc6rjrig/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Erkaklar krossovkalari Skechers GOWALK Flex 216481\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Havo sovutadigan Goga Mat oyoq to'shagini o'z ichiga oladi\n" +
+                        "● Nafas oladigan trikotaj ustki\n" +
+                        "● Asosiy xususiyatlar Yengil va sezgir ULTRA GO® tamponlama\n" +
+                        "● Model har qanday lazzat uchun 3 ta rangda taqdim etilgan\n" +
+                        "● Uzoq yurish, sport va kundalik hayot uchun juda mos keladi\n" +
+                        "● SKECHERS assortimenti haqida ko'proq bilish uchun do'kon sahifasiga o'ting");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -609,6 +1068,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_Kiyimlar(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -616,11 +1076,41 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
+            if (data.equals("4-Kiyimlar plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_KiyimlarPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Kiyimlar minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_KiyimlarMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("4-Kiyimlar oldinga")||data.equals("6-Kiyimlar orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cg67d37hgiov1qie6pbg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Ayollar krossovkalari \n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● EVA taglik, usti sun'iy teri");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -628,6 +1118,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_Kiyimlar(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -635,11 +1126,39 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
+            if (data.equals("5-Kiyimlar plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_KiyimlarPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Kiyimlar minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_KiyimlarMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("5-Kiyimlar oldinga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckp9t6sjvf2iqscbnfdg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Bolalar etikchalari, ustki qismi parusinalik, o'lchamlari 22-35");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -647,6 +1166,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_Kiyimlar(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
@@ -654,11 +1174,50 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
+            if (data.equals("6-Kiyimlar plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_KiyimlarPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Kiyimlar minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_KiyimlarMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (data.equals("2-Kiyimlar orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cfjidl7hgiopn8lc3bvg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Erkaklar sport to'plami, xudi shim bilan, qora\n\n" +
+                        "Ikki ipli yuqori sifatli erkaklar kostyumi. Bahoriy havo uchun ajoyib variant. Ipli qalpoqli qalpoqli, katta kenguru cho'ntak, etagi manjetli. Kesish bepul.\n" +
+                        "\n" +
+                        "\n" +
+                        "\n" +
+                        "Еrkaklar kostyumi, ikki ipli\n" +
+                        "\n" +
+                        "Kostyum siqilmaydi, yuqori sifatli mato\n" +
+                        "\n" +
+                        "Material: 90% paxta 10% polyester\n" +
+                        "\n" +
+                        "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -666,6 +1225,7 @@ public class MyBot extends TelegramLongPollingBot {
                 editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_KiyimlarInline(chatId));
 
                 try {
+                    execute(editMessageMedia);
                     execute(editMessageCaption);
                     execute(editMessageReplyMarkup);
                 } catch (TelegramApiException e) {
