@@ -4373,6 +4373,532 @@ public class MenuUzb {
         return inlineKeyboardMarkup;
     }
 
+    int Bir_Gozallikvaparvarish=1;
+    int Ikki_Gozallikvaparvarish=1;
+    int Uch_Gozallikvaparvarish=1;
+    int Tort_Gozallikvaparvarish=1;
+    int Besh_Gozallikvaparvarish=1;
+    int Olti_Gozallikvaparvarish=1;
+
+    public SendPhoto Bir_GozallikVaParvarishsendphoto(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg"));
+        sendPhoto.setCaption("Erkaklar uchun xushbo'ylagich suvi Antonio Banderas Blue Seduction, 50 ml\n\n" +
+                "Narx:\n" +
+                "donasi 299 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Gozallik minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Gozallikvaparvarish));
+        button.setCallbackData("1-Gozallik soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Gozallik plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Gozallik orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Gozallik savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Gozallik oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return sendPhoto;
+    }
+    public InlineKeyboardMarkup Bir_GozallikVaParvarishInline(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg"));
+        sendPhoto.setCaption("Erkaklar uchun xushbo'ylagich suvi Antonio Banderas Blue Seduction, 50 ml\n\n" +
+                "Narx:\n" +
+                "donasi 299 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Gozallik minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Gozallikvaparvarish));
+        button.setCallbackData("1-Gozallik soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Gozallik plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Gozallik orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Gozallik savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Gozallik oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Bir_GozallikVaParvarishPlus(Long chatId) {
+        Bir_Gozallikvaparvarish++;
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg"));
+        sendPhoto.setCaption("Erkaklar uchun xushbo'ylagich suvi Antonio Banderas Blue Seduction, 50 ml\n\n" +
+                "Narx:\n" +
+                "donasi 299 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Gozallik minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Gozallikvaparvarish));
+        button.setCallbackData("1-Gozallik soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Gozallik plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Gozallik orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Gozallik savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Gozallik oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Bir_GozallikVaParvarishMinus(Long chatId) {
+        if (Bir_Gozallikvaparvarish>1) {
+            Bir_Gozallikvaparvarish--;
+        }
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg"));
+        sendPhoto.setCaption("Erkaklar uchun xushbo'ylagich suvi Antonio Banderas Blue Seduction, 50 ml\n\n" +
+                "Narx:\n" +
+                "donasi 299 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Gozallik minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Gozallikvaparvarish));
+        button.setCallbackData("1-Gozallik soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Gozallik plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Gozallik orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Gozallik savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Gozallik oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+
+    public InlineKeyboardMarkup Ikki_GozallikVaParvarish(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cc8ru0eha88139ljb7og/original.jpg"));
+        sendPhoto.setCaption("Soch uchun shampun Garnier Fructis SOS, tiklash, 400 ml\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Ta'siri: ta'mirlash, mustahkamlash, parchalanishga qarshi\n" +
+                "● Soch turi: shikastlangan, uchlari bo'lingan\n\n" +
+                "Narx:\n" +
+                "donasi 48 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("2-Gozallik minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Ikki_Gozallikvaparvarish));
+        button.setCallbackData("2-Gozallik soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("2-Gozallik plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("2-Gozallik orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("2-Gozallik savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("2-Gozallik oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Ikki_GozallikVaParvarishPlus(Long chatId) {
+        Ikki_Gozallikvaparvarish++;
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cc8ru0eha88139ljb7og/original.jpg"));
+        sendPhoto.setCaption("Soch uchun shampun Garnier Fructis SOS, tiklash, 400 ml\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Ta'siri: ta'mirlash, mustahkamlash, parchalanishga qarshi\n" +
+                "● Soch turi: shikastlangan, uchlari bo'lingan\n\n" +
+                "Narx:\n" +
+                "donasi 48 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("2-Gozallik minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Ikki_Gozallikvaparvarish));
+        button.setCallbackData("2-Gozallik soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("2-Gozallik plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("2-Gozallik orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("2-Gozallik savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("2-Gozallik oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Ikki_GozallikVaParvarishMinus(Long chatId) {
+        if(Ikki_Gozallikvaparvarish>1){
+            Ikki_Gozallikvaparvarish--;
+        }
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cc8ru0eha88139ljb7og/original.jpg"));
+        sendPhoto.setCaption("Soch uchun shampun Garnier Fructis SOS, tiklash, 400 ml\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Ta'siri: ta'mirlash, mustahkamlash, parchalanishga qarshi\n" +
+                "● Soch turi: shikastlangan, uchlari bo'lingan\n\n" +
+                "Narx:\n" +
+                "donasi 48 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("2-Gozallik minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Ikki_Gozallikvaparvarish));
+        button.setCallbackData("2-Gozallik soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("2-Gozallik plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("2-Gozallik orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("2-Gozallik savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("2-Gozallik oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+
+    public InlineKeyboardMarkup Uch_GozallikVaParvarish(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ciff24l6sfhndlbpe9fg/original.jpg"));
+        sendPhoto.setCaption("Elektr tish cho'tkasi, 3 nasadkalar, batareyalar to'plamda\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● 3 nasadka + batareya kiritilgan\n" +
+                "● Daqiqada 19800 tebranish\n" +
+                "● Namlikka qarshi himoya darajasi IPX7" +
+                "Narx:\n" +
+                "donasi 33 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("3-Gozallik minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Uch_Gozallikvaparvarish));
+        button.setCallbackData("3-Gozallik soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("3-Gozallik plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("3-Gozallik orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("3-Gozallik savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("3-Gozallik oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Uch_GozallikVaParvarishPlus(Long chatId) {
+        Uch_Gozallikvaparvarish++;
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ciff24l6sfhndlbpe9fg/original.jpg"));
+        sendPhoto.setCaption("Elektr tish cho'tkasi, 3 nasadkalar, batareyalar to'plamda\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● 3 nasadka + batareya kiritilgan\n" +
+                "● Daqiqada 19800 tebranish\n" +
+                "● Namlikka qarshi himoya darajasi IPX7" +
+                "Narx:\n" +
+                "donasi 33 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("3-Gozallik minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Uch_Gozallikvaparvarish));
+        button.setCallbackData("3-Gozallik soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("3-Gozallik plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("3-Gozallik orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("3-Gozallik savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("3-Gozallik oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Uch_GozallikVaParvarishMinus(Long chatId) {
+        if (Uch_Gozallikvaparvarish>1){
+            Uch_Gozallikvaparvarish--;
+        }
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ciff24l6sfhndlbpe9fg/original.jpg"));
+        sendPhoto.setCaption("Elektr tish cho'tkasi, 3 nasadkalar, batareyalar to'plamda\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● 3 nasadka + batareya kiritilgan\n" +
+                "● Daqiqada 19800 tebranish\n" +
+                "● Namlikka qarshi himoya darajasi IPX7" +
+                "Narx:\n" +
+                "donasi 33 000 so'm ");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("3-Gozallik minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Uch_Gozallikvaparvarish));
+        button.setCallbackData("3-Gozallik soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("3-Gozallik plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("3-Gozallik orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("3-Gozallik savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("3-Gozallik oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+
+
+
+
 
 
 
