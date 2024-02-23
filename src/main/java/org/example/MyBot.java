@@ -1588,7 +1588,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
 
 
-            if (data.equals("Go`zallik va parvarish")||data.equals("6-Aksessuarlar oldinga")){
+            if (data.equals("Go`zallik va parvarish")){
                 try {
                     execute(menuUzb.Bir_GozallikVaParvarishsendphoto(chatId));
                 } catch (TelegramApiException e) {
@@ -1619,7 +1619,6 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
-
             if (data.equals("1-Gozallik oldinga")||data.equals("3-Gozallik orqaga")){
                 EditMessageMedia editMessageMedia = new EditMessageMedia();
                 InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cc8ru0eha88139ljb7og/original.jpg");
@@ -1676,7 +1675,6 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
-
             if (data.equals("2-Gozallik oldinga")||data.equals("4-Gozallik orqaga")){
                 EditMessageMedia editMessageMedia = new EditMessageMedia();
                 InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ciff24l6sfhndlbpe9fg/original.jpg");
@@ -1734,28 +1732,331 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
+            if (data.equals("3-Gozallik oldinga")||data.equals("5-Gozallik orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cj2j9d56sfhndlbrcsp0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Mahsulot haqida qisqacha:\n" +
+                        "● Miqdori: ishda 9 ta to'sar\n" +
+                        "Narx:\n" +
+                        "bir pachkasi 83 000 so'm");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_GozallikVaParvarish(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
 
+            }
+            if (data.equals("4-Gozallik plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_GozallikVaParvarishPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Gozallik minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_GozallikVaParvarishMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Gozallik oldinga")||data.equals("6-Gozallik orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckft48jk9fq8lb3aautg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Massaj tarog'i, soch uchun\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "Metall tishli yumshoq soch uchun massaj taroq;\n" +
+                        "Sochlarni silliq holatda taraydi;\n" +
+                        "Sochlarga zarar yetkazmaydi;\n" +
+                        "Uzunligi: 21 sm\n" +
+                        "Rangi: Jigarrang.\n" +
+                        "Narx:\n" +
+                        "donasi 21 000 so'm");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_GozallikVaParvarish(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
 
+            }
+            if (data.equals("5-Gozallik plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_GozallikVaParvarishPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Gozallik minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_GozallikVaParvarishMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Gozallik oldinga")||data.equals("1-Salomatlik orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cj576slenntd8rfequh0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Blesk lab uchun Cappuvini\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "Dudaklarni namlaydi va oziqlantiradi\n" +
+                        "Qulay format\n" +
+                        "Dudaklarga g'ayrioddiy tabiiy soyani beradi\n" +
+                        "Narx:\n" +
+                        "donasi 25 000 so'm");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_GozallikVaParvarish(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
 
+            }
+            if (data.equals("6-Gozallik plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_GozallikVaParvarishPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Gozallik minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_GozallikVaParvarishMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Gozallik orqaga")||data.equals("6-Aksessuarlar oldinga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Erkaklar uchun xushbo'ylagich suvi Antonio Banderas Blue Seduction, 50 ml\n\n" +
+                        "Narx:\n" +
+                        "donasi 299 000 so'm");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_GozallikVaParvarishInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
 
+            }
 
 
+            if (data.equals("Salomatlik")){
+                try {
+                    execute(menuUzb.Bir_SalomatlikSendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Salomatlik plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_SalomatlikPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
+            }
+            if (data.equals("1-Salomatlik minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_SalomatlikMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
+            }
+            if (data.equals("1-Salomatlik oldinga")||data.equals("3-Salomatlik orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cg68e97hgiov1qie7320/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
 
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Magniy kapsulalari Naturex, 60 kapsula, 150 mg\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Tanadagi magniy etishmovchiligini to'ldirish uchun\n" +
+                        "● Uyquni normallashtirish uchun\n" +
+                        "● Asabiy qo'zg'aluvchanlik, asabiylashish bilan vaziyatni normallashtirish\n" +
+                        "● Charchoqning kuchayishi bilan, jismoniy va aqliy ortiqcha ish sharoitida\n" +
+                        "● Og'riq va mushaklarning spazmlarini, oshqozon-ichak spazmlarini kamaytirish uchun\n" +
+                        "● Giperventiliya bilan funktsional anksiyete hujumlarida namoyon bo'lishni kamaytiradi\n" +
+                        "● Yurak urishini normallashtirish uchun" +
+                        "Narx:\n" +
+                        "bitta qutisi 37 000 so'm");
 
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_Salomatlik(chatId));
 
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Salomatlik plus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_SalomatlikPlus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
+            }
+            if (data.equals("2-Salomatlik minus")){
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_SalomatlikMinus(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
+            }
+            if (data.equals("2-Salomatlik oldinga")||data.equals("4-Salomatlik orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/chqce3l6sfhndlbn5qug/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
 
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("O'simlik turmalin plastir, bo'g'inlar va mushaklar uchun og'riq qoldiruvchi vosita, 10 dona\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Turmalin kukuni va o'tlar bilan yamoq mustahkamlangan, bo'g'inlar va burmalar uchun og'riq qoldiruvchi vositadir. 10 dona\n" +
+                        "● Og'riqni engillashtiradi. Tendonlar va suyaklarni mustahkamlaydi. Revmatik va oyoq barmoqlaridagi og'riqlarni yo'q qiladi\n" +
+                        "● Yaxshi nafas olish qobiliyatini ta'minlaydigan va hatto ayniqsa sezgir terini bezovta qilmaydigan mikro gözenekli to'quv bo'lmagan mato asosida, ko'ndalang cho'zilgan elastik tabiiy matodan qilingan\n" +
+                        "● Yamoqda Xitoy tibbiyotining ko'plab samarali o'simliklari mavjud bo'lib, ular antitümör va analjezik ta'sirga ega.\n" +
+                        "● Tarkibida faqat tabiiy ekstraktlar va o'tlar mavjud\n" +
+                        "● quyidagilar uchun ishlatiladi: osteoxondroz, siyatik, artrit;qo'shma displazi, nevralgiya,miyalji; jarohatlar, ko'karishlar, burmalar va shish\n" +
+                        "Narx:\n" +
+                        "34 000 so'm");
 
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_Salomatlik(chatId));
 
-
-
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
 
 
