@@ -5632,7 +5632,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Ikki_Salomatlik(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -5805,7 +5804,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Uch_Salomatlik(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -5861,121 +5859,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-    public InlineKeyboardMarkup Uch_SalomatlikPlus(Long chatId) {
-        Uch_Salomatlik++;
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/chqce3l6sfhndlbn5qug/original.jpg"));
-        sendPhoto.setCaption("O'simlik turmalin plastir, bo'g'inlar va mushaklar uchun og'riq qoldiruvchi vosita, 10 dona\n\n" +
-                "Mahsulot haqida qisqacha:\n" +
-                "● Turmalin kukuni va o'tlar bilan yamoq mustahkamlangan, bo'g'inlar va burmalar uchun og'riq qoldiruvchi vositadir. 10 dona\n" +
-                "● Og'riqni engillashtiradi. Tendonlar va suyaklarni mustahkamlaydi. Revmatik va oyoq barmoqlaridagi og'riqlarni yo'q qiladi\n" +
-                "● Yaxshi nafas olish qobiliyatini ta'minlaydigan va hatto ayniqsa sezgir terini bezovta qilmaydigan mikro gözenekli to'quv bo'lmagan mato asosida, ko'ndalang cho'zilgan elastik tabiiy matodan qilingan\n" +
-                "● Yamoqda Xitoy tibbiyotining ko'plab samarali o'simliklari mavjud bo'lib, ular antitümör va analjezik ta'sirga ega.\n" +
-                "● Tarkibida faqat tabiiy ekstraktlar va o'tlar mavjud\n" +
-                "● quyidagilar uchun ishlatiladi: osteoxondroz, siyatik, artrit;qo'shma displazi, nevralgiya,miyalji; jarohatlar, ko'karishlar, burmalar va shish\n" +
-                "Narx:\n" +
-                "34 000 so'm");
-
-        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
-        List<InlineKeyboardButton> row = new ArrayList<>();
-        InlineKeyboardButton button = new InlineKeyboardButton();
-        button.setText("➖");
-        button.setCallbackData("3-Salomatlik minus");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText(String.valueOf(Uch_Salomatlik));
-        button.setCallbackData("3-Salomatlik soni");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➕");
-        button.setCallbackData("3-Salomatlik plus");
-        row.add(button);
-        rowlist.add(row);
-        button = new InlineKeyboardButton();
-        row = new ArrayList<>();
-
-        button.setText("⬅\uFE0F");
-        button.setCallbackData("3-Salomatlik orqaga");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("Savatga qoshish\uD83D\uDED2");
-        button.setCallbackData("3-Salomatlik savat");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➡\uFE0F");
-        button.setCallbackData("3-Salomatlik oldinga");
-        row.add(button);
-        rowlist.add(row);
-
-        inlineKeyboardMarkup.setKeyboard(rowlist);
-        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
-        return inlineKeyboardMarkup;
-    }
-    public InlineKeyboardMarkup Uch_SalomatlikMinus(Long chatId) {
-        if (Uch_Salomatlik>1){
-            Uch_Salomatlik--;
-        }
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/chqce3l6sfhndlbn5qug/original.jpg"));
-        sendPhoto.setCaption("O'simlik turmalin plastir, bo'g'inlar va mushaklar uchun og'riq qoldiruvchi vosita, 10 dona\n\n" +
-                "Mahsulot haqida qisqacha:\n" +
-                "● Turmalin kukuni va o'tlar bilan yamoq mustahkamlangan, bo'g'inlar va burmalar uchun og'riq qoldiruvchi vositadir. 10 dona\n" +
-                "● Og'riqni engillashtiradi. Tendonlar va suyaklarni mustahkamlaydi. Revmatik va oyoq barmoqlaridagi og'riqlarni yo'q qiladi\n" +
-                "● Yaxshi nafas olish qobiliyatini ta'minlaydigan va hatto ayniqsa sezgir terini bezovta qilmaydigan mikro gözenekli to'quv bo'lmagan mato asosida, ko'ndalang cho'zilgan elastik tabiiy matodan qilingan\n" +
-                "● Yamoqda Xitoy tibbiyotining ko'plab samarali o'simliklari mavjud bo'lib, ular antitümör va analjezik ta'sirga ega.\n" +
-                "● Tarkibida faqat tabiiy ekstraktlar va o'tlar mavjud\n" +
-                "● quyidagilar uchun ishlatiladi: osteoxondroz, siyatik, artrit;qo'shma displazi, nevralgiya,miyalji; jarohatlar, ko'karishlar, burmalar va shish\n" +
-                "Narx:\n" +
-                "34 000 so'm");
-
-        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
-        List<InlineKeyboardButton> row = new ArrayList<>();
-        InlineKeyboardButton button = new InlineKeyboardButton();
-        button.setText("➖");
-        button.setCallbackData("3-Salomatlik minus");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText(String.valueOf(Uch_Salomatlik));
-        button.setCallbackData("3-Salomatlik soni");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➕");
-        button.setCallbackData("3-Salomatlik plus");
-        row.add(button);
-        rowlist.add(row);
-        button = new InlineKeyboardButton();
-        row = new ArrayList<>();
-
-        button.setText("⬅\uFE0F");
-        button.setCallbackData("3-Salomatlik orqaga");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("Savatga qoshish\uD83D\uDED2");
-        button.setCallbackData("3-Salomatlik savat");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➡\uFE0F");
-        button.setCallbackData("3-Salomatlik oldinga");
-        row.add(button);
-        rowlist.add(row);
-
-        inlineKeyboardMarkup.setKeyboard(rowlist);
-        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
-        return inlineKeyboardMarkup;
-    }
-
     public InlineKeyboardMarkup Tort_Salomatlik(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -6033,125 +5916,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-    public InlineKeyboardMarkup Tort_SalomatlikPlus(Long chatId) {
-        Tort_Salomatlik++;
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cdr712gv1htd23ai529g/original.jpg"));
-        sendPhoto.setCaption("Hallux Valgus Oyoq uchun fiksator, Katta bosh barmoq qeyshiqlikni to'g'irlash\n\n" +
-                "Mahsulot haqida qisqacha:\n" +
-                "● Valgus harakatlanish qobiliyatini saqlab, bo'g'imning tabiiy holatiga qaytishiga yordam berad\n" +
-                "● Bandajda siz uxlashingiz, yalangoyoq yoki terlik bilan yurishingiz, sayrga chiqishingiz mumkin\n" +
-                "● Mexanizm tufayli mahsulot bo'g'imning individual egilishini aniq takrorlayd\n" +
-                "● Tuzatish yumshoq va og'riqsiz tarzda amalga oshiriladi, bu oyoqlarni chiroyli va sog'lom ko'rinishga qaytarishga yordam beradi\n" +
-                "● Yurish paytida og'riqni kamaytiradi\n" +
-                "● Bosh barmog'ini to'g'ri holatda ushlab turadi\n" +
-                "● Materiallar: yuqori elastik ABS (plastik), neylon, Velcro qisqichi\n" +
-                "● Soni: 1 dona\n" +
-                "Narx:\n" +
-                "donasi 35 000 so'm\n");
-
-        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
-        List<InlineKeyboardButton> row = new ArrayList<>();
-        InlineKeyboardButton button = new InlineKeyboardButton();
-        button.setText("➖");
-        button.setCallbackData("4-Salomatlik minus");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText(String.valueOf(Tort_Salomatlik));
-        button.setCallbackData("4-Salomatlik soni");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➕");
-        button.setCallbackData("4-Salomatlik plus");
-        row.add(button);
-        rowlist.add(row);
-        button = new InlineKeyboardButton();
-        row = new ArrayList<>();
-
-        button.setText("⬅\uFE0F");
-        button.setCallbackData("4-Salomatlik orqaga");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("Savatga qoshish\uD83D\uDED2");
-        button.setCallbackData("4-Salomatlik savat");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➡\uFE0F");
-        button.setCallbackData("4-Salomatlik oldinga");
-        row.add(button);
-        rowlist.add(row);
-
-        inlineKeyboardMarkup.setKeyboard(rowlist);
-        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
-        return inlineKeyboardMarkup;
-    }
-    public InlineKeyboardMarkup Tort_SalomatlikMinus(Long chatId) {
-        if (Tort_Salomatlik>1){
-            Tort_Salomatlik--;
-        }
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cdr712gv1htd23ai529g/original.jpg"));
-        sendPhoto.setCaption("Hallux Valgus Oyoq uchun fiksator, Katta bosh barmoq qeyshiqlikni to'g'irlash\n\n" +
-                "Mahsulot haqida qisqacha:\n" +
-                "● Valgus harakatlanish qobiliyatini saqlab, bo'g'imning tabiiy holatiga qaytishiga yordam berad\n" +
-                "● Bandajda siz uxlashingiz, yalangoyoq yoki terlik bilan yurishingiz, sayrga chiqishingiz mumkin\n" +
-                "● Mexanizm tufayli mahsulot bo'g'imning individual egilishini aniq takrorlayd\n" +
-                "● Tuzatish yumshoq va og'riqsiz tarzda amalga oshiriladi, bu oyoqlarni chiroyli va sog'lom ko'rinishga qaytarishga yordam beradi\n" +
-                "● Yurish paytida og'riqni kamaytiradi\n" +
-                "● Bosh barmog'ini to'g'ri holatda ushlab turadi\n" +
-                "● Materiallar: yuqori elastik ABS (plastik), neylon, Velcro qisqichi\n" +
-                "● Soni: 1 dona\n" +
-                "Narx:\n" +
-                "donasi 35 000 so'm\n");
-
-        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
-        List<InlineKeyboardButton> row = new ArrayList<>();
-        InlineKeyboardButton button = new InlineKeyboardButton();
-        button.setText("➖");
-        button.setCallbackData("4-Salomatlik minus");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText(String.valueOf(Tort_Salomatlik));
-        button.setCallbackData("4-Salomatlik soni");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➕");
-        button.setCallbackData("4-Salomatlik plus");
-        row.add(button);
-        rowlist.add(row);
-        button = new InlineKeyboardButton();
-        row = new ArrayList<>();
-
-        button.setText("⬅\uFE0F");
-        button.setCallbackData("4-Salomatlik orqaga");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("Savatga qoshish\uD83D\uDED2");
-        button.setCallbackData("4-Salomatlik savat");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➡\uFE0F");
-        button.setCallbackData("4-Salomatlik oldinga");
-        row.add(button);
-        rowlist.add(row);
-
-        inlineKeyboardMarkup.setKeyboard(rowlist);
-        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
-        return inlineKeyboardMarkup;
-    }
-
     public InlineKeyboardMarkup Besh_Salomatlik(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -6203,113 +5967,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-    public InlineKeyboardMarkup Besh_SalomatlikPlus(Long chatId) {
-        Besh_Salomatlik++;
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cfor2gfhgiov1qicf6r0/original.jpg"));
-        sendPhoto.setCaption("Ortopedik korset orqa bel grijasi uchun, bel-sakral\n\n" +
-                "Mahsulot haqida qisqacha:\n" +
-                "● Bel dumg'aza qismini mahkam tutib turadi\n" +
-                "● Nafas oluvchi materialdan tayyorlangan\n" +
-                "Narx:\n" +
-                "donasi 229 000 so'm");
-
-        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
-        List<InlineKeyboardButton> row = new ArrayList<>();
-        InlineKeyboardButton button = new InlineKeyboardButton();
-        button.setText("➖");
-        button.setCallbackData("5-Salomatlik minus");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText(String.valueOf(Besh_Salomatlik));
-        button.setCallbackData("5-Salomatlik soni");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➕");
-        button.setCallbackData("5-Salomatlik plus");
-        row.add(button);
-        rowlist.add(row);
-        button = new InlineKeyboardButton();
-        row = new ArrayList<>();
-
-        button.setText("⬅\uFE0F");
-        button.setCallbackData("5-Salomatlik orqaga");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("Savatga qoshish\uD83D\uDED2");
-        button.setCallbackData("5-Salomatlik savat");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➡\uFE0F");
-        button.setCallbackData("5-Salomatlik oldinga");
-        row.add(button);
-        rowlist.add(row);
-
-        inlineKeyboardMarkup.setKeyboard(rowlist);
-        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
-        return inlineKeyboardMarkup;
-    }
-    public InlineKeyboardMarkup Besh_SalomatlikMinus(Long chatId) {
-        if (Besh_Salomatlik>1){
-            Besh_Salomatlik--;
-        }
-        SendPhoto sendPhoto = new SendPhoto();
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cfor2gfhgiov1qicf6r0/original.jpg"));
-        sendPhoto.setCaption("Ortopedik korset orqa bel grijasi uchun, bel-sakral\n\n" +
-                "Mahsulot haqida qisqacha:\n" +
-                "● Bel dumg'aza qismini mahkam tutib turadi\n" +
-                "● Nafas oluvchi materialdan tayyorlangan\n" +
-                "Narx:\n" +
-                "donasi 229 000 so'm");
-
-        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
-        List<InlineKeyboardButton> row = new ArrayList<>();
-        InlineKeyboardButton button = new InlineKeyboardButton();
-        button.setText("➖");
-        button.setCallbackData("5-Salomatlik minus");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText(String.valueOf(Besh_Salomatlik));
-        button.setCallbackData("5-Salomatlik soni");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➕");
-        button.setCallbackData("5-Salomatlik plus");
-        row.add(button);
-        rowlist.add(row);
-        button = new InlineKeyboardButton();
-        row = new ArrayList<>();
-
-        button.setText("⬅\uFE0F");
-        button.setCallbackData("5-Salomatlik orqaga");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("Savatga qoshish\uD83D\uDED2");
-        button.setCallbackData("5-Salomatlik savat");
-        row.add(button);
-
-        button = new InlineKeyboardButton();
-        button.setText("➡\uFE0F");
-        button.setCallbackData("5-Salomatlik oldinga");
-        row.add(button);
-        rowlist.add(row);
-
-        inlineKeyboardMarkup.setKeyboard(rowlist);
-        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
-        return inlineKeyboardMarkup;
-    }
-
     public InlineKeyboardMarkup Olti_Salomatlik(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -6358,12 +6015,288 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-    public InlineKeyboardMarkup Olti_SalomatlikPlus(Long chatId) {
-        Olti_Salomatlik++;
+
+    int Bir_QurilishMollari=1;
+    int Ikki_QurilishMollari=1;
+    int Uch_QurilishMollari=1;
+    int Tort_QurilishMollari=1;
+    int Besh_QurilishMollari=1;
+    int Olti_QurilishMollari=1;
+
+    public SendPhoto Bir_QurilishMollariSendphoto(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cg4sahfhj8j9g699f6fg/original.jpg"));
-        sendPhoto.setCaption("Elektr oyoq uqalagichi EMS, miostimulyator\n" +
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clm6uel6sfhsc0un3b0g/original.jpg"));
+        sendPhoto.setCaption("Zanjirli elektr arrasi Biyoti BYT-712\n\n" +
+                "Mahsulot haqida qisqacha\n" +
+                "\n" +
+                "● Dvigatel quvvati - 1800 vt\n" +
+                "● Aylanishlar soni - 4800 / daqiqasiga\n" +
+                "● Moy idishi hajmi - 0.1 litr\n" +
+                "● Shina uzunligi - 405 mm\n" +
+                "● Ishlab chiqaruvchi mamlakat - Xitoy\n" +
+                "Narx:\n" +
+                "donasi 545 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Qurilish minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_QurilishMollari));
+        button.setCallbackData("1-Qurilish soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Qurilish plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Qurilish orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Qurilish savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Qurilish oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return sendPhoto;
+    }
+    public InlineKeyboardMarkup Bir_QurilishMollariInline(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clm6uel6sfhsc0un3b0g/original.jpg"));
+        sendPhoto.setCaption("Zanjirli elektr arrasi Biyoti BYT-712\n\n" +
+                "Mahsulot haqida qisqacha\n" +
+                "\n" +
+                "● Dvigatel quvvati - 1800 vt\n" +
+                "● Aylanishlar soni - 4800 / daqiqasiga\n" +
+                "● Moy idishi hajmi - 0.1 litr\n" +
+                "● Shina uzunligi - 405 mm\n" +
+                "● Ishlab chiqaruvchi mamlakat - Xitoy\n" +
+                "Narx:\n" +
+                "donasi 545 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Qurilish minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_QurilishMollari));
+        button.setCallbackData("1-Qurilish soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Qurilish plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Qurilish orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Qurilish savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Qurilish oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Ikki_QurilishMollari(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ce4otsavtie1lhbehpj0/original.jpg"));
+        sendPhoto.setCaption("Chilangarlik va montaj ishlari bo'yicha to'plam MTX, 12 dona, 135629\n\n" +
+                "Narx:\n" +
+                "bir toplami 303 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("2-Qurilish minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Ikki_QurilishMollari));
+        button.setCallbackData("2-Qurilish soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("2-Qurilish plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("2-Qurilish orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("2-Qurilish savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("2-Qurilish oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Uch_QurilishMollari(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cl8skll6sfhgee0lhfb0/original.jpg"));
+        sendPhoto.setCaption("Lazer masofa o'lchagich UNI-T\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● UNI-T brendi\n" +
+                "● Lazer turi\n" +
+                "Narx:\n" +
+                "donasi 390 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("3-Qurilish minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Uch_QurilishMollari));
+        button.setCallbackData("3-Qurilish soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("3-Qurilish plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("3-Qurilish orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("3-Qurilish savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("3-Qurilish oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Tort_QurilishMollari(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clkoqj5enntcj8a9pcj0/original.jpg"));
+        sendPhoto.setCaption("Simsiz drel-shurup buragich L-Fine 2113, cho'tkasiz, 13 mm\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● 5.Boshlar: 4 mm, 5 mm, 5.5 mm, 6 mm, 7 mm, 8 mm, 9 mm, 10 mm, 12 mm.\n" +
+                "● 1. Kuchlanishi: 21V\n" +
+                "● 2.Maksimal aylanish momenti 40NM\n" +
+                "● 3.Maksimal tezlik 0-1400 r/min\n" +
+                "● 4.Minimal tezlik 0-450 r/min\n" +
+                "Narx:\n" +
+                "bir to`plami 459 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("4-Qurilish minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Tort_QurilishMollari));
+        button.setCallbackData("4-Qurilish soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("4-Qurilish plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("4-Qurilish orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("4-Qurilish savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("4-Qurilish oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Besh_QurilishMollari(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clausel6sfhgee0lvj1g/original.jpg"));
+        sendPhoto.setCaption("Simsiz osma chiroq magnitda, tungi chiroq\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Batareya yoki batareyalar bilan quvvatlanadi\n" +
+                "● Magnitga ega lampochka istalgan joylarda ishlatish mumkin\n" +
+                "● Mini LED lampochka batareyasi bilan ishlaydigan ichki devor tungi chiroqli elektr devor tugmachalari bilan uy uchun favqulodda chiroq\n" +
+                "● LED lampochka\n" +
+                "● O'lcham: 7.5 * 11 * 2 sm, og'irligi 70 g\n" +
                 "Narx:\n" +
                 "donasi 29 000 so'm");
 
@@ -6372,34 +6305,34 @@ public class MenuUzb {
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
         button.setText("➖");
-        button.setCallbackData("6-Salomatlik minus");
+        button.setCallbackData("5-Qurilish minus");
         row.add(button);
 
         button = new InlineKeyboardButton();
-        button.setText(String.valueOf(Olti_Salomatlik));
-        button.setCallbackData("6-Salomatlik soni");
+        button.setText(String.valueOf(Besh_QurilishMollari));
+        button.setCallbackData("5-Qurilish soni");
         row.add(button);
 
         button = new InlineKeyboardButton();
         button.setText("➕");
-        button.setCallbackData("6-Salomatlik plus");
+        button.setCallbackData("5-Qurilish plus");
         row.add(button);
         rowlist.add(row);
         button = new InlineKeyboardButton();
         row = new ArrayList<>();
 
         button.setText("⬅\uFE0F");
-        button.setCallbackData("6-Salomatlik orqaga");
+        button.setCallbackData("5-Qurilish orqaga");
         row.add(button);
 
         button = new InlineKeyboardButton();
         button.setText("Savatga qoshish\uD83D\uDED2");
-        button.setCallbackData("6-Salomatlik savat");
+        button.setCallbackData("5-Qurilish savat");
         row.add(button);
 
         button = new InlineKeyboardButton();
         button.setText("➡\uFE0F");
-        button.setCallbackData("6-Salomatlik oldinga");
+        button.setCallbackData("5-Qurilish oldinga");
         row.add(button);
         rowlist.add(row);
 
@@ -6407,50 +6340,54 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-    public InlineKeyboardMarkup Olti_SalomatlikMinus(Long chatId) {
-        if (Olti_Salomatlik>1){
-            Olti_Salomatlik--;
-        }
+    public InlineKeyboardMarkup Olti_QurilishMollari(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cg4sahfhj8j9g699f6fg/original.jpg"));
-        sendPhoto.setCaption("Elektr oyoq uqalagichi EMS, miostimulyator\n" +
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clgppilennt1kt4dlsbg/original.jpg"));
+        sendPhoto.setCaption("Smesitel high tech bukuluvchan oshxona uchun,COCO sultan\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Past qismi tolik latundan yasalgan yani zanglamaydi\n" +
+                "● High tech korinishiga oxshaydi, chiroylik dizayn\n" +
+                "● maxsulotni olganingizda sharx yozishni unutmang iltimos\n" +
+                "● Ushbu COCO SULTAN, BOTU smesitel yangicha korinish yangi dizayn va sifatlik\n" +
+                "● Purjina tepa qismi tolik bukuluvchan bolib,xoxlaganingizcha qayrishingiz mumkun\n" +
+                "● + shlang 40 sm dan 2 ta\n" +
                 "Narx:\n" +
-                "donasi 29 000 so'm");
+                "donasi 188 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
         button.setText("➖");
-        button.setCallbackData("6-Salomatlik minus");
+        button.setCallbackData("6-Qurilish minus");
         row.add(button);
 
         button = new InlineKeyboardButton();
-        button.setText(String.valueOf(Olti_Salomatlik));
-        button.setCallbackData("6-Salomatlik soni");
+        button.setText(String.valueOf(Olti_QurilishMollari));
+        button.setCallbackData("6-Qurilish soni");
         row.add(button);
 
         button = new InlineKeyboardButton();
         button.setText("➕");
-        button.setCallbackData("6-Salomatlik plus");
+        button.setCallbackData("6-Qurilish plus");
         row.add(button);
         rowlist.add(row);
         button = new InlineKeyboardButton();
         row = new ArrayList<>();
 
         button.setText("⬅\uFE0F");
-        button.setCallbackData("6-Salomatlik orqaga");
+        button.setCallbackData("6-Qurilish orqaga");
         row.add(button);
 
         button = new InlineKeyboardButton();
         button.setText("Savatga qoshish\uD83D\uDED2");
-        button.setCallbackData("6-Salomatlik savat");
+        button.setCallbackData("6-Qurilish savat");
         row.add(button);
 
         button = new InlineKeyboardButton();
         button.setText("➡\uFE0F");
-        button.setCallbackData("6-Salomatlik oldinga");
+        button.setCallbackData("6-Qurilish oldinga");
         row.add(button);
         rowlist.add(row);
 
@@ -6458,6 +6395,1173 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
+
+
+    int Bir_Avtotovarlar=1;
+    int Ikki_Avtotovarlar=1;
+    int Uch_Avtotovarlar=1;
+    int Tort_Avtotovarlar=1;
+    int Besh_Avtotovarlar=1;
+    int Olti_Avtotovarlar=1;
+
+    public SendPhoto Bir_AvtotovarlarSendphoto(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cgeqrh7hgiov1qifdtqg/original.jpg"));
+        sendPhoto.setCaption("O't oldiruvchi svechasi GM Tracker 1.8 uchun №25197812\n\n" +
+                "ur - o't oldiruvchi svechalari\n" +
+                "\n" +
+                "Ishlab Chiqaruvchi - General Motors.\n" +
+                "\n" +
+                "Detal raqami -25197812 \n" +
+                "\n" +
+                "Avtomobil modeli - Tracker 1.8 \n" +
+                "\n" +
+                "Soni -1 dona.\n" +
+                "\n" +
+                "Ehtiyot qismning ma'lum bir avtomobilga qo'llanilishi asl ehtiyot qismlar katalogidagi VIN kodi bilan tekshirilishi lozim. \n" +
+                "Narx:\n" +
+                "donasi 172 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Avtotovarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Avtotovarlar));
+        button.setCallbackData("1-Avtotovarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Avtotovarlar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Avtotovarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Avtotovarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Avtotovarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return sendPhoto;
+    }
+    public InlineKeyboardMarkup Bir_AvtotovarlarInline(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cgeqrh7hgiov1qifdtqg/original.jpg"));
+        sendPhoto.setCaption("O't oldiruvchi svechasi GM Tracker 1.8 uchun №25197812\n\n" +
+                "ur - o't oldiruvchi svechalari\n" +
+                "\n" +
+                "Ishlab Chiqaruvchi - General Motors.\n" +
+                "\n" +
+                "Detal raqami -25197812 \n" +
+                "\n" +
+                "Avtomobil modeli - Tracker 1.8 \n" +
+                "\n" +
+                "Soni -1 dona.\n" +
+                "\n" +
+                "Ehtiyot qismning ma'lum bir avtomobilga qo'llanilishi asl ehtiyot qismlar katalogidagi VIN kodi bilan tekshirilishi lozim. \n" +
+                "Narx:\n" +
+                "donasi 172 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Avtotovarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Avtotovarlar));
+        button.setCallbackData("1-Avtotovarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Avtotovarlar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Avtotovarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Avtotovarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Avtotovarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Ikki_Avtotovarlar(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cgf9hffhgiov1qiff820/original.jpg"));
+        sendPhoto.setCaption("GM Malibu-2 uchun salon havo filtri №13356914\n\n" +
+                "Tur - salon havo filtri.\n" +
+                "\n" +
+                "Ishlab Chiqaruvchi - General Motors.\n" +
+                "\n" +
+                "detal raqami - 13356914\n" +
+                "\n" +
+                "Avtomobil modeli - Malibu-2\n" +
+                "\n" +
+                "Soni -1 dona.\n" +
+                "\n" +
+                "Ehtiyot qismning ma'lum bir avtomobilga qo'llanilishi asl ehtiyot qismlar katalogidagi VIN kodi bilan tekshirilishi lozim.\n" +
+                "Narx:\n" +
+                "donasi 443 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("2-Avtotovarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Ikki_Avtotovarlar));
+        button.setCallbackData("2-Avtotovarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("2-Avtotovarlar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("2-Avtotovarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("2-Avtotovarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("2-Avtotovarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Uch_Avtotovarlar(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cl9h43fn7c6qm23irap0/original.jpg"));
+        sendPhoto.setCaption("Fara to'plami GM CAPTIVA №42639353/42639352\n\n" +
+                "Tur - Yoritgich to'plami.\n" +
+                "\n" +
+                "Ishlab Chiqaruvchi - General Motors.\n" +
+                "\n" +
+                "Detal raqami - 42639353/42639352.\n" +
+                "\n" +
+                "Avtomobil modeli - CAPTIVA.\n" +
+                "\n" +
+                "Soni -2 dona.\n" +
+                "\n" +
+                "Ehtiyot qismning ma'lum bir avtomobilga qo'llanilishi asl ehtiyot qismlar katalogidagi VIN kodi bilan tekshirilishi lozimn\n" +
+                "Narx:\n" +
+                "bir para 7 406 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("3-Avtotovarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Uch_Avtotovarlar));
+        button.setCallbackData("3-Avtotovarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("3-Avtotovarlar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("3-Avtotovarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("3-Avtotovarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("3-Avtotovarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Tort_Avtotovarlar(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ci9fh5l40v9pplt4ca70/original.jpg"));
+        sendPhoto.setCaption("Videoregistrator Lenovo V7 Plus FullHD 2023 ver + 32GB SanDisk, kamerasi Malibu shaklida\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Lenovo V7 Plus FullHD orqa kamerasi Malibu shaklida\n" +
+                "● Sovg'a Micro SD SanDisk Ultra 32GB 10 class\n" +
+                "● Video sifati: 1920*1080 (Full HD)\n" +
+                "● Ko'rish burchagi: old-170° orqa-140°\n" +
+                "● To'liq sensorli ekran: 9.66\"\n" +
+                "● Protsessor: General Plus\n" +
+                "● Ikki kanalli yozish: Bor\n" +
+                "● Mikrofon: Bor\n" +
+                "● Tungi rejim: Bor\n" +
+                "● Kafolat 1 oy faqat registratorga. Orqa kamera va quvvat simi uchun hech qanday kafolat yo'q\n" +
+                "Narx:\n" +
+                "bir to`plami 599 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("4-Avtotovarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Tort_Avtotovarlar));
+        button.setCallbackData("4-Avtotovarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("4-Avtotovarlar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("4-Avtotovarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("4-Avtotovarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("4-Avtotovarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Besh_Avtotovarlar(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cl2h1o5ennt861iodaq0/original.jpg"));
+        sendPhoto.setCaption("Avtomobil avariya vaziyatlar uchun to'plami 5 tasi 1 da, aptechka, o't o'chirish moslamasi, jilet, favqulodda holat belgisi\n\n" +
+                "5 tasi 1 da qulay sumkada muhim avtoulovchilar to'plami\n" +
+                "\n" +
+                "1. Yong'in o'chirish moslamasi - avtomobil ichida yoki uning atrofida yuzaga kelishi mumkin bo'lgan yong'inlarni o'chirish uchun.\n" +
+                "\n" +
+                "2. Jabrlanganlarga yordam berish uchun mini asboblar to'plami: jgut va paxta..\n" +
+                "\n" +
+                "3. Favqulodda to'xtash belgisi - boshqa haydovchilarni mashina to'xtaganligi yoki favqulodda vaziyatda ekanligi haqida ogohlantirish.\n" +
+                "\n" +
+                "4. Apelsin jilet - yo'l ishlari yoki yo'lda favqulodda vaziyatlar paytida haydovchining ko'rinishini ta'minlash.\n" +
+                "\n" +
+                "5. Sizga kerak bo'lgan hamma narsani sig'dira oladigan qulay kanvas sumkasi\n" +
+                "\n" +
+                "Har bir avtoulovchi o'zining shaxsiy ehtiyojlari va transport vositasidan foydalanishiga qarab o'zining favqulodda to'plamini, shu jumladan zarur vositalar va xavfsizlik uskunalarini yig'ishi mumkin.\n" +
+                "Narx:\n" +
+                "bir to`plami 109 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("5-Avtotovarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Besh_Avtotovarlar));
+        button.setCallbackData("5-Avtotovarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("5-Avtotovarlar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("5-Avtotovarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("5-Avtotovarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("5-Avtotovarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Olti_Avtotovarlar(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cfihkhvhgiopn8lc08dg/original.jpg"));
+        sendPhoto.setCaption("Havo xushbo'ylantirgich avtomobil uchun\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Quyosh batareyasining mavjudligi batareyalarsiz ishlashga imkon beradi\n" +
+                "● Yo'lingizni diversifikatsiya qilish uchun ajoyib imkoniyat\n" +
+                "● Aylanadigan pichoqlar\n" +
+                "● Har qanday sirt uchun mavjud\n" +
+                "● Xushbo'y moy avtomobildagi hidni yaxshilaydi\n" +
+                "● Havoni xushbo'ylashtiradigan aromatizator\n" +
+                "Narx:\n" +
+                "donasi 75 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("6-Avtotovarlar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Olti_Avtotovarlar));
+        button.setCallbackData("6-Avtotovarlar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("6-Avtotovarlar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("6-Avtotovarlar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("6-Avtotovarlar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("6-Avtotovarlar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+
+    int Bir_BolalarUchun=1;
+    int Ikki_BolalarUchun=1;
+    int Uch_BolalarUchun=1;
+    int Tort_BolalarUchun=1;
+    int Besh_BolalarUchun=1;
+    int Olti_BolalarUchun=1;
+
+    public SendPhoto Bir_BolalarUchunSendphoto(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmho1j1s99ouqbfqjjqg/original.jpg"));
+        sendPhoto.setCaption("Bolalar uchun manej, bolalar o'yinchoqlari bilan mat, chaqaloqlar uchun musiqiy pianino\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Diqqat! Ushbu mahsulot haqida yuqoridagi tavsifda batafsil ma'lumot berilgan\n" +
+                "● Katlanadigan tufayli dizaynlar, uni sayohatlarga olib borish qulay va yo'lda sayohat qilish va bolani ko'ngil ochish joylarga birga olib ketishingiz mumkin\n" +
+                "● Bolalarga ularning umumiy o'sishi va rivojlanishi uchun zarur bo'lgan ko'nikmalarni rivojlantirishga yordam beradi, mushaklarni kuchaytirishga, muvofiqlashtirishga yordam beradi\n" +
+                "● Bolaning rivojlanishi uchun juda foydali, bolalar bog'chasida emaklash uchun yorqin va chiroyli gilam bolaga juda ko'p qiziqarli o'yin soatlari va ko'plab ijobiy his-tuyg'ularni beradi\n" +
+                "● Bola yolg'iz o'tirganda, gilam pianino rolini o'ynaydi, uni interaktiv musiqa stoliga osongina aylantirish mumkin. O'yinchoq vosita ko'nikmalarini o'rgatadi va bolaning eshitish va ko'rish qobiliyatini rivojlantiradi\n" +
+                "Narx:\n" +
+                "bir to`plami 189 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Bolalar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_BolalarUchun));
+        button.setCallbackData("1-Bolalar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Bolalar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Bolalar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Bolalar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Bolalar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return sendPhoto;
+    }
+    public InlineKeyboardMarkup Bir_BolalarUchunInline(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmho1j1s99ouqbfqjjqg/original.jpg"));
+        sendPhoto.setCaption("Bolalar uchun manej, bolalar o'yinchoqlari bilan mat, chaqaloqlar uchun musiqiy pianino\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Diqqat! Ushbu mahsulot haqida yuqoridagi tavsifda batafsil ma'lumot berilgan\n" +
+                "● Katlanadigan tufayli dizaynlar, uni sayohatlarga olib borish qulay va yo'lda sayohat qilish va bolani ko'ngil ochish joylarga birga olib ketishingiz mumkin\n" +
+                "● Bolalarga ularning umumiy o'sishi va rivojlanishi uchun zarur bo'lgan ko'nikmalarni rivojlantirishga yordam beradi, mushaklarni kuchaytirishga, muvofiqlashtirishga yordam beradi\n" +
+                "● Bolaning rivojlanishi uchun juda foydali, bolalar bog'chasida emaklash uchun yorqin va chiroyli gilam bolaga juda ko'p qiziqarli o'yin soatlari va ko'plab ijobiy his-tuyg'ularni beradi\n" +
+                "● Bola yolg'iz o'tirganda, gilam pianino rolini o'ynaydi, uni interaktiv musiqa stoliga osongina aylantirish mumkin. O'yinchoq vosita ko'nikmalarini o'rgatadi va bolaning eshitish va ko'rish qobiliyatini rivojlantiradi\n" +
+                "Narx:\n" +
+                "bir to`plami 189 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Bolalar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_BolalarUchun));
+        button.setCallbackData("1-Bolalar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Bolalar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Bolalar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Bolalar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Bolalar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Ikki_BolalarUchun(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cl10d5t6sfhgee0k5fog/original.jpg"));
+        sendPhoto.setCaption("Tolokar, pushkar tutqichli 3 tasi 1 da Sport Car, 4 yoshgacha bo'lgan bolalar uchun\n\n" +
+                "Yukxonasi bor\n" +
+                "\n" +
+                "Ob'ektning kengligi 43 sm\n" +
+                "\n" +
+                "Ob'ektning chuqurligi 85 sm\n" +
+                "\n" +
+                "Paket bilan vazn (kg)4.1 kg\n" +
+                "\n" +
+                "Ob'ektning balandligi 85,5 sm\n" +
+                "\n" +
+                "Paket uzunligi 62 sm\n" +
+                "Narx:\n" +
+                "donasi 260 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("2-Bolalar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Ikki_BolalarUchun));
+        button.setCallbackData("2-Bolalar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("2-Bolalar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("2-Bolalar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("2-Bolalar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("2-Bolalar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Uch_BolalarUchun(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cl1ob0d6sfhgee0kaeig/original.jpg"));
+        sendPhoto.setCaption("Teknum 531 bolalar aravachasi Kolyaska 3 tasi 1 da, transformer\n\n" +
+                "Narx:\n" +
+                "bir to`plami 1 399 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("3-Bolalar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Uch_BolalarUchun));
+        button.setCallbackData("3-Bolalar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("3-Bolalar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("3-Bolalar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("3-Bolalar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("3-Bolalar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Tort_BolalarUchun(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn0dei9s99ouqbft9r1g/original.jpg"));
+        sendPhoto.setCaption("Konstruktor ajdarho chavandozlari Lego bilan mos\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Qadoqlash: bardoshli qadoqlash tashish va saqlash vaqtida ehtiyot qismlar xavfsizligini ta'minlaydi.\n" +
+                "● Ninja mavzusi: har bir to'plam bolalar uchun mashhur va jozibali Ninja jangchilari mavzusiga asoslangan.\n" +
+                "● To'plamlar seriyasi: 8 xil yig'ish to'plamini o'z ichiga oladi, ularning har biri o'ziga xos haykalchalar va mototsikllar to'plamiga ega.\n" +
+                "● Qismlar soni: har bir to'plamda 52 dan 55 gacha qismlar mavjud bo'lib, ular batafsil modellarni yaratishga imkon beradi.\n" +
+                "Narx:\n" +
+                "bir to`plami 19 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("4-Bolalar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Tort_BolalarUchun));
+        button.setCallbackData("4-Bolalar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("4-Bolalar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("4-Bolalar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("4-Bolalar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("4-Bolalar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Besh_BolalarUchun(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjeuktcvutvdmqj4hufg/original.jpg"));
+        sendPhoto.setCaption("Modellashtirish uchun plastilin Modelling clay, 24 rang\n\n" +
+                "Plastilin - bu sizning tasavvuringizni ochishga va ajoyib san'at asarlarini yaratishga yordam beradigan ko'p qirrali ijodiy vositadir. Yumshoq, egiluvchan va qoliplash juda oson, bu sizga turli shakllar, ob'ektlar va haykallarni osongina modellashtirish imkonini beradi.\n" +
+                "\n" +
+                "7 va undan katta yoshdagi bolalar uchun yaxshilangan formulali plastilin: u elastik bo'ladi, lekin fraktsiyalarni yirtmaydi va shaklini yaxshi ushlab turadi, bu sizga eng nozik qismlarni haykalga solishga imkon beradi. Plastilin chizish texnikasi uchun ideal - plastilinografiya. Tarkibi engil pigmentlarga ega, shuning uchun hunarmandchilik uzoq vaqt saqlanadi va so'nmaydi. Aniq hidsiz, qo'llar va ish yuzasi ifloslanmaydi.\n" +
+                "Narx:\n" +
+                "bir qutisi 22 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("5-Bolalar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Besh_BolalarUchun));
+        button.setCallbackData("5-Bolalar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("5-Bolalar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("5-Bolalar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("5-Bolalar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("5-Bolalar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Olti_BolalarUchun(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cf4h5k0l08k0o9qi17ug/original.jpg"));
+        sendPhoto.setCaption("Chizma doskasi LCD 8.5inch Writing Tablet, 12 x 16.5 sm\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● LCD 8.5inch\n" +
+                "● Batarekasi uzoq muddatga yetadi\n" +
+                "● 12 x 16.5 sm\n" +
+                "Narx:\n" +
+                "donasi 22 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("6-Bolalar minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Olti_BolalarUchun));
+        button.setCallbackData("6-Bolalar soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("6-Bolalar plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("6-Bolalar orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("6-Bolalar savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("6-Bolalar oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+
+
+    int Bir_Sport=1;
+    int Ikki_Sport=1;
+    int Uch_Sport=1;
+    int Tort_Sport=1;
+    int Besh_Sport=1;
+    int Olti_Sport=1;
+
+    public SendPhoto Bir_SportSendphoto(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cl12215ennt861io3mjg/original.jpg"));
+        sendPhoto.setCaption("Elektr samokat KECHTE M1 Electric Scooter, 8.5\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Maksimal yuklama: 120 kg\n" +
+                "● Shinalar: diametri 8,5 dyuym bo‘lgan old va orqa pnevmatik shinalari\n" +
+                "● Foydalanuvchining bo'yi: 120-200 sm\n" +
+                "● Tormozlash tizimi: eABS +orqa ikki kolodkali diskli tormoz\n" +
+                "● Maks. tezlik: 25 km/soat\n" +
+                "● Yurish zaxirasi: 30 km\n" +
+                "● Qiyalikdan ko‘tarilish qobiliyati:16%\n" +
+                "● Foydalanuvchining yoshi: 18 dan 50 yoshgacha\n" +
+                "● Og‘irligi: 13.2 kg\n" +
+                "Narx:\n" +
+                "donasi 3 290 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Sport minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Sport));
+        button.setCallbackData("1-Sport soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Sport plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Sport orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Sport savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Sport oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return sendPhoto;
+    }
+    public InlineKeyboardMarkup Bir_SportInline(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cl12215ennt861io3mjg/original.jpg"));
+        sendPhoto.setCaption("Elektr samokat KECHTE M1 Electric Scooter, 8.5\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Maksimal yuklama: 120 kg\n" +
+                "● Shinalar: diametri 8,5 dyuym bo‘lgan old va orqa pnevmatik shinalari\n" +
+                "● Foydalanuvchining bo'yi: 120-200 sm\n" +
+                "● Tormozlash tizimi: eABS +orqa ikki kolodkali diskli tormoz\n" +
+                "● Maks. tezlik: 25 km/soat\n" +
+                "● Yurish zaxirasi: 30 km\n" +
+                "● Qiyalikdan ko‘tarilish qobiliyati:16%\n" +
+                "● Foydalanuvchining yoshi: 18 dan 50 yoshgacha\n" +
+                "● Og‘irligi: 13.2 kg\n" +
+                "Narx:\n" +
+                "donasi 3 290 000 so'm");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("1-Sport minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Bir_Sport));
+        button.setCallbackData("1-Sport soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("1-Sport plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("1-Sport orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("1-Sport savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("1-Sport oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Ikki_SportInline(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(""));
+        sendPhoto.setCaption("");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("2-Sport minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Ikki_Sport));
+        button.setCallbackData("2-Sport soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("2-Sport plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("2-Sport orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("2-Sport savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("2-Sport oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Uch_SportInline(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(""));
+        sendPhoto.setCaption("");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("3-Sport minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Uch_Sport));
+        button.setCallbackData("3-Sport soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("3-Sport plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("3-Sport orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("3-Sport savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("3-Sport oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Tort_SportInline(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(""));
+        sendPhoto.setCaption("");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("4-Sport minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Tort_Sport));
+        button.setCallbackData("4-Sport soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("4-Sport plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("4-Sport orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("4-Sport savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("4-Sport oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Besh_SportInline(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(""));
+        sendPhoto.setCaption("");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("5-Sport minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Besh_Sport));
+        button.setCallbackData("5-Sport soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("5-Sport plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("5-Sport orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("5-Sport savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("5-Sport oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+    public InlineKeyboardMarkup Olti_SportInline(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(""));
+        sendPhoto.setCaption("");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("➖");
+        button.setCallbackData("6-Sport minus");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText(String.valueOf(Olti_Sport));
+        button.setCallbackData("6-Sport soni");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➕");
+        button.setCallbackData("6-Sport plus");
+        row.add(button);
+        rowlist.add(row);
+        button = new InlineKeyboardButton();
+        row = new ArrayList<>();
+
+        button.setText("⬅\uFE0F");
+        button.setCallbackData("6-Sport orqaga");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("Savatga qoshish\uD83D\uDED2");
+        button.setCallbackData("6-Sport savat");
+        row.add(button);
+
+        button = new InlineKeyboardButton();
+        button.setText("➡\uFE0F");
+        button.setCallbackData("6-Sport oldinga");
+        row.add(button);
+        rowlist.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowlist);
+        sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
+        return inlineKeyboardMarkup;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
