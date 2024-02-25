@@ -22,18 +22,23 @@ public class MenuRus {
         List<KeyboardRow> rowList=new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
         KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2= new KeyboardButton();
+        KeyboardButton button3= new KeyboardButton();
         button.setText("Категории\uD83D\uDDC2");
         button1.setText("Наш сайт\uD83D\uDECD");
         button2.setText("Настройки⚙\uFE0F");
+        button3.setText("Корзина\uD83D\uDED2");
 
         row.add(button);
         row.add(button1);
         row1.add(button2);
+        row2.add(button3);
         rowList.add(row);
         rowList.add(row1);
+        rowList.add(row2);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -67,7 +72,7 @@ public class MenuRus {
     public SendMessage TilOzgartirish(Long chatid){
 
         SendMessage sendMessage = new SendMessage();
-        sendMessage.setText("На какую язык хотите поменять \nqaysi tilga o`zgartirmoqchisiz");
+        sendMessage.setText("На какую язык хотите поменять \n\n qaysi tilga o`zgartirmoqchisiz");
         sendMessage.setChatId(chatid);
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
@@ -202,7 +207,6 @@ public class MenuRus {
                  <b> "https://uzum.uz/ru" Uzum Market </b>
                 """);
         sendMessage.setParseMode(ParseMode.HTML);
-
         return sendMessage;
     }
 }

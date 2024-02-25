@@ -1,5 +1,4 @@
 package org.example;
-
 import org.apache.poi.xslf.usermodel.XSLFSheet;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -24,10 +23,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-
-
 public class MyBot extends TelegramLongPollingBot {
-
     private String Language;
     BotService botservice=new BotService();
     MenuUzb menuUzb=new MenuUzb();
@@ -100,6 +96,16 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (text.equals("Savat\uD83D\uDED2")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Hozircha savatingiz bo`sh");
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             if (text.equals("Русский язык\uD83C\uDDF7\uD83C\uDDFA\uD83D\uDD04")){
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(chatId);
@@ -154,7 +160,8 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
-            }if (text.equals("👈 Orqaga")){
+            }
+            if (text.equals("👈 Orqaga")){
                 try {
                     execute(menuUzb.Sozlamalar(chatId));
                 } catch (TelegramApiException e) {
@@ -168,7 +175,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("👈 Назад")){
                 try {
                     execute(menuRus.Sozlamalar(chatId));
@@ -190,9 +196,20 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (text.equals("Корзина\uD83D\uDED2")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                sendMessage.setText("Ваша корзина пока пуста");
+                try {
+                    execute(sendMessage);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
 
         }
+
         else if (update.hasMessage() && update.getMessage().hasContact()){
             if (Language.equals("uz")) {
                 SendMessage sendMessage = new SendMessage();
@@ -225,9 +242,6 @@ public class MyBot extends TelegramLongPollingBot {
             }
 
         }
-
-
-
 
         else if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
@@ -533,7 +547,7 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            if (data.equals("2-elektronika orqaga")){
+            if (data.equals("2-elektronika orqaga")||data.equals("6-Sport oldinga")){
                 EditMessageMedia editMessageMedia = new EditMessageMedia();
                 InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmfa23hs99ouqbfq6kq0/original.jpg");
                 editMessageMedia.setMedia(inputMediaPhoto);
@@ -3404,7 +3418,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
-            if (data.equals("2-Avtotovarlar orqaga")||data.equals("6-Avtotovarlar oldinga")){
+            if (data.equals("2-Bolalar orqaga")||data.equals("6-Avtotovarlar oldinga")){
                 EditMessageMedia editMessageMedia = new EditMessageMedia();
                 InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmho1j1s99ouqbfqjjqg/original.jpg");
                 editMessageMedia.setMedia(inputMediaPhoto);
@@ -3459,7 +3473,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
-            if (data.equals("1-Bolalar minus")){
+            if (data.equals("1-Sport minus")){
                 if (menuUzb.Bir_Sport>1){
                     menuUzb.Bir_Sport--;
                 }
@@ -3473,6 +3487,357 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
 
+            }
+            if (data.equals("1-Sport oldinga")||data.equals("3-Sport orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clcp2st6sfhgee0maoag/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Velotrenajor Ax 010\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Maxovik: 4 kg (ichki aylanuvchi disk)\n" +
+                        "● Mashg’ulotlarni og’irlashtirish imkoni : 8 xil darajada\n" +
+                        "● Monitor: vaqt, masofa, tezlik, puls, kaloriya o’lchaydi\n" +
+                        "● Puls: rulda\n" +
+                        "● Maks foydalanuvchi vazni: 110 kg\n" +
+                        "Narx:\n" +
+                        "donasi  1 799 000 so'm");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_Sport(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Sport plus")){
+                menuUzb.Ikki_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_Sport(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Sport minus")){
+                if (menuUzb.Ikki_Sport>1){
+                    menuUzb.Ikki_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Ikki_Sport(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Sport oldinga")||data.equals("4-Sport orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ccmm7bbb3ho5lmupnkjg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Sakragichi sport va krossfit mashg'ulotlari uchun\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● 2.8 metr (uzunligi sozlanishi)\n" +
+                        "● Sport va krossfit mashg'ulotlari uchun arqondan sakrash\n" +
+                        "● Muvofiqlashtirish va chidamlilikni yaxshilaydi\n" +
+                        "● PVX qoplangan po'lat sim\n" +
+                        "● Arqon burilmaydi\n" +
+                        "Narx:\n" +
+                        "donasi 49 000 so'm");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_Sport(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Sport plus")){
+                menuUzb.Uch_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_Sport(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Sport minus")){
+                if (menuUzb.Uch_Sport>1){
+                    menuUzb.Uch_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Uch_Sport(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Sport oldinga")||data.equals("5-Sport orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cjl0v3cjvf2ofbh81lt0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Futbol to'pi Molten, AFC F5A5000-AC, o'lcham 5\n\n" +
+                        "Molten F5A5000-AC futbol to'pi.\n" +
+                        "\n" +
+                        "O'lchami: 5\n" +
+                        "\n" +
+                        "Sertifikat: Fifa Quality PRO.\n" +
+                        "\n" +
+                        "Panellar soni: 32\n" +
+                        "\n" +
+                        "Professional Acentec texnologiyasi (Cross Fusion Bonding Technology)\n" +
+                        "\n" +
+                        "Shinalar uchun material: poliuretan (yopishtirilgan, choksiz, suv o'tkazmaydigan)\n" +
+                        "\n" +
+                        "Kamera: tabiiy lateks.\n" +
+                        "\n" +
+                        "Yuqori aşınma qarshilik\n" +
+                        "Narx:\n" +
+                        "donasi 159 000 so'm");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_Sport(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Sport plus")){
+                menuUzb.Tort_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_Sport(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Sport minus")){
+                if (menuUzb.Tort_Sport>1){
+                    menuUzb.Tort_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Tort_Sport(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Sport oldinga")||data.equals("6-Sport orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cjpilhkjvf2hdh3edh20/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Batut fitnes va jamping uchun, vazn yo'qotish va o'yin-kulgi uchun\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Diametri (sm): 120.130\n" +
+                        "● Fitnes va sakrash uchun batut. Kilo yo'qotish uchun trambolin\n" +
+                        "● Yuk ko'tarish qobiliyati: 140 kg\n" +
+                        "● Balandligi: 1.5 metr\n" +
+                        "● Нar qanday savol bo'lsa UZUM MARKET shaxsiy xabar orqali bog'laning\n" +
+                        "Narx:\n" +
+                        "donasi 1 050 000 so'm");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_Sport(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Sport plus")){
+                menuUzb.Besh_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_Sport(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Sport minus")){
+                if (menuUzb.Besh_Sport>1){
+                    menuUzb.Besh_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Besh_Sport(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Sport oldinga")||data.equals("1-elektronika orqaga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmfvodrifoubkc6no8lg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Bilyard uchun qo'lqop Predator va Classic, chap va o'ng qo'l, 2 rang\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Hajmi: o'lchamsiz\n" +
+                        "● Xususiyat chap va o'ng qo'llar uchun\n" +
+                        "● Predator va Classic\n" +
+                        "● Rang: qora, ko'k\n" +
+                        "● 1 dona o'z ichiga oladi\n" +
+                        "Narx:\n" +
+                        "donasi 49 000 so'm");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_Sport(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Sport plus")){
+                menuUzb.Olti_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_Sport(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Sport minus")){
+                if (menuUzb.Olti_Sport>1){
+                    menuUzb.Olti_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Olti_Sport(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Sport orqaga")||data.equals("6-Bolalar oldinga")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cl12215ennt861io3mjg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Elektr samokat KECHTE M1 Electric Scooter, 8.5\n\n" +
+                        "Mahsulot haqida qisqacha:\n" +
+                        "● Maksimal yuklama: 120 kg\n" +
+                        "● Shinalar: diametri 8,5 dyuym bo‘lgan old va orqa pnevmatik shinalari\n" +
+                        "● Foydalanuvchining bo'yi: 120-200 sm\n" +
+                        "● Tormozlash tizimi: eABS +orqa ikki kolodkali diskli tormoz\n" +
+                        "● Maks. tezlik: 25 km/soat\n" +
+                        "● Yurish zaxirasi: 30 km\n" +
+                        "● Qiyalikdan ko‘tarilish qobiliyati:16%\n" +
+                        "● Foydalanuvchining yoshi: 18 dan 50 yoshgacha\n" +
+                        "● Og‘irligi: 13.2 kg\n" +
+                        "Narx:\n" +
+                        "donasi 3 290 000 so'm");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuUzb.Bir_SportInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
             }
 
 
@@ -3489,7 +3854,6 @@ public class MyBot extends TelegramLongPollingBot {
     public String getBotUsername() {
         return "AsosiyUzum_bot";
     }
-
     @Override
     public String getBotToken() {
         return "6278691791:AAHUo1ctSTY8e12o9KUoywgrMUXFlTO4lGU";

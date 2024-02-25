@@ -12,7 +12,8 @@ import java.util.List;
 public class BotService {
     public SendMessage Salom(Long chatId){
         SendMessage sendMessage = new SendMessage();
-        sendMessage.setText("Assalomu aleykum \n Botga xush kelibsiz☺");
+        sendMessage.setText("Assalomu aleykum  Botga xush kelibsiz☺\n\n" +
+                "Здравствуйте добро пожаловать в бот☺");
         sendMessage.setChatId(chatId);
         return sendMessage;
     }
@@ -20,7 +21,7 @@ public class BotService {
     public SendMessage Til(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Tilni Tanlang \n Выбирайте язык");
+        sendMessage.setText("Tilni Tanlang     Выбирайте язык");
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow>rowList=new ArrayList<>();

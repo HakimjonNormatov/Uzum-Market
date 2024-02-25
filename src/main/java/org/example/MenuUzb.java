@@ -1,5 +1,4 @@
 package org.example;
-
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendDocument;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -13,7 +12,6 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class MenuUzb {
     public SendMessage menu(Long chatId) {
         SendMessage sendMessage = new SendMessage();
@@ -23,17 +21,22 @@ public class MenuUzb {
         List<KeyboardRow> rowList = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
         KeyboardRow row1 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
         KeyboardButton button1 = new KeyboardButton();
         KeyboardButton button2 = new KeyboardButton();
+        KeyboardButton button3 = new KeyboardButton();
         button.setText("Katigoriyalar\uD83D\uDDC2");
         button1.setText("Bizning sayt\uD83D\uDECD");
         button2.setText("Sozlamalar⚙\uFE0F");
+        button3.setText("Savat\uD83D\uDED2");
         row.add(button);
         row.add(button1);
         row1.add(button2);
+        row2.add(button3);
         rowList.add(row);
         rowList.add(row1);
+        rowList.add(row2);
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
@@ -66,7 +69,7 @@ public class MenuUzb {
     public SendMessage TilOzgartirish(Long chatid) {
 
         SendMessage sendMessage = new SendMessage();
-        sendMessage.setText("На какую язык хотите поменять \nqaysi tilga o`zgartirmoqchisiz");
+        sendMessage.setText("На какую язык хотите поменять \n\n qaysi tilga o`zgartirmoqchisiz");
         sendMessage.setChatId(chatid);
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
@@ -176,7 +179,6 @@ public class MenuUzb {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-
     public SendMessage KategoriyaOrqaga(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -194,7 +196,6 @@ public class MenuUzb {
         replyKeyboardMarkup.setResizeKeyboard(true);
         return sendMessage;
     }
-
     public SendMessage Site(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -444,8 +445,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Ikki_Elektronika(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -603,8 +602,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Uch_Elektronika(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -777,8 +774,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup tort_Elektronika(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -951,8 +946,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup besh_Elektronika(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -1119,8 +1112,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup olti_Elektronika(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -1263,7 +1254,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
 
     int Bir_MaishiyTexnika=1;
     int Ikki_MaishiyTexnika=1;
@@ -1480,8 +1470,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Ikki_MaishiyTexnika(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -1645,8 +1633,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Uch_MaishiyTexnika(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -1807,8 +1793,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Tort_MaishiyTexnika(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -1981,8 +1965,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Besh_MaishiyTexnika(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -2158,8 +2140,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Olti_MaishiyTexnika(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -2320,7 +2300,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
 
     int Bir_Kiyimlar=1;
     int Ikki_Kiyimlar=1;
@@ -2561,8 +2540,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Ikki_Kiyimlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -2723,8 +2700,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Uch_Kiyimlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -2876,8 +2851,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Tort_Kiyimlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -3041,8 +3014,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Besh_Kiyimlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -3191,8 +3162,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
     public InlineKeyboardMarkup Olti_Kiyimlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -3335,7 +3304,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
 
     int Bir_Aksessuarlar=1;
     int Ikki_Aksessuarlar=1;
@@ -3560,7 +3528,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Ikki_Aksessuarlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -3721,7 +3688,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Uch_Aksessuarlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -3885,7 +3851,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Tort_Aksessuarlar(Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -4576,7 +4541,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Ikki_GozallikVaParvarish(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -4734,7 +4698,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Uch_GozallikVaParvarish(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -4895,7 +4858,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Tort_GozallikVaParvarish(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -5047,7 +5009,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Besh_GozallikVaParvarish(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -5214,7 +5175,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
     public InlineKeyboardMarkup Olti_GozallikVaParvarish(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
@@ -5375,7 +5335,6 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
 
     int Bir_Salomatlik=1;
     int Ikki_Salomatlik=1;
@@ -6396,7 +6355,6 @@ public class MenuUzb {
         return inlineKeyboardMarkup;
     }
 
-
     int Bir_Avtotovarlar=1;
     int Ikki_Avtotovarlar=1;
     int Uch_Avtotovarlar=1;
@@ -7195,7 +7153,6 @@ public class MenuUzb {
         return inlineKeyboardMarkup;
     }
 
-
     int Bir_Sport=1;
     int Ikki_Sport=1;
     int Uch_Sport=1;
@@ -7319,11 +7276,19 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-    public InlineKeyboardMarkup Ikki_SportInline(Long chatId) {
+    public InlineKeyboardMarkup Ikki_Sport(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clcp2st6sfhgee0maoag/original.jpg"));
+        sendPhoto.setCaption("Velotrenajor Ax 010\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Maxovik: 4 kg (ichki aylanuvchi disk)\n" +
+                "● Mashg’ulotlarni og’irlashtirish imkoni : 8 xil darajada\n" +
+                "● Monitor: vaqt, masofa, tezlik, puls, kaloriya o’lchaydi\n" +
+                "● Puls: rulda\n" +
+                "● Maks foydalanuvchi vazni: 110 kg\n" +
+                "Narx:\n" +
+                "donasi  1 799 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -7365,11 +7330,19 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-    public InlineKeyboardMarkup Uch_SportInline(Long chatId) {
+    public InlineKeyboardMarkup Uch_Sport(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ccmm7bbb3ho5lmupnkjg/original.jpg"));
+        sendPhoto.setCaption("Sakragichi sport va krossfit mashg'ulotlari uchun\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● 2.8 metr (uzunligi sozlanishi)\n" +
+                "● Sport va krossfit mashg'ulotlari uchun arqondan sakrash\n" +
+                "● Muvofiqlashtirish va chidamlilikni yaxshilaydi\n" +
+                "● PVX qoplangan po'lat sim\n" +
+                "● Arqon burilmaydi\n" +
+                "Narx:\n" +
+                "donasi 49 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -7411,11 +7384,28 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-    public InlineKeyboardMarkup Tort_SportInline(Long chatId) {
+    public InlineKeyboardMarkup Tort_Sport(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjl0v3cjvf2ofbh81lt0/original.jpg"));
+        sendPhoto.setCaption("Futbol to'pi Molten, AFC F5A5000-AC, o'lcham 5\n\n" +
+                "Molten F5A5000-AC futbol to'pi.\n" +
+                "\n" +
+                "O'lchami: 5\n" +
+                "\n" +
+                "Sertifikat: Fifa Quality PRO.\n" +
+                "\n" +
+                "Panellar soni: 32\n" +
+                "\n" +
+                "Professional Acentec texnologiyasi (Cross Fusion Bonding Technology)\n" +
+                "\n" +
+                "Shinalar uchun material: poliuretan (yopishtirilgan, choksiz, suv o'tkazmaydigan)\n" +
+                "\n" +
+                "Kamera: tabiiy lateks.\n" +
+                "\n" +
+                "Yuqori aşınma qarshilik\n" +
+                "Narx:\n" +
+                "donasi 159 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -7457,11 +7447,19 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-    public InlineKeyboardMarkup Besh_SportInline(Long chatId) {
+    public InlineKeyboardMarkup Besh_Sport(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjpilhkjvf2hdh3edh20/original.jpg"));
+        sendPhoto.setCaption("Batut fitnes va jamping uchun, vazn yo'qotish va o'yin-kulgi uchun\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Diametri (sm): 120.130\n" +
+                "● Fitnes va sakrash uchun batut. Kilo yo'qotish uchun trambolin\n" +
+                "● Yuk ko'tarish qobiliyati: 140 kg\n" +
+                "● Balandligi: 1.5 metr\n" +
+                "● Нar qanday savol bo'lsa UZUM MARKET shaxsiy xabar orqali bog'laning\n" +
+                "Narx:\n" +
+                "donasi 1 050 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -7503,11 +7501,19 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-    public InlineKeyboardMarkup Olti_SportInline(Long chatId) {
+    public InlineKeyboardMarkup Olti_Sport(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(""));
-        sendPhoto.setCaption("");
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmfvodrifoubkc6no8lg/original.jpg"));
+        sendPhoto.setCaption("Bilyard uchun qo'lqop Predator va Classic, chap va o'ng qo'l, 2 rang\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Hajmi: o'lchamsiz\n" +
+                "● Xususiyat chap va o'ng qo'llar uchun\n" +
+                "● Predator va Classic\n" +
+                "● Rang: qora, ko'k\n" +
+                "● 1 dona o'z ichiga oladi\n" +
+                "Narx:\n" +
+                "donasi 49 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -7549,39 +7555,5 @@ public class MenuUzb {
         sendPhoto.setReplyMarkup(inlineKeyboardMarkup);
         return inlineKeyboardMarkup;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
