@@ -337,7 +337,14 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn4ucohs99ouqbfu5jt0/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Телевизор Premier 43PRM705S, Full HD Смарт ТВ\n\n" +
+                "Кратко о товаре:\n" +
+                "● Тип матрицы - VA панель\n" +
+                "● Разрешение - Full HD (1920 * 1080)\n" +
+                "● Смарт TV - Android\n" +
+                "● Гарантия - 3 год\n" +
+                "Цена:\n" +
+                "2 589 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
