@@ -11,6 +11,7 @@ import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageCa
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageMedia;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageReplyMarkup;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
+import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.media.InputMediaPhoto;
@@ -3841,15 +3842,3270 @@ public class MyBot extends TelegramLongPollingBot {
             }
 
 
+            //RUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUSRUS/``/\
+            if (data.equals("Електроника")){
+                try {
+                    execute(menuRus.Bir_Elektronikasendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-електроника плюс")){
+                menuRus.Bir_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_ElektronikaInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
+            }
+            if (data.equals("1-електроника минус")){
+                if (menuRus.Bir_Sport>1){
+                    menuRus.Bir_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_ElektronikaInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
+            }
+            if (data.equals("1-електроника вперёд")||data.equals("3-електроника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cn4ucohs99ouqbfu5jt0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
 
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("Телевизор Premier 43PRM705S, Full HD Смарт ТВ\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Тип матрицы - VA панель\n" +
+                        "● Разрешение - Full HD (1920 * 1080)\n" +
+                        "● Смарт TV - Android\n" +
+                        "● Гарантия - 3 год\n" +
+                        "Цена:\n" +
+                        "2 589 000 сум");
 
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Elektronika(chatId));
 
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-електроника плюс")){
+                menuRus.Ikki_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Elektronika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
+            }
+            if (data.equals("2-електроника минус")){
+                if (menuRus.Ikki_Sport>1){
+                    menuRus.Ikki_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Elektronika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
 
+            }
+            if (data.equals("2-електроника вперёд")||data.equals("4-електроника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cla6qcnn7c6qm23j01mg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
 
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
 
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Elektronika(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-електроника плюс")){
+                menuRus.Uch_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Elektronika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-електроника минус")){
+                if (menuRus.Uch_Sport>1){
+                    menuRus.Uch_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Elektronika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-електроника вперёд")||data.equals("5-електроника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckk5o4cjvf2peh8sjehg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Elektronika(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-електроника плюс")){
+                menuRus.Tort_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Elektronika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-електроника минус")){
+                if (menuRus.Tort_Sport>1){
+                    menuRus.Tort_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Elektronika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-електроника вперёд")||data.equals("6-електроника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cjjgakkvutv1g2ricde0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Elektronika(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-електроника плюс")){
+                menuRus.Besh_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Elektronika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-електроника минус")){
+                if (menuRus.Besh_Sport>1){
+                    menuRus.Besh_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Elektronika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-електроника вперёд")||data.equals("1-Бытовая техника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clk4get6sfhsc0umir90/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Elektronika(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-електроника плюс")){
+                menuRus.Olti_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Elektronika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-електроника минус")){
+                if (menuRus.Olti_Sport>1){
+                    menuRus.Olti_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Elektronika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-електроника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmfa23hs99ouqbfq6kq0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_ElektronikaInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("Бытовая техника")){
+                try {
+                    execute(menuRus.Bir_MaishiyTexnikaSendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Бытовая техника плюс")){
+                menuRus.Bir_MaishiyTexnika++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_MaishiyTexnikaInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Бытовая техника минус")){
+                if (menuRus.Bir_MaishiyTexnika>1){
+                    menuRus.Bir_MaishiyTexnika--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_MaishiyTexnikaInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Бытовая техника вперёд")||data.equals("3-Бытовая техника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmcj35bifoubkc6n5f8g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_MaishiyTexnika(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Бытовая техника плюс")){
+                menuRus.Ikki_MaishiyTexnika++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_MaishiyTexnika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Бытовая техника минус")){
+                if (menuRus.Ikki_MaishiyTexnika>1){
+                    menuRus.Ikki_MaishiyTexnika--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_MaishiyTexnika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Бытовая техника вперёд")||data.equals("4-Бытовая техника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckjbb6cjvf2sulnvad3g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_MaishiyTexnika(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Бытовая техника плюс")){
+                menuRus.Uch_MaishiyTexnika++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_MaishiyTexnika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Бытовая техника минус")){
+                if (menuRus.Uch_MaishiyTexnika>1){
+                    menuRus.Uch_MaishiyTexnika--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_MaishiyTexnika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Бытовая техника вперёд")||data.equals("5-Бытовая техника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/chmpuav5d7kom1tgatb0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_MaishiyTexnika(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Бытовая техника плюс")){
+                menuRus.Tort_MaishiyTexnika++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_MaishiyTexnika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Бытовая техника минус")){
+                if (menuRus.Tort_MaishiyTexnika>1){
+                    menuRus.Tort_MaishiyTexnika--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_MaishiyTexnika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Бытовая техника вперёд")||data.equals("6-Бытовая техника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckiempsjvf2sulnv3dng/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_MaishiyTexnika(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Бытовая техника плюс")){
+                menuRus.Besh_MaishiyTexnika++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_MaishiyTexnika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Бытовая техника минус")){
+                if (menuRus.Besh_MaishiyTexnika>1){
+                    menuRus.Besh_MaishiyTexnika--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_MaishiyTexnika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Бытовая техника вперёд")||data.equals("1-Одежды назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmtl0d125ku8jql6hcj0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_MaishiyTexnika(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Бытовая техника плюс")){
+                menuRus.Olti_MaishiyTexnika++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_MaishiyTexnika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Бытовая техника минус")){
+                if (menuRus.Olti_MaishiyTexnika>1){
+                    menuRus.Olti_MaishiyTexnika--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_MaishiyTexnika(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Бытовая техника назад")||data.equals("6-електроника вперёд")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clomahfn7c6gg9ie3om0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_MaishiyTexnikaInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("Одежда")){
+                try {
+                    execute(menuRus.Bir_KiyimSendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Одежды плюс")){
+                menuRus.Bir_MaishiyTexnika++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_MaishiyTexnikaInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Одежды минус")){
+                if (menuRus.Bir_MaishiyTexnika>1){
+                    menuRus.Bir_MaishiyTexnika--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_MaishiyTexnikaInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Одежды вперёд")||data.equals("3-Одежды назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cn325n3ifoubkc6r8ujg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Kiyim(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Одежды плюс")){
+                menuRus.Ikki_Kiyimlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Kiyim(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Одежды минус")){
+                if (menuRus.Ikki_Kiyimlar>1){
+                    menuRus.Ikki_Kiyimlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Kiyim(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Одежды вперёд")||data.equals("4-Одежды назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmjr8u1s99ouqbfqvh20/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Kiyim(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Одежды плюс")){
+                menuRus.Uch_Kiyimlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Kiyim(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Одежды минус")){
+                if (menuRus.Uch_Kiyimlar>1){
+                    menuRus.Uch_Kiyimlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Kiyim(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Одежды вперёд")||data.equals("5-Одежды назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cn50anbifoubkc6rjrig/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Kiyim(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Одежды плюс")){
+                menuRus.Tort_Kiyimlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Kiyim(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Одежды минус")){
+                if (menuRus.Tort_Kiyimlar>1){
+                    menuRus.Tort_Kiyimlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Kiyim(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Одежды вперёд")||data.equals("6-Одежды назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cg67d37hgiov1qie6pbg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Kiyim(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Одежды плюс")){
+                menuRus.Besh_Kiyimlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Kiyim(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Одежды минус")){
+                if (menuRus.Besh_Kiyimlar>1){
+                    menuRus.Besh_Kiyimlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Kiyim(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Одежды вперёд")||data.equals("1-Аксессуары назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckp9t6sjvf2iqscbnfdg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Kiyim(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Одежды плюс")){
+                menuRus.Olti_Kiyimlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Kiyim(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Одежды минус")){
+                if (menuRus.Olti_Kiyimlar>1){
+                    menuRus.Olti_Kiyimlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Kiyim(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Одежды назад")||data.equals("6-Бытовая техника вперёд")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clomahfn7c6gg9ie3om0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_MaishiyTexnikaInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("Аксессуары")){
+                try {
+                    execute(menuRus.Bir_AksessuarlarSendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Аксессуары плюс")){
+                menuRus.Bir_Aksessuarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_AksessuarlarInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Аксессуары минус")){
+                if (menuRus.Bir_Aksessuarlar>1){
+                    menuRus.Bir_Aksessuarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_AksessuarlarInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Аксессуары вперёд")||data.equals("3-Аксессуары назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cje50qkjvf2trp6s4nrg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Aksessuarlar(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Аксессуары плюс")){
+                menuRus.Ikki_Aksessuarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Aksessuarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Аксессуары минус")){
+                if (menuRus.Ikki_Aksessuarlar>1){
+                    menuRus.Ikki_Aksessuarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Aksessuarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Аксессуары вперёд")||data.equals("4-Аксессуары назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cjcb4lkvutv7iatast50/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Aksessuarlar(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Аксессуары плюс")){
+                menuRus.Uch_Aksessuarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Aksessuarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Аксессуары минус")){
+                if (menuRus.Uch_Aksessuarlar>1){
+                    menuRus.Uch_Aksessuarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Aksessuarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Аксессуары вперёд")||data.equals("5-Аксессуары назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clqtjohs99oopol1euj0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Aksessuarlar(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Аксессуары плюс")){
+                menuRus.Tort_Aksessuarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Aksessuarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Аксессуары минус")){
+                if (menuRus.Tort_Aksessuarlar>1){
+                    menuRus.Tort_Aksessuarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Aksessuarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Аксессуары вперёд")||data.equals("6-Аксессуары назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckd380rk9fq1hr1nstrg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Aksessuarlar(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Аксессуары плюс")){
+                menuRus.Besh_Aksessuarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Aksessuarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Аксессуары минус")){
+                if (menuRus.Besh_Aksessuarlar>1){
+                    menuRus.Besh_Aksessuarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Aksessuarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Аксессуары вперёд")||data.equals("1-Красота и уход назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ck6lh83k9fqd6b9u0su0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Aksessuarlar(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Аксессуары плюс")){
+                menuRus.Olti_Aksessuarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Aksessuarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Аксессуары минус")){
+                if (menuRus.Olti_Aksessuarlar>1){
+                    menuRus.Olti_Aksessuarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Aksessuarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Аксессуары назад")||data.equals("6-Одежды вперёд")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clomahfn7c6gg9ie3om0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_MaishiyTexnikaInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("Красота и уход")){
+                try {
+                    execute(menuRus.Bir_GozallikvaParvarishSendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Красота и уход плюс")){
+                menuRus.Bir_Gozallikvaparvarish++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_GozallikvaParvarishInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Красота и уход минус")){
+                if (menuRus.Bir_Gozallikvaparvarish>1){
+                    menuRus.Bir_Gozallikvaparvarish--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_GozallikvaParvarishInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Красота и уход вперёд")||data.equals("3-Красота и уход назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cc8ru0eha88139ljb7og/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_GozallikvaParvarish(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Красота и уход плюс")){
+                menuRus.Ikki_Gozallikvaparvarish++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_GozallikvaParvarish(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Красота и уход минус")){
+                if (menuRus.Ikki_Gozallikvaparvarish>1){
+                    menuRus.Ikki_Gozallikvaparvarish--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_GozallikvaParvarish(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Красота и уход вперёд")||data.equals("4-Красота и уход назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ciff24l6sfhndlbpe9fg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_GozallikvaParvarish(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Красота и уход плюс")){
+                menuRus.Uch_Gozallikvaparvarish++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_GozallikvaParvarish(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Красота и уход минус")){
+                if (menuRus.Uch_Gozallikvaparvarish>1){
+                    menuRus.Uch_Gozallikvaparvarish--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_GozallikvaParvarish(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Красота и уход вперёд")||data.equals("5-Красота и уход назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cj2j9d56sfhndlbrcsp0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_GozallikvaParvarish(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Красота и уход плюс")){
+                menuRus.Tort_Gozallikvaparvarish++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_GozallikvaParvarish(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Красота и уход минус")){
+                if (menuRus.Tort_Gozallikvaparvarish>1){
+                    menuRus.Tort_Gozallikvaparvarish--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_GozallikvaParvarish(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Красота и уход вперёд")||data.equals("6-Красота и уход назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ckft48jk9fq8lb3aautg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_GozallikvaParvarish(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Красота и уход плюс")){
+                menuRus.Besh_Gozallikvaparvarish++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_GozallikvaParvarish(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Красота и уход минус")){
+                if (menuRus.Besh_Gozallikvaparvarish>1){
+                    menuRus.Besh_Gozallikvaparvarish--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_GozallikvaParvarish(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Красота и уход вперёд")||data.equals("1-Здоровье назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cj576slenntd8rfequh0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_GozallikvaParvarish(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Красота и уход плюс")){
+                menuRus.Olti_Gozallikvaparvarish++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_GozallikvaParvarish(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Красота и уход минус")){
+                if (menuRus.Olti_Gozallikvaparvarish>1){
+                    menuRus.Olti_Gozallikvaparvarish--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_GozallikvaParvarish(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Красота и уход назад")||data.equals("6-Аксессуары вперёд")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_GozallikvaParvarishInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("Здоровье")){
+                try {
+                    execute(menuRus.Bir_SalomatlikSendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Здоровье плюс")){
+                menuRus.Bir_Salomatlik++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_SalomatlikInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Здоровье минус")){
+                if (menuRus.Bir_Salomatlik>1){
+                    menuRus.Bir_Salomatlik--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_SalomatlikInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Здоровье вперёд")||data.equals("3-Здоровье назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cg68e97hgiov1qie7320/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Salomatlik(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Здоровье плюс")){
+                menuRus.Ikki_Salomatlik++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Salomatlik(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Здоровье минус")){
+                if (menuRus.Ikki_Salomatlik>1){
+                    menuRus.Ikki_Salomatlik--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Salomatlik(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Здоровье вперёд")||data.equals("4-Здоровье назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/chqce3l6sfhndlbn5qug/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Salomatlik(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Здоровье плюс")){
+                menuRus.Uch_Salomatlik++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Salomatlik(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Здоровье минус")){
+                if (menuRus.Uch_Salomatlik>1){
+                    menuRus.Uch_Salomatlik--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Salomatlik(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Здоровье вперёд")||data.equals("5-Здоровье назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cdr712gv1htd23ai529g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Salomatlik(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Здоровье плюс")){
+                menuRus.Tort_Salomatlik++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Salomatlik(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Здоровье минус")){
+                if (menuRus.Tort_Salomatlik>1){
+                    menuRus.Tort_Salomatlik--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Salomatlik(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Здоровье вперёд")||data.equals("6-Здоровье назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cfor2gfhgiov1qicf6r0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Salomatlik(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Здоровье плюс")){
+                menuRus.Besh_Salomatlik++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Salomatlik(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Здоровье минус")){
+                if (menuRus.Besh_Salomatlik>1){
+                    menuRus.Besh_Salomatlik--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Salomatlik(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Здоровье вперёд")||data.equals("1-Строительство и ремонт назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cg4sahfhj8j9g699f6fg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Salomatlik(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Здоровье плюс")){
+                menuRus.Olti_Salomatlik++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Salomatlik(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Здоровье минус")){
+                if (menuRus.Olti_Salomatlik>1){
+                    menuRus.Olti_Salomatlik--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Salomatlik(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Здоровье назад")||data.equals("6-Красота и уход вперёд")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_GozallikvaParvarishInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("Строительство и ремонт")){
+                try {
+                    execute(menuRus.Bir_QurilishMollariSendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Строительство и ремонт плюс")){
+                menuRus.Bir_QurilishMollari++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_QurilishMollariInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Строительство и ремонт минус")){
+                if (menuRus.Bir_QurilishMollari>1){
+                    menuRus.Bir_QurilishMollari--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_QurilishMollariInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Строительство и ремонт вперёд")||data.equals("3-Строительство и ремонт назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ce4otsavtie1lhbehpj0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_QurilishMollari(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Строительство и ремонт плюс")){
+                menuRus.Ikki_QurilishMollari++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_QurilishMollari(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Строительство и ремонт минус")){
+                if (menuRus.Ikki_QurilishMollari>1){
+                    menuRus.Ikki_QurilishMollari--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_QurilishMollari(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Строительство и ремонт вперёд")||data.equals("4-Строительство и ремонт назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cl8skll6sfhgee0lhfb0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_QurilishMollari(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Строительство и ремонт плюс")){
+                menuRus.Uch_QurilishMollari++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_QurilishMollari(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Строительство и ремонт минус")){
+                if (menuRus.Uch_QurilishMollari>1){
+                    menuRus.Uch_QurilishMollari--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_QurilishMollari(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Строительство и ремонт вперёд")||data.equals("5-Строительство и ремонт назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clkoqj5enntcj8a9pcj0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_QurilishMollari(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Строительство и ремонт плюс")){
+                menuRus.Tort_QurilishMollari++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_QurilishMollari(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Строительство и ремонт минус")){
+                if (menuRus.Tort_QurilishMollari>1){
+                    menuRus.Tort_QurilishMollari--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_QurilishMollari(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Строительство и ремонт вперёд")||data.equals("6-Строительство и ремонт назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clausel6sfhgee0lvj1g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_QurilishMollari(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Строительство и ремонт плюс")){
+                menuRus.Besh_QurilishMollari++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_QurilishMollari(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Строительство и ремонт минус")){
+                if (menuRus.Besh_QurilishMollari>1){
+                    menuRus.Besh_QurilishMollari--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_QurilishMollari(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Строительство и ремонт вперёд")||data.equals("1-Автотовары назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clgppilennt1kt4dlsbg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_QurilishMollari(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Строительство и ремонт плюс")){
+                menuRus.Olti_QurilishMollari++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_QurilishMollari(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Строительство и ремонт минус")){
+                if (menuRus.Olti_QurilishMollari>1){
+                    menuRus.Olti_QurilishMollari--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_QurilishMollari(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Строительство и ремонт назад")||data.equals("6-Здоровье вперёд")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clm6uel6sfhsc0un3b0g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_QurilishMollariInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("Автотовары")){
+                try {
+                    execute(menuRus.Bir_AvtotovarlarSendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Автотовары плюс")){
+                menuRus.Bir_Avtotovarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_AvtotovarlarInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Автотовары минус")){
+                if (menuRus.Bir_Avtotovarlar>1){
+                    menuRus.Bir_Avtotovarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_AvtotovarlarInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Автотовары вперёд")||data.equals("3-Автотовары назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cgf9hffhgiov1qiff820/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Avtotovarlar(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Автотовары плюс")){
+                menuRus.Ikki_Avtotovarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Avtotovarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Автотовары минус")){
+                if (menuRus.Ikki_Avtotovarlar>1){
+                    menuRus.Ikki_Avtotovarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_Avtotovarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Автотовары вперёд")||data.equals("4-Автотовары назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cl9h43fn7c6qm23irap0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Avtotovarlar(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Автотовары плюс")){
+                menuRus.Uch_Avtotovarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Avtotovarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Автотовары минус")){
+                if (menuRus.Uch_Avtotovarlar>1){
+                    menuRus.Uch_Avtotovarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_Avtotovarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Автотовары вперёд")||data.equals("5-Автотовары назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ci9fh5l40v9pplt4ca70/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Avtotovarlar(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Автотовары плюс")){
+                menuRus.Tort_Avtotovarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Avtotovarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Автотовары минус")){
+                if (menuRus.Tort_Avtotovarlar>1){
+                    menuRus.Tort_Avtotovarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_Avtotovarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Автотовары вперёд")||data.equals("6-Автотовары назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cl2h1o5ennt861iodaq0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Avtotovarlar(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Автотовары плюс")){
+                menuRus.Besh_Avtotovarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Avtotovarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Автотовары минус")){
+                if (menuRus.Besh_Avtotovarlar>1){
+                    menuRus.Besh_Avtotovarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_Avtotovarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Автотовары вперёд")||data.equals("1-Для ребёнок назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cfihkhvhgiopn8lc08dg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Avtotovarlar(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Автотовары плюс")){
+                menuRus.Olti_Avtotovarlar++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Avtotovarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Автотовары минус")){
+                if (menuRus.Olti_Avtotovarlar>1){
+                    menuRus.Olti_Avtotovarlar--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_Avtotovarlar(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Автотовары назад")||data.equals("6-Строительство и ремонт вперёд")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cgeqrh7hgiov1qifdtqg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_AvtotovarlarInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("Для ребёнок")){
+                try {
+                    execute(menuRus.Bir_BolalarUchunSendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Для ребёнок плюс")){
+                menuRus.Bir_BolalarUchun++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_BolalarUchunInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Для ребёнок минус")){
+                if (menuRus.Bir_BolalarUchun>1){
+                    menuRus.Bir_BolalarUchun--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_BolalarUchunInline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Для ребёнок вперёд")||data.equals("3-Для ребёнок назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cl10d5t6sfhgee0k5fog/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_BolalarUchun(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Для ребёнок плюс")){
+                menuRus.Ikki_BolalarUchun++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_BolalarUchun(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Для ребёнок минус")){
+                if (menuRus.Ikki_BolalarUchun>1){
+                    menuRus.Ikki_BolalarUchun--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_BolalarUchun(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Для ребёнок вперёд")||data.equals("4-Для ребёнок назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cl1ob0d6sfhgee0kaeig/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_BolalarUchun(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Для ребёнок плюс")){
+                menuRus.Uch_BolalarUchun++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_BolalarUchun(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Для ребёнок минус")){
+                if (menuRus.Uch_BolalarUchun>1){
+                    menuRus.Uch_BolalarUchun--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_BolalarUchun(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Для ребёнок вперёд")||data.equals("5-Для ребёнок назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cn0dei9s99ouqbft9r1g/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_BolalarUchun(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Для ребёнок плюс")){
+                menuRus.Tort_BolalarUchun++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_BolalarUchun(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Для ребёнок минус")){
+                if (menuRus.Tort_BolalarUchun>1){
+                    menuRus.Tort_BolalarUchun--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_BolalarUchun(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Для ребёнок вперёд")||data.equals("6-Для ребёнок назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cjeuktcvutvdmqj4hufg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_BolalarUchun(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Для ребёнок плюс")){
+                menuRus.Besh_BolalarUchun++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_BolalarUchun(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Для ребёнок минус")){
+                if (menuRus.Besh_BolalarUchun>1){
+                    menuRus.Besh_BolalarUchun--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_BolalarUchun(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Для ребёнок вперёд")||data.equals("1-Спорт и отдых назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cf4h5k0l08k0o9qi17ug/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_BolalarUchun(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Для ребёнок плюс")){
+                menuRus.Olti_BolalarUchun++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_BolalarUchun(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Для ребёнок минус")){
+                if (menuRus.Olti_BolalarUchun>1){
+                    menuRus.Olti_BolalarUchun--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_BolalarUchun(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Для ребёнок назад")||data.equals("6-Автотовары вперёд")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmho1j1s99ouqbfqjjqg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_BolalarUchunInline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("Спорт и отдых")){
+                try {
+                    execute(menuRus.Bir_SportvaHordiqsendphoto(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("1-Спорт и отдых плюс")){
+                menuRus.Bir_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_SportvaHordiqinline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Спорт и отдых минус")){
+                if (menuRus.Bir_Sport>1){
+                    menuRus.Bir_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_SportvaHordiqinline(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("1-Спорт и отдых вперёд")||data.equals("3-Спорт и отдых назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/clcp2st6sfhgee0maoag/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_SportvaHordiq(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("2-Спорт и отдых плюс")){
+                menuRus.Ikki_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_SportvaHordiq(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Спорт и отдых минус")){
+                if (menuRus.Ikki_Sport>1){
+                    menuRus.Ikki_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Ikki_SportvaHordiq(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Спорт и отдых вперёд")||data.equals("4-Спорт и отдых назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/ccmm7bbb3ho5lmupnkjg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_SportvaHordiq(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("3-Спорт и отдых плюс")){
+                menuRus.Uch_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_SportvaHordiq(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Спорт и отдых минус")){
+                if (menuRus.Uch_Sport>1){
+                    menuRus.Uch_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Uch_SportvaHordiq(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("3-Спорт и отдых вперёд")||data.equals("5-Спорт и отдых назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cjl0v3cjvf2ofbh81lt0/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_SportvaHordiq(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("4-Спорт и отдых плюс")){
+                menuRus.Tort_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_SportvaHordiq(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Спорт и отдых минус")){
+                if (menuRus.Tort_Sport>1){
+                    menuRus.Tort_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Tort_SportvaHordiq(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("4-Спорт и отдых вперёд")||data.equals("6-Спорт и отдых назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cjpilhkjvf2hdh3edh20/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_SportvaHordiq(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("5-Спорт и отдых плюс")){
+                menuRus.Besh_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_SportvaHordiq(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Спорт и отдых минус")){
+                if (menuRus.Besh_Sport>1){
+                    menuRus.Besh_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Besh_SportvaHordiq(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("5-Спорт и отдых вперёд")||data.equals("1-електроника назад")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmfvodrifoubkc6no8lg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_SportvaHordiq(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("6-Спорт и отдых плюс")){
+                menuRus.Olti_Sport++;
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_SportvaHordiq(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("6-Спорт и отдых минус")){
+                if (menuRus.Olti_Sport>1){
+                    menuRus.Olti_Sport--;
+                }
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Olti_SportvaHordiq(chatId));
+                try {
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+            if (data.equals("2-Спорт и отдых назад")||data.equals("6-Для ребёнок вперёд")){
+                EditMessageMedia editMessageMedia = new EditMessageMedia();
+                InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cl12215ennt861io3mjg/original.jpg");
+                editMessageMedia.setMedia(inputMediaPhoto);
+                editMessageMedia.setChatId(chatId);
+                editMessageMedia.setMessageId(message.getMessageId());
+
+                EditMessageCaption editMessageCaption = new EditMessageCaption();
+                editMessageCaption.setChatId(chatId);
+                editMessageCaption.setMessageId(message.getMessageId());
+                editMessageCaption.setCaption("");
+
+                EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
+                editMessageReplyMarkup.setChatId(chatId);
+                editMessageReplyMarkup.setMessageId(message.getMessageId());
+                editMessageReplyMarkup.setReplyMarkup(menuRus.Bir_SportvaHordiqinline(chatId));
+
+                try {
+                    execute(editMessageMedia);
+                    execute(editMessageCaption);
+                    execute(editMessageReplyMarkup);
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
 
         }

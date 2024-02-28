@@ -223,18 +223,7 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmfa23hs99ouqbfq6kq0/original.jpg"));
-        sendPhoto.setCaption("Smartfon Xiaomi Redmi 13C 4GB+128GB, 8GB+256GB, 6.74 90Hz, 5000 mA/soat, Dual SIM, 4G LTE \n" +
-                "Mahsulot haqida qisqacha:\n" +
-                "● Ekran: Corning® Gorilla® Glass\n" +
-                "● Batareya: 5000mAh (turi) 18W PD zaryadlashni qo'llab-quvvatlaydi\n" +
-                "● Xavfsizlik: TouchID\n" +
-                "● Кino kamerasi / HDR rejimi / tungi rejim / portret rejimi / 50 Mp rejimi\n" +
-                "● Asosiy kamera 50 Mp 5p ob'ektiv, f/1.8\n" +
-                "● 8 megapikselli old kamera f/2.0\n" +
-                "● Protsessor: MediaTek Helio G85\n" +
-                "● Diagonali displey: 6,74 dyum 1600x720, 260 ppi\n" +
-                "● Yangilanish tezligi: 90 Hz gacha\n" +
-                "● Yorqinligi: 450 nit (turi), 600 nit\n\n ");
+        sendPhoto.setCaption("");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -280,18 +269,7 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmfa23hs99ouqbfq6kq0/original.jpg"));
-        sendPhoto.setCaption("Smartfon Xiaomi Redmi 13C 4GB+128GB, 8GB+256GB, 6.74 90Hz, 5000 mA/soat, Dual SIM, 4G LTE \n" +
-                "Mahsulot haqida qisqacha:\n" +
-                "● Ekran: Corning® Gorilla® Glass\n" +
-                "● Batareya: 5000mAh (turi) 18W PD zaryadlashni qo'llab-quvvatlaydi\n" +
-                "● Xavfsizlik: TouchID\n" +
-                "● Кino kamerasi / HDR rejimi / tungi rejim / portret rejimi / 50 Mp rejimi\n" +
-                "● Asosiy kamera 50 Mp 5p ob'ektiv, f/1.8\n" +
-                "● 8 megapikselli old kamera f/2.0\n" +
-                "● Protsessor: MediaTek Helio G85\n" +
-                "● Diagonali displey: 6,74 dyum 1600x720, 260 ppi\n" +
-                "● Yangilanish tezligi: 90 Hz gacha\n" +
-                "● Yorqinligi: 450 nit (turi), 600 nit\n\n ");
+        sendPhoto.setCaption("");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
