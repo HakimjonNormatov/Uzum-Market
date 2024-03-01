@@ -223,7 +223,17 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmfa23hs99ouqbfq6kq0/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Смартфон Xiaomi Redmi 13C, 4GB+128GB I 8GB+256GB, 6.74\" 90Hz, 5000mAh, Dual SIM, 4G LTE\n\n" +
+                "Кратко о товаре:\n" +
+                "● Процессор: MediaTek Helio G85\n" +
+                "● Частота обновления: до 90 Гц\n" +
+                "● Яркость: 450 нит (тип), 600 нит\n" +
+                "● Экран: Corning® Gorilla® Glass\n" +
+                "● Дисплей с диагональю: 6,74 дюйма 1600x720, 260 ppi\n" +
+                "● Основная камера 50 Мпс объективом 5P, f/1.8\n" +
+                "● 8-мегапиксельная фронтальная камера f /2.0\n" +
+                "Цена:\n" +
+                "штука 1 589 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -269,7 +279,17 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmfa23hs99ouqbfq6kq0/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Смартфон Xiaomi Redmi 13C, 4GB+128GB I 8GB+256GB, 6.74\" 90Hz, 5000mAh, Dual SIM, 4G LTE\n\n" +
+                "Кратко о товаре:\n" +
+                "● Процессор: MediaTek Helio G85\n" +
+                "● Частота обновления: до 90 Гц\n" +
+                "● Яркость: 450 нит (тип), 600 нит\n" +
+                "● Экран: Corning® Gorilla® Glass\n" +
+                "● Дисплей с диагональю: 6,74 дюйма 1600x720, 260 ppi\n" +
+                "● Основная камера 50 Мпс объективом 5P, f/1.8\n" +
+                "● 8-мегапиксельная фронтальная камера f /2.0\n" +
+                "Цена:\n" +
+                "штука 1 589 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -560,7 +580,14 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clomahfn7c6gg9ie3om0/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Умный робот пылесос Xiaomi Robot Vacuum E12 Global, с функцией сухой и влажной уборки\n\n" +
+                "Кратко о товаре:\n" +
+                "● Официальная гарантия от производителя: 1 год. \n" +
+                "● Откройте мир эффективной и умной уборки с новым Xiaomi Robot Vacuum E12 EU. Это не просто умный робот-пылесос, а настоящий чемпион в мире чистоты. \n" +
+                "● Подключившись к приложению Mi Home, вы получаете полный контроль над уборкой. Управляйте умным роботом прямо с вашего смартфона, выбирайте между тремя режимами уборки и наслаждайтесь безупречной чистотой без лишних усилий. \n" +
+                "● Xiaomi Robot Vacuum E12 EU оснащен мощным вытяжным мотором 4000 Па, обеспечивающим эффективную уборку всего помещения. Забудьте о пыли и грязи – этот робот-пылесос справится с любыми загрязнениями\n" +
+                "Цена:\n" +
+                "2 559 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -606,7 +633,14 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clomahfn7c6gg9ie3om0/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Умный робот пылесос Xiaomi Robot Vacuum E12 Global, с функцией сухой и влажной уборки\n\n" +
+                "Кратко о товаре:\n" +
+                "● Официальная гарантия от производителя: 1 год. \n" +
+                "● Откройте мир эффективной и умной уборки с новым Xiaomi Robot Vacuum E12 EU. Это не просто умный робот-пылесос, а настоящий чемпион в мире чистоты. \n" +
+                "● Подключившись к приложению Mi Home, вы получаете полный контроль над уборкой. Управляйте умным роботом прямо с вашего смартфона, выбирайте между тремя режимами уборки и наслаждайтесь безупречной чистотой без лишних усилий. \n" +
+                "● Xiaomi Robot Vacuum E12 EU оснащен мощным вытяжным мотором 4000 Па, обеспечивающим эффективную уборку всего помещения. Забудьте о пыли и грязи – этот робот-пылесос справится с любыми загрязнениями\n" +
+                "Цена:\n" +
+                "2 559 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -890,7 +924,20 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cfjidl7hgiopn8lc3bvg/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Мужской спортивный комплект, штаны с худи, черный\n\n" +
+                "Качественный мужской костюм с штанами из двунитка. Отличный вариант на Весенний порою. Худи с капюшоном с фиксирующим шнурком, большой карман-кенгуру, низ на манжете. Крой свободный.\n" +
+                "\n" +
+                "\n" +
+                "\n" +
+                "Костюм, двунитка\n" +
+                "\n" +
+                "Костюм не колотится , ткань премиум качества\n" +
+                "\n" +
+                "Материал : 90% хлопок 10% полестер\n" +
+                "\n" +
+                "Размеры : S M L XL ХХL XXXL (полномерные)\n" +
+                "Цена:\n" +
+                "210 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -936,7 +983,20 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cfjidl7hgiopn8lc3bvg/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Мужской спортивный комплект, штаны с худи, черный\n\n" +
+                "Качественный мужской костюм с штанами из двунитка. Отличный вариант на Весенний порою. Худи с капюшоном с фиксирующим шнурком, большой карман-кенгуру, низ на манжете. Крой свободный.\n" +
+                "\n" +
+                "\n" +
+                "\n" +
+                "Костюм, двунитка\n" +
+                "\n" +
+                "Костюм не колотится , ткань премиум качества\n" +
+                "\n" +
+                "Материал : 90% хлопок 10% полестер\n" +
+                "\n" +
+                "Размеры : S M L XL ХХL XXXL (полномерные)\n" +
+                "Цена:\n" +
+                "210 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1220,7 +1280,16 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjj1qrkjvf2ofbh7llcg/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Сумка мужская через плечо, барсетка\n\n" +
+                "Кратко о товаре:\n" +
+                "● Регулируемый ремень\n" +
+                "● Прямоугольная форма; базовая модель\n" +
+                "● Вид застежки - молния; кнопки\n" +
+                "● Модель сумки: через плечо, на плечо, на пояс\n" +
+                "● В случае если Вас что-то не устроило, пожалуйста, не торопитесь писать негативный отзыв. Напишите нам в личные сообщения, и мы обязательно решим Вашу проблему!\n" +
+                "● Сумка повседневная, на любой случай\n" +
+                "Цена:\n" +
+                "69 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1266,7 +1335,16 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cjj1qrkjvf2ofbh7llcg/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Сумка мужская через плечо, барсетка\n\n" +
+                "Кратко о товаре:\n" +
+                "● Регулируемый ремень\n" +
+                "● Прямоугольная форма; базовая модель\n" +
+                "● Вид застежки - молния; кнопки\n" +
+                "● Модель сумки: через плечо, на плечо, на пояс\n" +
+                "● В случае если Вас что-то не устроило, пожалуйста, не торопитесь писать негативный отзыв. Напишите нам в личные сообщения, и мы обязательно решим Вашу проблему!\n" +
+                "● Сумка повседневная, на любой случай\n" +
+                "Цена:\n" +
+                "69 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1550,7 +1628,16 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Туалетная вода для мужчин Antonio Banderas Blue Seduction, 100 мл\n\n" +
+                "Кратко о товаре:\n" +
+                "● Верхние ноты: Дыня, Бергамот, Мята и Черная смородина\n" +
+                "● Базовые ноты: Древесные ноты и Амбра\n" +
+                "● Производство: Испания\n" +
+                "● Тип: Туалетная вода\n" +
+                "● Объем: 100m Высокое качество сохраняется до 12 часов\n" +
+                "● Туалетная вода для мужчин Antonio Banderas Blue Seduction, 100 мл\n" +
+                "Цена:\n" +
+                "339 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1596,7 +1683,16 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Туалетная вода для мужчин Antonio Banderas Blue Seduction, 100 мл\n\n" +
+                "Кратко о товаре:\n" +
+                "● Верхние ноты: Дыня, Бергамот, Мята и Черная смородина\n" +
+                "● Базовые ноты: Древесные ноты и Амбра\n" +
+                "● Производство: Испания\n" +
+                "● Тип: Туалетная вода\n" +
+                "● Объем: 100m Высокое качество сохраняется до 12 часов\n" +
+                "● Туалетная вода для мужчин Antonio Banderas Blue Seduction, 100 мл\n" +
+                "Цена:\n" +
+                "339 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1733,7 +1829,7 @@ public class MenuRus {
     public InlineKeyboardMarkup Tort_GozallikvaParvarish(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cj2j9d56sfhndlbrcsp0/original.jpg"));
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cla8eg7n7c6qm23j0erg/original.jpg"));
         sendPhoto.setCaption("");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();

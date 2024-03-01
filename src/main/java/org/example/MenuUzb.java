@@ -228,7 +228,9 @@ public class MenuUzb {
                 "● Protsessor: MediaTek Helio G85\n" +
                 "● Diagonali displey: 6,74 dyum 1600x720, 260 ppi\n" +
                 "● Yangilanish tezligi: 90 Hz gacha\n" +
-                "● Yorqinligi: 450 nit (turi), 600 nit\n\n ");
+                "● Yorqinligi: 450 nit (turi), 600 nit\n" +
+                "Narx:\n" +
+                "donasi 1 589 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -285,7 +287,9 @@ public class MenuUzb {
                 "● Protsessor: MediaTek Helio G85\n" +
                 "● Diagonali displey: 6,74 dyum 1600x720, 260 ppi\n" +
                 "● Yangilanish tezligi: 90 Hz gacha\n" +
-                "● Yorqinligi: 450 nit (turi), 600 nit\n\n ");
+                "● Yorqinligi: 450 nit (turi), 600 nit\n" +
+                "Narx: \n" +
+                "donasi 1 589 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -343,7 +347,9 @@ public class MenuUzb {
                 "● Protsessor: MediaTek Helio G85\n" +
                 "● Diagonali displey: 6,74 dyum 1600x720, 260 ppi\n" +
                 "● Yangilanish tezligi: 90 Hz gacha\n" +
-                "● Yorqinligi: 450 nit (turi), 600 nit\n\n ");
+                "● Yorqinligi: 450 nit (turi), 600 nit\n" +
+                "Narx:\n" +
+                "donasi 1 589 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -403,7 +409,9 @@ public class MenuUzb {
                 "● Protsessor: MediaTek Helio G85\n" +
                 "● Diagonali displey: 6,74 dyum 1600x720, 260 ppi\n" +
                 "● Yangilanish tezligi: 90 Hz gacha\n" +
-                "● Yorqinligi: 450 nit (turi), 600 nit\n\n ");
+                "● Yorqinligi: 450 nit (turi), 600 nit\n" +
+                "Narx:\n" +
+                "donasi 1 589 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -454,7 +462,9 @@ public class MenuUzb {
                 "● Matritsa turi - VA paneli\n" +
                 "● Ekran o'lchamlari - Full HD (1920 * 1080)\n" +
                 "● Smart TV - Android\n" +
-                "● Kafolat - 3 yil");
+                "● Kafolat - 3 yil\n" +
+                "Narx\n" +
+                "donasi 2 589 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -506,7 +516,9 @@ public class MenuUzb {
                 "● Matritsa turi - VA paneli\n" +
                 "● Ekran o'lchamlari - Full HD (1920 * 1080)\n" +
                 "● Smart TV - Android\n" +
-                "● Kafolat - 3 yil");
+                "● Kafolat - 3 yil\n" +
+                "Narx\n" +
+                "donasi 2 589 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -560,7 +572,9 @@ public class MenuUzb {
                 "● Matritsa turi - VA paneli\n" +
                 "● Ekran o'lchamlari - Full HD (1920 * 1080)\n" +
                 "● Smart TV - Android\n" +
-                "● Kafolat - 3 yil");
+                "● Kafolat - 3 yil\n" +
+                "Narx:\n" +
+                "donasi 2 589 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -616,7 +630,9 @@ public class MenuUzb {
                 "va eMMC 5.1 128/256GB ichki xotirani kiritadi, bu ma’lumotlarning\n" +
                 "katta miqdorini saqlashga va ularga ishlov berishning yuqori\n" +
                 "tezligini ta’minlash imkonini beradi\n" +
-                "● PUBG Mobile o‘yinida, siz 60 FPSgacha olasiz.");
+                "● PUBG Mobile o‘yinida, siz 60 FPSgacha olasiz\n" +
+                "Narx:\n" +
+                "donasi 2 990 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -673,7 +689,9 @@ public class MenuUzb {
                 "va eMMC 5.1 128/256GB ichki xotirani kiritadi, bu ma’lumotlarning\n" +
                 "katta miqdorini saqlashga va ularga ishlov berishning yuqori\n" +
                 "tezligini ta’minlash imkonini beradi\n" +
-                "● PUBG Mobile o‘yinida, siz 60 FPSgacha olasiz.");
+                "● PUBG Mobile o‘yinida, siz 60 FPSgacha olasiz\n" +
+                "Narx:\n" +
+                "donasi 2 990 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -732,7 +750,9 @@ public class MenuUzb {
                 "va eMMC 5.1 128/256GB ichki xotirani kiritadi, bu ma’lumotlarning\n" +
                 "katta miqdorini saqlashga va ularga ishlov berishning yuqori\n" +
                 "tezligini ta’minlash imkonini beradi\n" +
-                "● PUBG Mobile o‘yinida, siz 60 FPSgacha olasiz.");
+                "● PUBG Mobile o‘yinida, siz 60 FPSgacha olasiz\n" +
+                "Narx:\n" +
+                "donasi 2 990 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -788,7 +808,9 @@ public class MenuUzb {
                 "● Optik haydovchi turi: Blu-ray/DVD\n" +
                 "● Maksimal ruxsat: 8K Ultra HD qo'llab-quvvatlash\n" +
                 "● Yaponiya 3-chi tahrir\n" +
-                "● Protsessor turi: 8 yadroli AMD Ryzen Zen 2");
+                "● Protsessor turi: 8 yadroli AMD Ryzen Zen 2\n" +
+                "Narx:\n" +
+                "donasi 6 789 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -845,7 +867,9 @@ public class MenuUzb {
                 "● Optik haydovchi turi: Blu-ray/DVD\n" +
                 "● Maksimal ruxsat: 8K Ultra HD qo'llab-quvvatlash\n" +
                 "● Yaponiya 3-chi tahrir\n" +
-                "● Protsessor turi: 8 yadroli AMD Ryzen Zen 2");
+                "● Protsessor turi: 8 yadroli AMD Ryzen Zen 2\n" +
+                "Narx:\n" +
+                "donasi 6 789 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -904,7 +928,9 @@ public class MenuUzb {
                 "● Optik haydovchi turi: Blu-ray/DVD\n" +
                 "● Maksimal ruxsat: 8K Ultra HD qo'llab-quvvatlash\n" +
                 "● Yaponiya 3-chi tahrir\n" +
-                "● Protsessor turi: 8 yadroli AMD Ryzen Zen 2");
+                "● Protsessor turi: 8 yadroli AMD Ryzen Zen 2\n" +
+                "Narx:\n" +
+                "donasi 6 789 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -958,7 +984,9 @@ public class MenuUzb {
                 "● Bluetooth: Ha\n" +
                 "● Qo'shimcha funktsiyalar: Chiroq, FM radio\n" +
                 "● Ulagich: Micro USB\n" +
-                "● Batareya: 1050 mA/soat");
+                "● Batareya: 1050 mA/soat\n" +
+                "Narx:\n" +
+                "donasi 191 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1013,7 +1041,9 @@ public class MenuUzb {
                 "● Bluetooth: Ha\n" +
                 "● Qo'shimcha funktsiyalar: Chiroq, FM radio\n" +
                 "● Ulagich: Micro USB\n" +
-                "● Batareya: 1050 mA/soat");
+                "● Batareya: 1050 mA/soat\n" +
+                "Narx:\n" +
+                "donasi 191 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1070,7 +1100,9 @@ public class MenuUzb {
                 "● Bluetooth: Ha\n" +
                 "● Qo'shimcha funktsiyalar: Chiroq, FM radio\n" +
                 "● Ulagich: Micro USB\n" +
-                "● Batareya: 1050 mA/soat");
+                "● Batareya: 1050 mA/soat\n" +
+                "Narx:\n" +
+                "donasi 191 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1116,7 +1148,9 @@ public class MenuUzb {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clk4get6sfhsc0umir90/original.jpg"));
-        sendPhoto.setCaption("Aqlli qo'l soati Zeblaze Vibe 7 Pro");
+        sendPhoto.setCaption("Aqlli qo'l soati Zeblaze Vibe 7 Pro\n" +
+                "Narx:\n" +
+                "donasi 570 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1163,7 +1197,9 @@ public class MenuUzb {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clk4get6sfhsc0umir90/original.jpg"));
-        sendPhoto.setCaption("Aqlli qo'l soati Zeblaze Vibe 7 Pro");
+        sendPhoto.setCaption("Aqlli qo'l soati Zeblaze Vibe 7 Pro\n" +
+                "Narx:\n" +
+                "donasi 570 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1212,7 +1248,9 @@ public class MenuUzb {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clk4get6sfhsc0umir90/original.jpg"));
-        sendPhoto.setCaption("Aqlli qo'l soati Zeblaze Vibe 7 Pro");
+        sendPhoto.setCaption("Aqlli qo'l soati Zeblaze Vibe 7 Pro\n" +
+                "Narx:\n" +
+                "donasi 570 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1271,7 +1309,9 @@ public class MenuUzb {
                 "● Ishlab chiqaruvchidan rasmiy kafolat: 1 yil. \n" +
                 "● Yangi Xiaomi Robot Vacuum E12 EU bilan samarali va aqlli yig‘ishtirish dunyosini oching. Bu oddiy aqlli robot-changyutgich emas, balki tozalik dunyosidagi haqiqiy chempion.\n" +
                 "● Mi Home ilovasiga ulanib, siz yig‘ishtirish ustidan nazoratni qo‘lga kiritasiz. Aqlli robotni bevosita smartfoningizdan boshqaring, yig‘ishtirishning uchta rejimi orasidan tanlang va ortiqcha zo‘riqishlarsiz bekami-ko‘st tozalikdan bahramand bo‘ling.\n" +
-                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi.");
+                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi\n" +
+                "Narx:\n" +
+                "donasi 2 559 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1322,7 +1362,9 @@ public class MenuUzb {
                 "● Ishlab chiqaruvchidan rasmiy kafolat: 1 yil.\n" +
                 "● Yangi Xiaomi Robot Vacuum E12 EU bilan samarali va aqlli yig‘ishtirish dunyosini oching. Bu oddiy aqlli robot-changyutgich emas, balki tozalik dunyosidagi haqiqiy chempion.\n" +
                 "● Mi Home ilovasiga ulanib, siz yig‘ishtirish ustidan nazoratni qo‘lga kiritasiz. Aqlli robotni bevosita smartfoningizdan boshqaring, yig‘ishtirishning uchta rejimi orasidan tanlang va ortiqcha zo‘riqishlarsiz bekami-ko‘st tozalikdan bahramand bo‘ling.\n" +
-                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi.");
+                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi\n" +
+                "Narx:\n" +
+                "donasi 2 559 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1374,7 +1416,9 @@ public class MenuUzb {
                 "● Ishlab chiqaruvchidan rasmiy kafolat: 1 yil.\n" +
                 "● Yangi Xiaomi Robot Vacuum E12 EU bilan samarali va aqlli yig‘ishtirish dunyosini oching. Bu oddiy aqlli robot-changyutgich emas, balki tozalik dunyosidagi haqiqiy chempion.\n" +
                 "● Mi Home ilovasiga ulanib, siz yig‘ishtirish ustidan nazoratni qo‘lga kiritasiz. Aqlli robotni bevosita smartfoningizdan boshqaring, yig‘ishtirishning uchta rejimi orasidan tanlang va ortiqcha zo‘riqishlarsiz bekami-ko‘st tozalikdan bahramand bo‘ling.\n" +
-                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi.");
+                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi\n" +
+                "Narx:\n" +
+                "donasi 2 559 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1428,7 +1472,9 @@ public class MenuUzb {
                 "● Ishlab chiqaruvchidan rasmiy kafolat: 1 yil.\n" +
                 "● Yangi Xiaomi Robot Vacuum E12 EU bilan samarali va aqlli yig‘ishtirish dunyosini oching. Bu oddiy aqlli robot-changyutgich emas, balki tozalik dunyosidagi haqiqiy chempion.\n" +
                 "● Mi Home ilovasiga ulanib, siz yig‘ishtirish ustidan nazoratni qo‘lga kiritasiz. Aqlli robotni bevosita smartfoningizdan boshqaring, yig‘ishtirishning uchta rejimi orasidan tanlang va ortiqcha zo‘riqishlarsiz bekami-ko‘st tozalikdan bahramand bo‘ling.\n" +
-                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi.");
+                "● Xiaomi Robot Vacuum E12 EU butun xonani samarali yig‘ishtirilishini ta’minlovchi 4000 Pa kuchli so‘ruvchi motor bilan jihozlangan. Chang va ifloslik haqida unuting - ushbu robot-changyutgich har qanday iflosliklarni uddasidan chiqadi\n" +
+                "Narx:\n" +
+                "donasi 2 559 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1481,7 +1527,9 @@ public class MenuUzb {
                 "● Koson turi: Oq\n" +
                 "● Mikroto'lqinli pechning quvvati: 700 Vt\n" +
                 "● Ishlab chiqaruvchi: Xitoy\n" +
-                "● Kafolat: 3 yil");
+                "● Kafolat: 3 yil\n" +
+                "Narx:\n" +
+                "donasi 1 034 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1535,7 +1583,9 @@ public class MenuUzb {
                 "● Koson turi: Oq\n" +
                 "● Mikroto'lqinli pechning quvvati: 700 Vt\n" +
                 "● Ishlab chiqaruvchi: Xitoy\n" +
-                "● Kafolat: 3 yil");
+                "● Kafolat: 3 yil\n" +
+                "Narx:\n" +
+                "donasi 1 034 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1591,7 +1641,9 @@ public class MenuUzb {
                 "● Koson turi: Oq\n" +
                 "● Mikroto'lqinli pechning quvvati: 700 Vt\n" +
                 "● Ishlab chiqaruvchi: Xitoy\n" +
-                "● Kafolat: 3 yil");
+                "● Kafolat: 3 yil\n" +
+                "Narx:\n" +
+                "donasi 1 034 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1643,7 +1695,9 @@ public class MenuUzb {
                 "● Invertor motor (past elektr kuchlanishda ham ishlashni davom etadi)\n" +
                 "● R32 freon. Kam shovqin darajasi (19dB gacha)\n" +
                 "● LED displey va kutish rejimi (minimal shovqin darajasini va qulay harorat o'zgarishini ta'minlaydi)\n" +
-                "● Xavfsiz dizayn. Kondensat va elektr o'rtasida aloqa yo'q.");
+                "● Xavfsiz dizayn. Kondensat va elektr o'rtasida aloqa yo'q\n" +
+                "Narx:\n" +
+                "donasi 4 849 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1696,7 +1750,9 @@ public class MenuUzb {
                 "● Invertor motor (past elektr kuchlanishda ham ishlashni davom etadi)\n" +
                 "● R32 freon. Kam shovqin darajasi (19dB gacha)\n" +
                 "● LED displey va kutish rejimi (minimal shovqin darajasini va qulay harorat o'zgarishini ta'minlaydi)\n" +
-                "● Xavfsiz dizayn. Kondensat va elektr o'rtasida aloqa yo'q.");
+                "● Xavfsiz dizayn. Kondensat va elektr o'rtasida aloqa yo'q\n" +
+                "Narx:\n" +
+                "donasi 4 849 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1751,7 +1807,9 @@ public class MenuUzb {
                 "● Invertor motor (past elektr kuchlanishda ham ishlashni davom etadi)\n" +
                 "● R32 freon. Kam shovqin darajasi (19dB gacha)\n" +
                 "● LED displey va kutish rejimi (minimal shovqin darajasini va qulay harorat o'zgarishini ta'minlaydi)\n" +
-                "● Xavfsiz dizayn. Kondensat va elektr o'rtasida aloqa yo'q.");
+                "● Xavfsiz dizayn. Kondensat va elektr o'rtasida aloqa yo'q\n" +
+                "Narx:\n" +
+                "donasi 4 849 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1807,7 +1865,9 @@ public class MenuUzb {
                 "● Keramika tagligi\n" +
                 "● Balandligi 250 (mm) 25 sm.\n" +
                 "● Bug'li dazmol\n" +
-                "● Made in P.R.C");
+                "● Made in P.R.C\n" +
+                "Narx:\n" +
+                "donasi 200 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1864,7 +1924,9 @@ public class MenuUzb {
                 "● Keramika tagligi\n" +
                 "● Balandligi 250 (mm) 25 sm.\n" +
                 "● Bug'li dazmol\n" +
-                "● Made in P.R.C");
+                "● Made in P.R.C\n" +
+                "Narx:\n" +
+                "donasi 200 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1923,7 +1985,9 @@ public class MenuUzb {
                 "● Keramika tagligi\n" +
                 "● Balandligi 250 (mm) 25 sm.\n" +
                 "● Bug'li dazmol\n" +
-                "● Made in P.R.C");
+                "● Made in P.R.C\n" +
+                "Narx:\n" +
+                "donasi 200 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -1980,7 +2044,9 @@ public class MenuUzb {
                 "\n" +
                 " ● Uzluksiz ish vaqti: cheklovlarsiz\n" +
                 "\n" +
-                " ● 2 tezlik");
+                " ● 2 tezlik\n" +
+                "Narx:\n" +
+                "donasi 139 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2038,7 +2104,9 @@ public class MenuUzb {
                 "\n" +
                 " ● Uzluksiz ish vaqti: cheklovlarsiz\n" +
                 "\n" +
-                " ● 2 tezlik");
+                " ● 2 tezlik\n" +
+                "Narx:\n" +
+                "donasi 139 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2098,7 +2166,9 @@ public class MenuUzb {
                 "\n" +
                 " ● Uzluksiz ish vaqti: cheklovlarsiz\n" +
                 "\n" +
-                " ● 2 tezlik");
+                " ● 2 tezlik\n" +
+                "Narx:\n" +
+                "donasi 139 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2150,7 +2220,9 @@ public class MenuUzb {
                 "● Kompakt - qulay dizaynga ega, uni oson olib borish va har qanday sharoitda foydalanish oson\n" +
                 "● Ishonchli va qulay qurilma\n" +
                 "● Rang: oq\n" +
-                "● Kuchi - 2000 Vt");
+                "● Kuchi - 2000 Vt\n" +
+                "Narx:\n" +
+                "donasi 450 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2203,7 +2275,9 @@ public class MenuUzb {
                 "● Kompakt - qulay dizaynga ega, uni oson olib borish va har qanday sharoitda foydalanish oson\n" +
                 "● Ishonchli va qulay qurilma\n" +
                 "● Rang: oq\n" +
-                "● Kuchi - 2000 Vt");
+                "● Kuchi - 2000 Vt\n" +
+                "Narx:\n" +
+                "donasi 450 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2258,7 +2332,9 @@ public class MenuUzb {
                 "● Kompakt - qulay dizaynga ega, uni oson olib borish va har qanday sharoitda foydalanish oson\n" +
                 "● Ishonchli va qulay qurilma\n" +
                 "● Rang: oq\n" +
-                "● Kuchi - 2000 Vt");
+                "● Kuchi - 2000 Vt\n" +
+                "Narx:\n" +
+                "donasi 450 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2323,7 +2399,9 @@ public class MenuUzb {
                 "\n" +
                 "Material: 90% paxta 10% polyester\n" +
                 "\n" +
-                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)");
+                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)\n" +
+                "Narxi:\n" +
+                "210 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2380,7 +2458,9 @@ public class MenuUzb {
                 "\n" +
                 "Material: 90% paxta 10% polyester\n" +
                 "\n" +
-                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)");
+                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)\n" +
+                "Narx:\n" +
+                "210 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2438,7 +2518,9 @@ public class MenuUzb {
                 "\n" +
                 "Material: 90% paxta 10% polyester\n" +
                 "\n" +
-                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)");
+                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)\n" +
+                "Narxi:\n" +
+                "210 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2498,7 +2580,9 @@ public class MenuUzb {
                 "\n" +
                 "Material: 90% paxta 10% polyester\n" +
                 "\n" +
-                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)");
+                "O'lchamlari: S M L XL XXL XXXL (to'liq o'lcham)\n" +
+                "Narxi:\n" +
+                "210 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2603,7 +2687,9 @@ public class MenuUzb {
                 "● Keng turadigon fason\n" +
                 "● Har qanday poyabzal bilan kiyinish mumkin\n" +
                 "● Bitta o'lcham 46-52 gacha mos keladi\n" +
-                "● Fasl: kuz qish bohor");
+                "● Fasl: kuz qish bohor\n" +
+                "Narx:\n" +
+                "donasi 188 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2658,7 +2744,11 @@ public class MenuUzb {
                 "● Keng turadigon fason\n" +
                 "● Har qanday poyabzal bilan kiyinish mumkin\n" +
                 "● Bitta o'lcham 46-52 gacha mos keladi\n" +
-                "● Fasl: kuz qish bohor");
+                "● Fasl: kuz qish bohor\n" +
+                "Narx:\n" +
+                "donasi 188 000 so`m\n" +
+                "Narx:\n" +
+                "donasi 188 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2706,8 +2796,10 @@ public class MenuUzb {
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmjr8u1s99ouqbfqvh20/original.jpg"));
         sendPhoto.setCaption("Bolalar kombinezoni, chaqaloqlar uchun, quloqchalar bilan quyoncha, paxtali\n\n" +
                 "Mahsulot haqida qisqacha:\n" +
-                "Balandligi 52 dan 80 gacha bo'lgan o'lchamlar mavjud, ular chaqaloqlar va bir yarim yoshgacha bo'lgan bolalar uchun juda mos keladi.\n" +
-                "Yumshoq va nozik yuqori sifatli trikotaj mato. Kombinezon 95% paxta va 5% elastandan iborat. Elastanning ozgina foizi kombinezonga shakl beradi, burishmaydi, cho'zilmaydi");
+                "● Balandligi 52 dan 80 gacha bo'lgan o'lchamlar mavjud, ular chaqaloqlar va bir yarim yoshgacha bo'lgan bolalar uchun juda mos keladi.\n" +
+                "● Yumshoq va nozik yuqori sifatli trikotaj mato. Kombinezon 95% paxta va 5% elastandan iborat. Elastanning ozgina foizi kombinezonga shakl beradi, burishmaydi, cho'zilmaydi\n" +
+                "Narx:\n" +
+                "donasi 129 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2756,8 +2848,10 @@ public class MenuUzb {
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmjr8u1s99ouqbfqvh20/original.jpg"));
         sendPhoto.setCaption("Bolalar kombinezoni, chaqaloqlar uchun, quloqchalar bilan quyoncha, paxtali\n\n" +
                 "Mahsulot haqida qisqacha:\n" +
-                "Balandligi 52 dan 80 gacha bo'lgan o'lchamlar mavjud, ular chaqaloqlar va bir yarim yoshgacha bo'lgan bolalar uchun juda mos keladi.\n" +
-                "Yumshoq va nozik yuqori sifatli trikotaj mato. Kombinezon 95% paxta va 5% elastandan iborat. Elastanning ozgina foizi kombinezonga shakl beradi, burishmaydi, cho'zilmaydi");
+                "● Balandligi 52 dan 80 gacha bo'lgan o'lchamlar mavjud, ular chaqaloqlar va bir yarim yoshgacha bo'lgan bolalar uchun juda mos keladi.\n" +
+                "● Yumshoq va nozik yuqori sifatli trikotaj mato. Kombinezon 95% paxta va 5% elastandan iborat. Elastanning ozgina foizi kombinezonga shakl beradi, burishmaydi, cho'zilmaydi\n" +
+                "Narx:\n" +
+                "donasi 129 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2808,8 +2902,10 @@ public class MenuUzb {
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmjr8u1s99ouqbfqvh20/original.jpg"));
         sendPhoto.setCaption("Bolalar kombinezoni, chaqaloqlar uchun, quloqchalar bilan quyoncha, paxtali\n\n" +
                 "Mahsulot haqida qisqacha:\n" +
-                "Balandligi 52 dan 80 gacha bo'lgan o'lchamlar mavjud, ular chaqaloqlar va bir yarim yoshgacha bo'lgan bolalar uchun juda mos keladi.\n" +
-                "Yumshoq va nozik yuqori sifatli trikotaj mato. Kombinezon 95% paxta va 5% elastandan iborat. Elastanning ozgina foizi kombinezonga shakl beradi, burishmaydi, cho'zilmaydi");
+                "● Balandligi 52 dan 80 gacha bo'lgan o'lchamlar mavjud, ular chaqaloqlar va bir yarim yoshgacha bo'lgan bolalar uchun juda mos keladi.\n" +
+                "● Yumshoq va nozik yuqori sifatli trikotaj mato. Kombinezon 95% paxta va 5% elastandan iborat. Elastanning ozgina foizi kombinezonga shakl beradi, burishmaydi, cho'zilmaydi\n" +
+                "Narx:\n" +
+                "donasi 129 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2862,7 +2958,9 @@ public class MenuUzb {
                 "● Asosiy xususiyatlar Yengil va sezgir ULTRA GO® tamponlama\n" +
                 "● Model har qanday lazzat uchun 3 ta rangda taqdim etilgan\n" +
                 "● Uzoq yurish, sport va kundalik hayot uchun juda mos keladi\n" +
-                "● SKECHERS assortimenti haqida ko'proq bilish uchun do'kon sahifasiga o'ting");
+                "● SKECHERS assortimenti haqida ko'proq bilish uchun do'kon sahifasiga o'ting\n" +
+                "Narx:\n" +
+                "711 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2916,7 +3014,9 @@ public class MenuUzb {
                 "● Asosiy xususiyatlar Yengil va sezgir ULTRA GO® tamponlama\n" +
                 "● Model har qanday lazzat uchun 3 ta rangda taqdim etilgan\n" +
                 "● Uzoq yurish, sport va kundalik hayot uchun juda mos keladi\n" +
-                "● SKECHERS assortimenti haqida ko'proq bilish uchun do'kon sahifasiga o'ting");
+                "● SKECHERS assortimenti haqida ko'proq bilish uchun do'kon sahifasiga o'ting\n" +
+                "Narx:\n" +
+                "711 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2972,7 +3072,9 @@ public class MenuUzb {
                 "● Asosiy xususiyatlar Yengil va sezgir ULTRA GO® tamponlama\n" +
                 "● Model har qanday lazzat uchun 3 ta rangda taqdim etilgan\n" +
                 "● Uzoq yurish, sport va kundalik hayot uchun juda mos keladi\n" +
-                "● SKECHERS assortimenti haqida ko'proq bilish uchun do'kon sahifasiga o'ting");
+                "● SKECHERS assortimenti haqida ko'proq bilish uchun do'kon sahifasiga o'ting\n" +
+                "Narx:\n" +
+                "711 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3020,7 +3122,9 @@ public class MenuUzb {
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cg67d37hgiov1qie6pbg/original.jpg"));
         sendPhoto.setCaption("Ayollar krossovkalari \n\n" +
                 "Mahsulot haqida qisqacha:\n" +
-                "● EVA taglik, usti sun'iy teri");
+                "● EVA taglik, usti sun'iy teri\n" +
+                "Narx:\n" +
+                "48 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3069,7 +3173,9 @@ public class MenuUzb {
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cg67d37hgiov1qie6pbg/original.jpg"));
         sendPhoto.setCaption("Ayollar krossovkalari \n\n" +
                 "Mahsulot haqida qisqacha:\n" +
-                "● EVA taglik, usti sun'iy teri");
+                "● EVA taglik, usti sun'iy teri\n" +
+                "Narx:\n" +
+                "48 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3120,7 +3226,9 @@ public class MenuUzb {
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cg67d37hgiov1qie6pbg/original.jpg"));
         sendPhoto.setCaption("Ayollar krossovkalari \n\n" +
                 "Mahsulot haqida qisqacha:\n" +
-                "● EVA taglik, usti sun'iy teri");
+                "● EVA taglik, usti sun'iy teri\n" +
+                "Narx:\n" +
+                "48 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3166,7 +3274,9 @@ public class MenuUzb {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckp9t6sjvf2iqscbnfdg/original.jpg"));
-        sendPhoto.setCaption("Bolalar etikchalari, ustki qismi parusinalik, o'lchamlari 22-35");
+        sendPhoto.setCaption("Bolalar etikchalari, ustki qismi parusinalik, o'lchamlari 22-35\n" +
+                "Narx:\n" +
+                "119 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3213,7 +3323,9 @@ public class MenuUzb {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckp9t6sjvf2iqscbnfdg/original.jpg"));
-        sendPhoto.setCaption("Bolalar etikchalari, ustki qismi parusinalik, o'lchamlari 22-35");
+        sendPhoto.setCaption("Bolalar etikchalari, ustki qismi parusinalik, o'lchamlari 22-35\n" +
+                "Narx:\n" +
+                "119 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3262,7 +3374,9 @@ public class MenuUzb {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/ckp9t6sjvf2iqscbnfdg/original.jpg"));
-        sendPhoto.setCaption("Bolalar etikchalari, ustki qismi parusinalik, o'lchamlari 22-35");
+        sendPhoto.setCaption("Bolalar etikchalari, ustki qismi parusinalik, o'lchamlari 22-35\n" +
+                "Narx:\n" +
+                "119 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3323,7 +3437,9 @@ public class MenuUzb {
                 "● Mahkamlagich turi - chaqmoq; tugmalar\n" +
                 "● Sumka modeli: o'zaro faoliyat\n" +
                 "Agar biror narsa sizga mos kelmasa, salbiy sharh yozishga shoshilmang. Bizga shaxsiy xabar yuboring va biz sizning muammoingizni albatta hal qilamiz!\n" +
-                "● Har kuni, ofisga va ish uchun sumka");
+                "● Har kuni, ofisga va ish uchun sumka\n" +
+                "Narx:\n" +
+                "donasi 69 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3376,7 +3492,9 @@ public class MenuUzb {
                 "● Mahkamlagich turi - chaqmoq; tugmalar\n" +
                 "● Sumka modeli: o'zaro faoliyat\n" +
                 "Agar biror narsa sizga mos kelmasa, salbiy sharh yozishga shoshilmang. Bizga shaxsiy xabar yuboring va biz sizning muammoingizni albatta hal qilamiz!\n" +
-                "● Har kuni, ofisga va ish uchun sumka");
+                "● Har kuni, ofisga va ish uchun sumka\n" +
+                "Narx:\n" +
+                "donasi 69 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3430,7 +3548,9 @@ public class MenuUzb {
                 "● Mahkamlagich turi - chaqmoq; tugmalar\n" +
                 "● Sumka modeli: o'zaro faoliyat\n" +
                 "Agar biror narsa sizga mos kelmasa, salbiy sharh yozishga shoshilmang. Bizga shaxsiy xabar yuboring va biz sizning muammoingizni albatta hal qilamiz!\n" +
-                "● Har kuni, ofisga va ish uchun sumka");
+                "● Har kuni, ofisga va ish uchun sumka\n" +
+                "Narx:\n" +
+                "donasi 69 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3486,7 +3606,9 @@ public class MenuUzb {
                 "● Mahkamlagich turi - chaqmoq; tugmalar\n" +
                 "● Sumka modeli: o'zaro faoliyat\n" +
                 "Agar biror narsa sizga mos kelmasa, salbiy sharh yozishga shoshilmang. Bizga shaxsiy xabar yuboring va biz sizning muammoingizni albatta hal qilamiz!\n" +
-                "● Har kuni, ofisga va ish uchun sumka");
+                "● Har kuni, ofisga va ish uchun sumka\n" +
+                "Narx:\n" +
+                "donasi 69 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3538,7 +3660,9 @@ public class MenuUzb {
                 "● Ishlab chiqarilgan davlat: Xitoy\n" +
                 "● Rangi: bir tomoni qora - ikkinchi tomoni jigarrang\n" +
                 "● Eni: 4 sm\n" +
-                "● Bo`yi: 120 sm");
+                "● Bo`yi: 120 sm\n" +
+                "Narx:\n" +
+                "donasi 22 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3591,7 +3715,9 @@ public class MenuUzb {
                 "● Ishlab chiqarilgan davlat: Xitoy\n" +
                 "● Rangi: bir tomoni qora - ikkinchi tomoni jigarrang\n" +
                 "● Eni: 4 sm\n" +
-                "● Bo`yi: 120 sm");
+                "● Bo`yi: 120 sm\n" +
+                "Narx:\n" +
+                "donasi 22 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3646,7 +3772,9 @@ public class MenuUzb {
                 "● Ishlab chiqarilgan davlat: Xitoy\n" +
                 "● Rangi: bir tomoni qora - ikkinchi tomoni jigarrang\n" +
                 "● Eni: 4 sm\n" +
-                "● Bo`yi: 120 sm");
+                "● Bo`yi: 120 sm\n" +
+                "Narx:\n" +
+                "donasi 22 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3699,7 +3827,9 @@ public class MenuUzb {
                 "● Tanlash uchun 4 ta rang\n" +
                 "● Yilni o'lcham\n" +
                 "● Sozlanishi tasma\n" +
-                "● Ayollar uchun elkama-sumka");
+                "● Ayollar uchun elkama-sumka\n" +
+                "Narx:\n" +
+                "donasi 219 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3753,7 +3883,9 @@ public class MenuUzb {
                 "● Tanlash uchun 4 ta rang\n" +
                 "● Yilni o'lcham\n" +
                 "● Sozlanishi tasma\n" +
-                "● Ayollar uchun elkama-sumka");
+                "● Ayollar uchun elkama-sumka\n" +
+                "Narx:\n" +
+                "donasi 219 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3809,7 +3941,9 @@ public class MenuUzb {
                 "● Tanlash uchun 4 ta rang\n" +
                 "● Yilni o'lcham\n" +
                 "● Sozlanishi tasma\n" +
-                "● Ayollar uchun elkama-sumka");
+                "● Ayollar uchun elkama-sumka\n" +
+                "Narx:\n" +
+                "donasi 219 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3863,7 +3997,9 @@ public class MenuUzb {
                 "● 30 gradusdan past haroratda yuvilsin\n" +
                 "● Qiz va o'g'il bolalar uchun\n" +
                 "● Yengil to'qilgan material\n" +
-                "● Farzandingizga qulaylik va uslub bering");
+                "● Farzandingizga qulaylik va uslub bering\n" +
+                "Narx:\n" +
+                "donasi 49 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3918,7 +4054,9 @@ public class MenuUzb {
                 "● 30 gradusdan past haroratda yuvilsin\n" +
                 "● Qiz va o'g'il bolalar uchun\n" +
                 "● Yengil to'qilgan material\n" +
-                "● Farzandingizga qulaylik va uslub bering");
+                "● Farzandingizga qulaylik va uslub bering\n" +
+                "Narx:\n" +
+                "donasi 49 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3975,7 +4113,9 @@ public class MenuUzb {
                 "● 30 gradusdan past haroratda yuvilsin\n" +
                 "● Qiz va o'g'il bolalar uchun\n" +
                 "● Yengil to'qilgan material\n" +
-                "● Farzandingizga qulaylik va uslub bering");
+                "● Farzandingizga qulaylik va uslub bering\n" +
+                "Narx:\n" +
+                "donasi 49 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4028,7 +4168,9 @@ public class MenuUzb {
                 "● Allergiyaga olib kelmaydi\n" +
                 "● Erkaklar va ayollar uchun\n" +
                 "● Uslub: har kuni uchun\n" +
-                "● Nur bilan quvvatlanadi");
+                "● Nur bilan quvvatlanadi\n" +
+                "Narx:\n" +
+                "25 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4082,7 +4224,9 @@ public class MenuUzb {
                 "● Allergiyaga olib kelmaydi\n" +
                 "● Erkaklar va ayollar uchun\n" +
                 "● Uslub: har kuni uchun\n" +
-                "● Nur bilan quvvatlanadi");
+                "● Nur bilan quvvatlanadi\n" +
+                "Narx:\n" +
+                "25 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4138,7 +4282,9 @@ public class MenuUzb {
                 "● Allergiyaga olib kelmaydi\n" +
                 "● Erkaklar va ayollar uchun\n" +
                 "● Uslub: har kuni uchun\n" +
-                "● Nur bilan quvvatlanadi");
+                "● Nur bilan quvvatlanadi\n" +
+                "Narx:\n" +
+                "25 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4189,7 +4335,9 @@ public class MenuUzb {
                 "● Mahsulotning qadoqlangan og'irligi 40 g\n" +
                 "● Bezatish har qanday zichlik va hajmdagi bukleler uchun javob beradi\n" +
                 "● Boshni siqmaydi\n" +
-                "● Buyum kengligi 1-1.5 sm. Diametri: 15 sm");
+                "● Buyum kengligi 1-1.5 sm. Diametri: 15 sm\n" +
+                "Narx:\n" +
+                "donasi 19 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4241,7 +4389,9 @@ public class MenuUzb {
                 "● Mahsulotning qadoqlangan og'irligi 40 g\n" +
                 "● Bezatish har qanday zichlik va hajmdagi bukleler uchun javob beradi\n" +
                 "● Boshni siqmaydi\n" +
-                "● Buyum kengligi 1-1.5 sm. Diametri: 15 sm");
+                "● Buyum kengligi 1-1.5 sm. Diametri: 15 sm\n" +
+                "Narx:\n" +
+                "donasi 19 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4295,7 +4445,9 @@ public class MenuUzb {
                 "● Mahsulotning qadoqlangan og'irligi 40 g\n" +
                 "● Bezatish har qanday zichlik va hajmdagi bukleler uchun javob beradi\n" +
                 "● Boshni siqmaydi\n" +
-                "● Buyum kengligi 1-1.5 sm. Diametri: 15 sm");
+                "● Buyum kengligi 1-1.5 sm. Diametri: 15 sm\n" +
+                "Narx:\n" +
+                "donasi 19 000 so`m");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4349,9 +4501,9 @@ public class MenuUzb {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg"));
-        sendPhoto.setCaption("Erkaklar uchun xushbo'ylagich suvi Antonio Banderas Blue Seduction, 50 ml\n\n" +
+        sendPhoto.setCaption("Erkaklar uchun xushbo'ylagich suvi Antonio Banderas Blue Seduction, 100 ml\n\n" +
                 "Narx:\n" +
-                "donasi 299 000 so'm");
+                "donasi 339 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4399,7 +4551,7 @@ public class MenuUzb {
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg"));
         sendPhoto.setCaption("Erkaklar uchun xushbo'ylagich suvi Antonio Banderas Blue Seduction, 50 ml\n\n" +
                 "Narx:\n" +
-                "donasi 299 000 so'm");
+                "donasi 339 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4448,7 +4600,7 @@ public class MenuUzb {
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg"));
         sendPhoto.setCaption("Erkaklar uchun xushbo'ylagich suvi Antonio Banderas Blue Seduction, 50 ml\n\n" +
                 "Narx:\n" +
-                "donasi 299 000 so'm");
+                "donasi 339 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4499,7 +4651,7 @@ public class MenuUzb {
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cn1juc1s99ouqbfth33g/original.jpg"));
         sendPhoto.setCaption("Erkaklar uchun xushbo'ylagich suvi Antonio Banderas Blue Seduction, 50 ml\n\n" +
                 "Narx:\n" +
-                "donasi 299 000 so'm");
+                "donasi 339 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4861,11 +5013,13 @@ public class MenuUzb {
     public InlineKeyboardMarkup Tort_GozallikVaParvarish(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cj2j9d56sfhndlbrcsp0/original.jpg"));
-        sendPhoto.setCaption("Mahsulot haqida qisqacha:\n" +
-                "● Miqdori: ishda 9 ta to'sar\n" +
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cla8eg7n7c6qm23j0erg/original.jpg"));
+        sendPhoto.setCaption("Makiyaj uchun kosmetik cho'tkalari to'plami, 9 dona\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Cho'tkalar makiyajning yumshoq va samarali surtilishi uchun yuqori sifatli sintetik qillardan tayyorlangan.\n" +
+                "● To'plam pudra, kontur, rumyana, haylayter, ko'z qovoqlari makiyaji, qoshlar va boshqa turdagi makiyajlar uchun cho'tkalarni o'z ichiga oladi, bu har qanday qiyinlikdagi va har qanday uslubdagi makiyaj uchun to'liq to'plamni kafolatlaydi\n" +
                 "Narx:\n" +
-                "bir pachkasi 83 000 so'm");
+                "bir pachkasi 125 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4911,11 +5065,13 @@ public class MenuUzb {
         Tort_Gozallikvaparvarish++;
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cj2j9d56sfhndlbrcsp0/original.jpg"));
-        sendPhoto.setCaption("Mahsulot haqida qisqacha:\n" +
-                "● Miqdori: ishda 9 ta to'sar\n" +
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cla8eg7n7c6qm23j0erg/original.jpg"));
+        sendPhoto.setCaption("Makiyaj uchun kosmetik cho'tkalari to'plami, 9 dona\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Cho'tkalar makiyajning yumshoq va samarali surtilishi uchun yuqori sifatli sintetik qillardan tayyorlangan.\n" +
+                "● To'plam pudra, kontur, rumyana, haylayter, ko'z qovoqlari makiyaji, qoshlar va boshqa turdagi makiyajlar uchun cho'tkalarni o'z ichiga oladi, bu har qanday qiyinlikdagi va har qanday uslubdagi makiyaj uchun to'liq to'plamni kafolatlaydi\n" +
                 "Narx:\n" +
-                "bir pachkasi 83 000 so'm");
+                "bir pachkasi 125 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -4963,11 +5119,13 @@ public class MenuUzb {
         }
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cj2j9d56sfhndlbrcsp0/original.jpg"));
-        sendPhoto.setCaption("Mahsulot haqida qisqacha:\n" +
-                "● Miqdori: ishda 9 ta to'sar\n" +
+        sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cla8eg7n7c6qm23j0erg/original.jpg"));
+        sendPhoto.setCaption("Makiyaj uchun kosmetik cho'tkalari to'plami, 9 dona\n\n" +
+                "Mahsulot haqida qisqacha:\n" +
+                "● Cho'tkalar makiyajning yumshoq va samarali surtilishi uchun yuqori sifatli sintetik qillardan tayyorlangan.\n" +
+                "● To'plam pudra, kontur, rumyana, haylayter, ko'z qovoqlari makiyaji, qoshlar va boshqa turdagi makiyajlar uchun cho'tkalarni o'z ichiga oladi, bu har qanday qiyinlikdagi va har qanday uslubdagi makiyaj uchun to'liq to'plamni kafolatlaydi\n" +
                 "Narx:\n" +
-                "bir pachkasi 83 000 so'm");
+                "bir pachkasi 125 000 so'm");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
