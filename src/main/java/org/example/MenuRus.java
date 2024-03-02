@@ -1976,7 +1976,22 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cdota3ivtie1lhbdvie0/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Автоматический тонометр на предплечье Protech YK-BPA4, 22-32 см\n\n" +
+                "Обхват манжет: 22 - 32 см\n" +
+                "\n" +
+                "Дисплей: 72 х 43.5 мм\n" +
+                "\n" +
+                "Память: 99 значений\n" +
+                "\n" +
+                "Питание: 4 батареи ААА / электросеть\n" +
+                "\n" +
+                "Размер корпуса: 140 х 100 х 40 мм\n" +
+                "\n" +
+                "Вес: 282 г\n" +
+                "\n" +
+                "Комплект: корпус, манжеты, шланг, адаптер питания, чехол, инструкция\n" +
+                "Цена:\n" +
+                "415 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2022,7 +2037,22 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cdota3ivtie1lhbdvie0/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Автоматический тонометр на предплечье Protech YK-BPA4, 22-32 см\n\n" +
+                "Обхват манжет: 22 - 32 см\n" +
+                "\n" +
+                "Дисплей: 72 х 43.5 мм\n" +
+                "\n" +
+                "Память: 99 значений\n" +
+                "\n" +
+                "Питание: 4 батареи ААА / электросеть\n" +
+                "\n" +
+                "Размер корпуса: 140 х 100 х 40 мм\n" +
+                "\n" +
+                "Вес: 282 г\n" +
+                "\n" +
+                "Комплект: корпус, манжеты, шланг, адаптер питания, чехол, инструкция\n" +
+                "Цена:\n" +
+                "415 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2306,7 +2336,15 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clm6uel6sfhsc0un3b0g/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Пила цепная электрическая Biyoti BYT-712\n\n" +
+                "Кратко о товаре\n" +
+                "● Мощность двигателя - 1800 Вт\n" +
+                "● Число оборотов - 4800 об/мин\n" +
+                "● Объем масляного бака - 0.1 литр\n" +
+                "● Длина шины - 405 мм\n" +
+                "● Страна производитель - Китай\n" +
+                "Цена:\n" +
+                "545 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2352,7 +2390,15 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/clm6uel6sfhsc0un3b0g/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Пила цепная электрическая Biyoti BYT-712\n\n" +
+                "Кратко о товаре\n" +
+                "● Мощность двигателя - 1800 Вт\n" +
+                "● Число оборотов - 4800 об/мин\n" +
+                "● Объем масляного бака - 0.1 литр\n" +
+                "● Длина шины - 405 мм\n" +
+                "● Страна производитель - Китай\n" +
+                "Цена:\n" +
+                "545 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2636,7 +2682,20 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cgeqrh7hgiov1qifdtqg/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Свеча зажигания GM Tracker 1.8 №25197812\n\n" +
+                "Тип - свеча зажигания.\n" +
+                "\n" +
+                "Производитель \"General Motors\".\n" +
+                "\n" +
+                "Парт номер -25197812 \n" +
+                "\n" +
+                "Модель автомобиля - Tracker 1.8 \n" +
+                "\n" +
+                "Количество - 1 шт.\n" +
+                "\n" +
+                "Применимость детали к конкретному автомобилю необходимо проверять по VIN-коду в оригинальном каталоге запчастей\n" +
+                "Цена:\n" +
+                "172 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2682,7 +2741,20 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cgeqrh7hgiov1qifdtqg/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Свеча зажигания GM Tracker 1.8 №25197812\n\n" +
+                "Тип - свеча зажигания.\n" +
+                "\n" +
+                "Производитель \"General Motors\".\n" +
+                "\n" +
+                "Парт номер -25197812 \n" +
+                "\n" +
+                "Модель автомобиля - Tracker 1.8 \n" +
+                "\n" +
+                "Количество - 1 шт.\n" +
+                "\n" +
+                "Применимость детали к конкретному автомобилю необходимо проверять по VIN-коду в оригинальном каталоге запчастей\n" +
+                "Цена:\n" +
+                "172 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -2966,7 +3038,16 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmho1j1s99ouqbfqjjqg/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Манеж для детей, коврик с детскими игрушками, музыкальное пианино для малышей\n\n" +
+                "Кратко о товаре:\n" +
+                "● Внимание! Этот продукт подробно описан в описании выше\n" +
+                "● Помогает детям развивать навыки, необходимые для их общего роста и развития, способствует укреплению мышц, координации\n" +
+                "● Благодаря складной конструкции его удобно брать с собой в поездки, а также можно брать с собой в поездки и развлекательные места\n" +
+                "● Очень полезный для развития ребенка яркий и красивый ковер для ползания в детском саду подарит ребенку много часов веселой игры и массу положительных эмоций\n" +
+                "● Когда ребенок сидит один, ковер играет роль пианино, которое легко превратить в интерактивный музыкальный столик. Игрушка обучает моторике и развивает слух и зрение ребенка\n" +
+                "● Лежа на животе малыш учится поднимать голову и познает окружающий мир. В этот период коврик помогает ползать и делать первые шаги. Прекрасно изолирует ребенка от холода земли\n" +
+                "Цена:\n" +
+                "189 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3012,7 +3093,16 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cmho1j1s99ouqbfqjjqg/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Манеж для детей, коврик с детскими игрушками, музыкальное пианино для малышей\n\n" +
+                "Кратко о товаре:\n" +
+                        "● Внимание! Этот продукт подробно описан в описании выше\n" +
+                        "● Помогает детям развивать навыки, необходимые для их общего роста и развития, способствует укреплению мышц, координации\n" +
+                        "● Благодаря складной конструкции его удобно брать с собой в поездки, а также можно брать с собой в поездки и развлекательные места\n" +
+                        "● Очень полезный для развития ребенка яркий и красивый ковер для ползания в детском саду подарит ребенку много часов веселой игры и массу положительных эмоций\n" +
+                        "● Когда ребенок сидит один, ковер играет роль пианино, которое легко превратить в интерактивный музыкальный столик. Игрушка обучает моторике и развивает слух и зрение ребенка\n" +
+                        "● Лежа на животе малыш учится поднимать голову и познает окружающий мир. В этот период коврик помогает ползать и делать первые шаги. Прекрасно изолирует ребенка от холода земли\n" +
+                        "Цена:\n" +
+                        "189 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3296,7 +3386,19 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cl12215ennt861io3mjg/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Электросамокат KEKCHTE M1 Electric Scooter, 8.5\n" +
+                "Кратко о товаре:\n" +
+                "● Максимальная нагрузка: 120 кг\n" +
+                "● Шины: Передние и задние пневматические шины диаметром 8,5 дюймов\n" +
+                "● Рост пользователя: 120–200 см\n" +
+                "● Система торможения: eABS + задний двухколодочный дисковый тормоз\n" +
+                "● Макс Скорость: 25 км/ч\n" +
+                "Запас хода: 30 км\n" +
+                "Способность преодолевать уклон:16%\n" +
+                "Возраст пользователя: от 18 до 50 лет\n" +
+                "Вес: 13.2 кг\n" +
+                "Цена:\n" +
+                "3 290 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
@@ -3342,7 +3444,19 @@ public class MenuRus {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://images.uzum.uz/cl12215ennt861io3mjg/original.jpg"));
-        sendPhoto.setCaption("");
+        sendPhoto.setCaption("Электросамокат KEKCHTE M1 Electric Scooter, 8.5\n" +
+                "Кратко о товаре:\n" +
+                "● Максимальная нагрузка: 120 кг\n" +
+                "● Шины: Передние и задние пневматические шины диаметром 8,5 дюймов\n" +
+                "● Рост пользователя: 120–200 см\n" +
+                "● Система торможения: eABS + задний двухколодочный дисковый тормоз\n" +
+                "● Макс Скорость: 25 км/ч\n" +
+                "Запас хода: 30 км\n" +
+                "Способность преодолевать уклон:16%\n" +
+                "Возраст пользователя: от 18 до 50 лет\n" +
+                "Вес: 13.2 кг\n" +
+                "Цена:\n" +
+                "3 290 000 сум");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();

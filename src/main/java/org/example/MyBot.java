@@ -4176,7 +4176,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
 
             }
-            if (data.equals("2-електроника назад")){
+            if (data.equals("2-електроника назад")||data.equals("6-Спорт и отдых вперёд")){
                 EditMessageMedia editMessageMedia = new EditMessageMedia();
                 InputMediaPhoto inputMediaPhoto = new InputMediaPhoto("https://images.uzum.uz/cmfa23hs99ouqbfq6kq0/original.jpg");
                 editMessageMedia.setMedia(inputMediaPhoto);
@@ -5747,7 +5747,17 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Капсулы магния Naturex, 60 капсул, 150 мг\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● При повышенной утомляемости, при состояниях физического и умственного переутомления\n" +
+                        "● Для восполнения дефицита магния в организме\n" +
+                        "● Для нормализации сна\n" +
+                        "● Для нормализации состояния при повышенной нервной возбудимости, раздражительности\n" +
+                        "● Для уменьшения боли и спазмов мышц, желудочно-кишечных спазмов\n" +
+                        "● Уменьшает проявления при функциональных приступах тревоги с гипервентиляцией\n" +
+                        "● Для нормализации учащенного сердцебиения\n" +
+                        "Цена:\n" +
+                        "37 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -5800,7 +5810,16 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Пластырь травяной турмалиновый, обезболивающий для суставов и мышц, 10 шт\n\n" +
+                        "Кратко о товаре:\n" +
+                        "Пластырь с турмалиновым порошком и травами усиленный, обезболивающий для суставов и мыщц. 10 шт\n" +
+                        "Снимает боль. Укрепляет сухожилия и кости. Устраняет ревматические боли и боли в мыщцах\n" +
+                        "Изготовлен на основе микропористого нетканого полотна, обеспечивающего хорошую воздухопроницаемость и не раздражающего даже особо чувствительную кожу, из эластичной натуральной ткани с поперечным растяжением\n" +
+                        "В пластыре содержится множество действенных трав китайской медицины, оказывает противоопухолевое и обезболивающее действие.\n" +
+                        "В составе только натуральные экстракты и травы\n" +
+                        "используют при:остеохондрозе, радикулитах, артритах;дисплазии суставов, невралгии, миалгии;травмах, ушибах, растяжениях и отеках\n" +
+                        "Цена:\n" +
+                        "34 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -5853,7 +5872,13 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Вальгусная шина, фиксатор большого пальца Hallux Valgus, Корректор большого пальца, Для ног\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Вальгусная шарнирная шина способствует возвращению сустава в естественное положение при сохранении возможности передвижения\n" +
+                        "● Вальгусная шарнирная шина способствует возвращению сустава в естественное положение при сохранении возможности передвижения\n" +
+                        "● Вальгусная шарнирная шина способствует возвращению сустава в естественное положение при сохранении возможности передвижения\n" +
+                        "Цена:\n" +
+                        "35 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -5906,7 +5931,12 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Корсет ортопедический для грыжи спины, пояснично-крестцовый\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Полужесткая фиксация поясничного отдела\n" +
+                        "● Изготовлен из эластичного «дышащего» материала\n" +
+                        "Цена:\n" +
+                        "229 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -5959,7 +5989,16 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Массажер миостимулятор для ног EMS Foot Massager\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Тип: Массажер для ног EMS\n" +
+                        "● Многофункциональность: 6 режимов, 9 интенсивностей.\n" +
+                        "● Вес уникального набора: 240,8 г.\n" +
+                        "● Батарея: литиевая батарея - 150 мАч.\n" +
+                        "● Размер массажной подушки для ног: 31x31 см (12,2 * 12,2 дюйма)\n" +
+                        "● Зарядка через USB\n" +
+                        "Цена:\n" +
+                        "29 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6012,7 +6051,22 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Автоматический тонометр на предплечье Protech YK-BPA4, 22-32 см\n\n" +
+                        "Обхват манжет: 22 - 32 см\n" +
+                        "\n" +
+                        "Дисплей: 72 х 43.5 мм\n" +
+                        "\n" +
+                        "Память: 99 значений\n" +
+                        "\n" +
+                        "Питание: 4 батареи ААА / электросеть\n" +
+                        "\n" +
+                        "Размер корпуса: 140 х 100 х 40 мм\n" +
+                        "\n" +
+                        "Вес: 282 г\n" +
+                        "\n" +
+                        "Комплект: корпус, манжеты, шланг, адаптер питания, чехол, инструкция\n" +
+                        "Цена:\n" +
+                        "415 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6073,7 +6127,9 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Набор слесарно-монтажный MTX, 12 предметов, 135629\n\n" +
+                        "Цена:\n" +
+                        "303 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6126,7 +6182,9 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Лазерный метр UNI-T LM40\n\n" +
+                        "Цена:\n" +
+                        "390 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6179,7 +6237,15 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Дрель-шуруповерт аккумуляторная L-Fine 2113, бесщеточный, 13 мм\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● 5.Головки: 4 мм, 5 мм, 5.5 мм, 6 мм, 7 мм, 8 мм, 9 мм, 10 мм, 12 мм.\n" +
+                        "● 1. Напряжение: 21В\n" +
+                        "● 2.Максимально крутящий момент - 40NM;\n" +
+                        "● 3.Максимальная скорость 0-1400 оборотов /мин;\n" +
+                        "● 4.Минимальная скорость : 0-450 оборотов/мин;\n" +
+                        "Цена:\n" +
+                        "459 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6232,7 +6298,15 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Беспроводной подвесной светильник на магните, ночник\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Очень удобный и простой в использовании\n" +
+                        "● Лампочку с магнитом можно включить где угодно\n" +
+                        "● Мини лампа с монолитным блоком cветодиодов, питание от батарейки, настенный ночной Светилъник для помещений, Электирический настенный переключател с кнопками, аварийный светилъник для дома\n" +
+                        "● Светодиодная лампа\n" +
+                        "● Размер: 7.5 * 11 * 2 см, вес 70 г\n" +
+                        "Цена:\n" +
+                        "29 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6285,7 +6359,16 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Смеситель хайтек гибкий для кухни,COCO sultan\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Нижняя часть изготовлена \u200B\u200Bиз прочной латуни и не ржавеет\n" +
+                        "● Выглядит как хай-тек, красивый дизайн\n" +
+                        "● Пожалуйста, не забудьте написать отзыв при получении товара\n" +
+                        "● Этот смеситель COCO SULTAN И BOTU имеет новый внешний вид с новым дизайном и качественным\n" +
+                        "● Верхняя часть пружины очень гибкая, и вы можете согнуть ее как угодно\n" +
+                        "● + шланг по 40 см. 2 штук\n" +
+                        "Цена:\n" +
+                        "199 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6338,7 +6421,15 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Пила цепная электрическая Biyoti BYT-712\n\n" +
+                        "Кратко о товаре\n" +
+                        "● Мощность двигателя - 1800 Вт\n" +
+                        "● Число оборотов - 4800 об/мин\n" +
+                        "● Объем масляного бака - 0.1 литр\n" +
+                        "● Длина шины - 405 мм\n" +
+                        "● Страна производитель - Китай\n" +
+                        "Цена:\n" +
+                        "545 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6399,7 +6490,20 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Фильтр воздушный салона GM Malibu-2 №13356914\n\n" +
+                        "Тип - воздушный фильтр салона.\n" +
+                        "\n" +
+                        "Производитель \"General Motors\".\n" +
+                        "\n" +
+                        "Партномер - 13356914\n" +
+                        "\n" +
+                        "Модель автомобиля - Malibu-2\n" +
+                        "\n" +
+                        "Количество - 1 шт.\n" +
+                        "\n" +
+                        "Применимость детали к конкретному автомобилю необходимо проверять по VIN-коду в оригинальном каталоге запчастей\n" +
+                        "Цена:\n" +
+                        "443 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6452,7 +6556,20 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Фара комплект GM CAPTIVA №42639353/42639352\n\n" +
+                        "Тип - Фара комплект.\n" +
+                        "\n" +
+                        "Производитель \"General Motors\".\n" +
+                        "\n" +
+                        "Парт номер - 42639353/42639352.\n" +
+                        "\n" +
+                        "Модель автомобиля - CAPTIVA.\n" +
+                        "\n" +
+                        "Количество - 2 шт.\n" +
+                        "\n" +
+                        "Применимость детали к конкретному автомобилю необходимо проверять по VIN-коду в оригинальном каталоге запчастей\n" +
+                        "Цена:\n" +
+                        "комплект 7 406 000 сум\n");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6505,7 +6622,20 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Видеорегистратор Lenovo V7 Plus FullHD 2023 ver +32GB SanDisk, задняя камера в виде Malibu\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Lenovo V7 Plus FullHD задняя камера в виде Malibu\n" +
+                        "● В подарок Micro SD SanDisk Ultra 32GB 10class\n" +
+                        "● Разрешение: 1920*1080 (Full HD)\n" +
+                        "● Угол oбзора: передний-170° задний-140°\n" +
+                        "● Полный сенсорный экран: 9.66\"\n" +
+                        "● Мощный процессор: General Plus\n" +
+                        "● Двухканальная запись: +\n" +
+                        "● Встроенный микрофон: +\n" +
+                        "● Ночной режим: +\n" +
+                        "● Гарантия 1 месяц на сам видеорегистратор. На заднюю камеру и шнур питания-гарантии нет\n" +
+                        "Цена:\n" +
+                        "599 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6558,7 +6688,12 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Аварийный набор для автомобиля 5 в 1, аптечка, огнетушитель, жилет, аварийный знак\n\n" +
+                        "Необходимый набор автомобилиста в удобной сумке 5 в 1\n" +
+                        "\n" +
+                        "Аварийный автомобильный набор - это комплект инструментов и средств, предназначенных для оказания первой помощи при дорожных авариях или поломках автомобиля.\n" +
+                        "Цена:\n" +
+                        "109 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6611,7 +6746,16 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Освежитель воздуха для автомобиля\n\n" +
+                        "Кратко о товаре:\n" +
+                        "Наличие солнечного элемента позволяет работать без батареек\n" +
+                        "Отличный вариант разнообразить Ваш путь\n" +
+                        "Вращающиеся лопасти\n" +
+                        "Имеется крепление для любой поверхности\n" +
+                        "Ароматическое масло позволит улучшить запах в автомобиле\n" +
+                        "Ароматизирует воздух\n" +
+                        "Цена:\n" +
+                        "75 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6664,7 +6808,20 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Свеча зажигания GM Tracker 1.8 №25197812\n\n" +
+                        "Тип - свеча зажигания.\n" +
+                        "\n" +
+                        "Производитель \"General Motors\".\n" +
+                        "\n" +
+                        "Парт номер -25197812 \n" +
+                        "\n" +
+                        "Модель автомобиля - Tracker 1.8 \n" +
+                        "\n" +
+                        "Количество - 1 шт.\n" +
+                        "\n" +
+                        "Применимость детали к конкретному автомобилю необходимо проверять по VIN-коду в оригинальном каталоге запчастей\n" +
+                        "Цена:\n" +
+                        "172 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6725,7 +6882,20 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Толокар, пушкар с ручкой 3 в 1 Sport Car, для детей до 4 х лет\n\n" +
+                        "Есть багажник\n" +
+                        "\n" +
+                        "Ширина предмета 43 см\n" +
+                        "\n" +
+                        "Глубина предмета 85 см\n" +
+                        "\n" +
+                        "Вес с упаковкой (кг)4.1 кг\n" +
+                        "\n" +
+                        "Высота предмета85.5 см\n" +
+                        "\n" +
+                        "Длина упаковки62 см\n" +
+                        "Цена:\n" +
+                        "260 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6778,7 +6948,12 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Teknum 531 детская коляска 3 в 1, трансформер\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Коляска\n" +
+                        "● Детская коляска\n" +
+                        "Цена:\n" +
+                        "1 399 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6831,7 +7006,14 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Конструктор Ниндзяго Ninjago Всадники на драконах совместим с лего Lego\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Упаковка: Прочная упаковка обеспечивает безопасность деталей во время транспортировки и хранения.\n" +
+                        "● Тематика ниндзя: Каждый набор основан на теме воинов-ниндзя, популярной и привлекательной для детей.\n" +
+                        "● Серия наборов: Включает в себя 8 различных наборов для сборки, каждый с уникальным набором фигурок и мотоциклов.\n" +
+                        "● Количество деталей: Каждый набор содержит от 52 до 55 деталей, позволяя создать детализированные модели\n" +
+                        "Цена:\n" +
+                        "16 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6884,7 +7066,9 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Пластилин для лепки Modelling clay, 24 цвета\n\n" +
+                        "Цена:\n" +
+                        "22 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6937,7 +7121,16 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Доска для рисования 8.5inch LCD Writing Tablet, 12 x 16.5 см\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● LCD 8.5inch\n" +
+                        "● Батарея держит долго\n" +
+                        "● 12 x 16.5 см\n" +
+                        "● Безопасный для глаз экран - рисовать можно часами\n" +
+                        "● Есть защита от случайного стирания\n" +
+                        "● Изображение легко стирается одним нажатием кнопки\n" +
+                        "Цена:\n" +
+                        "22 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -6990,7 +7183,16 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Манеж для детей, коврик с детскими игрушками, музыкальное пианино для малышей\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Внимание! Этот продукт подробно описан в описании выше\n" +
+                        "● Помогает детям развивать навыки, необходимые для их общего роста и развития, способствует укреплению мышц, координации\n" +
+                        "● Благодаря складной конструкции его удобно брать с собой в поездки, а также можно брать с собой в поездки и развлекательные места\n" +
+                        "● Очень полезный для развития ребенка яркий и красивый ковер для ползания в детском саду подарит ребенку много часов веселой игры и массу положительных эмоций\n" +
+                        "● Когда ребенок сидит один, ковер играет роль пианино, которое легко превратить в интерактивный музыкальный столик. Игрушка обучает моторике и развивает слух и зрение ребенка\n" +
+                        "● Лежа на животе малыш учится поднимать голову и познает окружающий мир. В этот период коврик помогает ползать и делать первые шаги. Прекрасно изолирует ребенка от холода земли\n" +
+                        "Цена:\n" +
+                        "189 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -7051,7 +7253,15 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Велотренажер Axelus 010, до 120 кг, для похудения\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Максимальный вес пользователя: 110 кг\n" +
+                        "● Маховик: 4 кг (внутренний вращающийся диск)\n" +
+                        "● Возможность увеличения сложности обучения: 8 разных уровней.\n" +
+                        "● Монитор: измеряет время, расстояние, скорость, пульс, калории.\n" +
+                        "● Пульс: на руле\n" +
+                        "Цена:\n" +
+                        "1 779 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -7104,7 +7314,14 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Скакалка с счетчиком для спорта и кроссфит тренировок\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Скакалка с механическим счетчиком\n" +
+                        "● Общая длина 280 см, длина ручки 17 см\n" +
+                        "● Пластиковые ручки с мягкой поролоновой накладкой\n" +
+                        "● Отличный тренажер для кардио тренировок\n" +
+                        "Цена:\n" +
+                        "49 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -7157,7 +7374,24 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Мяч футбольный Molten F5A5000-AC, размер 5\n\n" +
+                        "Мяч футбольный Molten F5A5000-AC.\n" +
+                        "\n" +
+                        "Размер: 5\n" +
+                        "\n" +
+                        "Сертификат: Fifa Quality PRO.\n" +
+                        "\n" +
+                        "Количество панелей: 32\n" +
+                        "\n" +
+                        "Профессиональный технология Acentec (технология склеивания поперечным сплавлением)\n" +
+                        "\n" +
+                        "Материал покрышки: Полиуретан (склеенный, бесшовный, водостойкий)\n" +
+                        "\n" +
+                        "Камера: натуральный латекс.\n" +
+                        "\n" +
+                        "Высокая стойкость к истиранию\n" +
+                        "Цена:\n" +
+                        "159 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -7210,7 +7444,15 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Батут для фитнеса и джампинга, батут для похудения\n\n" +
+                        "Кратко о товаре:\n" +
+                        "● Диаметр (см): 120.130\n" +
+                        "● Батут для фитнеса и джампинга. Батут для похудения\n" +
+                        "● Грузоподъёмность: 140 кг\n" +
+                        "● Высота: 1.5 метр\n" +
+                        "● В случае возникновения вопросов, прошу обращаться к нам в личное сообщения УЗУМ МАРКЕТ\n" +
+                        "Цена:\n" +
+                        "1 050 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -7263,7 +7505,15 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Перчатка для бильярда Predator и Classic, на левую и правую руку, 2 цвета\n\n" +
+                        "Кратко о товаре:\n" +
+                        "Размер: безразмерная\n" +
+                        "Особенность: на левую и правую руку\n" +
+                        "Predator и Classic\n" +
+                        "Цвет: Чёрный, синий\n" +
+                        "В комплекте 1 шт\n" +
+                        "Цена:\n" +
+                        "49 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
@@ -7316,7 +7566,19 @@ public class MyBot extends TelegramLongPollingBot {
                 EditMessageCaption editMessageCaption = new EditMessageCaption();
                 editMessageCaption.setChatId(chatId);
                 editMessageCaption.setMessageId(message.getMessageId());
-                editMessageCaption.setCaption("");
+                editMessageCaption.setCaption("Электросамокат KEKCHTE M1 Electric Scooter, 8.5\n" +
+                        "Кратко о товаре:\n" +
+                        "● Максимальная нагрузка: 120 кг\n" +
+                        "● Шины: Передние и задние пневматические шины диаметром 8,5 дюймов\n" +
+                        "● Рост пользователя: 120–200 см\n" +
+                        "● Система торможения: eABS + задний двухколодочный дисковый тормоз\n" +
+                        "● Макс Скорость: 25 км/ч\n" +
+                        "Запас хода: 30 км\n" +
+                        "Способность преодолевать уклон:16%\n" +
+                        "Возраст пользователя: от 18 до 50 лет\n" +
+                        "Вес: 13.2 кг\n" +
+                        "Цена:\n" +
+                        "3 290 000 сум");
 
                 EditMessageReplyMarkup editMessageReplyMarkup = new EditMessageReplyMarkup();
                 editMessageReplyMarkup.setChatId(chatId);
